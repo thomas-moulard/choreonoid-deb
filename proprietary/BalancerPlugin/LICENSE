@@ -1,0 +1,15 @@
+
+Balancer Plugin Version 1.1.0
+=============================
+
+This plugin has been developed by Shin'ichiro Nakaoka and Choreonoid Development Team, AIST.
+
+This plugin is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Please note that the licence of this plugin is different from LGPL, which is the licence of 
+the main part of Choreonoid. Currently this plugin is distributed only in a binary form.
+You can freely use this plugin for creating motions of any robot / character models, but the
+plugin cannot be redistributed for commercial purposes.
+
+Please contact us if you want to use this plugin for a purpose beyond the the above conditions.

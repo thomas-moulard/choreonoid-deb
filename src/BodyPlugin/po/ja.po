@@ -1,0 +1,690 @@
+# Language = translations for PACKAGE package.
+# Copyright (C) 2011 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# nakaoka <s.nakaoka@aist.go.jp>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-12-21 16:15+0000\n"
+"PO-Revision-Date: 2011-11-12 14:46+0000\n"
+"Last-Translator: nakaoka <s.nakaoka@aist.go.jp>\n"
+"Language-Team: Language =\n"
+"Language: =\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: BodyBar.cpp:27
+msgid "Memory the current pose"
+msgstr "現在姿勢を記憶"
+
+#: BodyBar.cpp:30
+msgid "Recall the memorized pose"
+msgstr "記憶した姿勢の呼び出し"
+
+#: BodyBar.cpp:33
+msgid "Move the selected bodies to the origin"
+msgstr "選択ボディを原点へ移動"
+
+#: BodyBar.cpp:36
+msgid "Set the preset initial pose to the selected bodies"
+msgstr "選択ボディを初期姿勢に"
+
+#: BodyBar.cpp:39
+msgid "Set the preset standard pose to the selected bodies"
+msgstr "選択ボディを標準姿勢に"
+
+#: BodyBar.cpp:44
+msgid "Copy the right side pose to the left side"
+msgstr "右側の姿勢を左側にコピー"
+
+#: BodyBar.cpp:47
+msgid "Mirror copy"
+msgstr "反転コピー"
+
+#: BodyBar.cpp:50
+msgid "Copy the left side pose to the right side"
+msgstr "左側の姿勢を右側にコピー"
+
+#: BodyBar.cpp:56
+msgid ""
+"Move the center of mass to the position where its projection corresponds to "
+"the support feet cener"
+msgstr "重心投影点が支持脚中心に一致するよう移動"
+
+#: BodyBar.cpp:59
+msgid "Move the center of mass to fit its projection to ZMP"
+msgstr "重心投影点がZMPに一致するよう移動"
+
+#: BodyBar.cpp:64
+msgid "Set ZMP to the projection of the center of mass"
+msgstr "ZMPを重心投影点に移動"
+
+#: BodyBar.cpp:67
+msgid "Set ZMP under the right foot"
+msgstr "ZMPを右足に移動"
+
+#: BodyBar.cpp:70
+msgid "Set ZMP at the center of the feet"
+msgstr "ZMPを両足中心に移動"
+
+#: BodyBar.cpp:73
+msgid "Set ZMP under the left foot"
+msgstr "ZMPを左足に移動"
+
+#: BodyBar.cpp:78
+msgid "Adjust the width between the feet"
+msgstr "足幅の調整"
+
+#: BodyBar.cpp:83
+msgid "Width between the feet [m]"
+msgstr "両足中心間距離"
+
+#: BodyBar.cpp:253
+msgid "The center of mass of %1% cannt be moved to the target position\n"
+msgstr "%1% の重心を指定の位置まで移動できません。\n"
+
+#: BodyItem.cpp:76
+msgid "BodyItem"
+msgstr ""
+
+#: BodyItem.cpp:78
+msgid "OpenHRP model file"
+msgstr "OpenHRP モデルファイル"
+
+#: BodyItem.cpp:818
+msgid "Model name"
+msgstr "モデル名"
+
+#: BodyItem.cpp:819
+msgid "Num links"
+msgstr "リンク数"
+
+#: BodyItem.cpp:820
+msgid "Num joints"
+msgstr "関節数"
+
+#: BodyItem.cpp:821
+msgid "Root link"
+msgstr "ルートリンク"
+
+#: BodyItem.cpp:822
+msgid "Base link"
+msgstr "ベースリンク"
+
+#: BodyItem.cpp:823
+msgid "Mass"
+msgstr "質量"
+
+#: BodyItem.cpp:824
+msgid "Static model ?"
+msgstr "静止モデル？"
+
+#: BodyItem.cpp:825
+msgid "Model file"
+msgstr "モデルファイル"
+
+#: BodyItem.cpp:827
+msgid "Self-collision"
+msgstr "自己干渉"
+
+#: BodyLinkView.cpp:151
+msgid "Body / Link"
+msgstr "ボディ／リンク"
+
+#: BodyLinkView.cpp:214
+msgid "Index:"
+msgstr "インデックス"
+
+#: BodyLinkView.cpp:216
+msgid "Joint ID:"
+msgstr "関節ID"
+
+#: BodyLinkView.cpp:218
+msgid "Joint Type:"
+msgstr "関節タイプ"
+
+#: BodyLinkView.cpp:220
+msgid "Joint Axis:"
+msgstr "関節軸"
+
+#: BodyLinkView.cpp:261
+msgid "min"
+msgstr "最小"
+
+#: BodyLinkView.cpp:271
+msgid "max"
+msgstr "最大"
+
+#: BodyLinkView.cpp:291
+msgid "Link Position [m],[deg]"
+msgstr "リンク位置 [m],[deg]"
+
+#: BodyLinkView.cpp:331
+msgid "Matrix"
+msgstr "行列"
+
+#: BodyLinkView.cpp:362
+msgid "ZMP [m]"
+msgstr "ZMP [m]"
+
+#: BodyLinkView.cpp:389
+msgid "Collisions"
+msgstr "干渉"
+
+#: BodyLinkView.cpp:403
+msgid "Self-Collisions"
+msgstr "自己干渉"
+
+#: BodyLinkView.cpp:547
+msgid "Free"
+msgstr "非拘束"
+
+#: BodyLinkView.cpp:550
+msgid "Fixed"
+msgstr "固定"
+
+#: BodyLinkView.cpp:554
+msgid "Rotation"
+msgstr "回転"
+
+#: BodyLinkView.cpp:556
+msgid "Joint Angle [deg]"
+msgstr "関節角 [deg]"
+
+#: BodyLinkView.cpp:568
+msgid "Joint Velocity [deg/s]"
+msgstr "関節角速度 [deg/s]"
+
+#: BodyLinkView.cpp:582
+msgid "Slide"
+msgstr "直動"
+
+#: BodyLinkView.cpp:584
+msgid "Joint Translation [m]:"
+msgstr "関節並進位置 [m]"
+
+#: BodyLinkView.cpp:593
+msgid "Joint Velocity [m/s]"
+msgstr "関節速度 [m/s]"
+
+#: BodyMotionItem.cpp:27
+msgid "Warning"
+msgstr "警告"
+
+#: BodyMotionItem.cpp:67
+msgid ""
+"The frame rate of a body motion exported as Hrpsys files should be standard "
+"value 200, but the frame rate of \"%1%\" is %2%. The exported data may cause "
+"a problem.\n"
+"\n"
+"Do you continue to export ?"
+msgstr ""
+"Hrpsys用ファイルのフレームレートは標準で200となっていますが、エクスポートしよ"
+"うとしている \"%1%\" のフレームレートは%2%となっており、これによって問題が起"
+"こる可能性があります。"
+
+#: BodyMotionItem.cpp:83
+msgid ""
+"A fault has been detected. Please check the report in the MessageView.\n"
+"\n"
+"Do you continue to export ?"
+msgstr ""
+"障害を検出しました。メッセージビュー内に出力される内容を確認してください。\n"
+"\n"
+"エクスポートを続けますか ?"
+
+#: BodyMotionItem.cpp:85
+msgid ""
+"%1% faults have been detected. Please check the report in the MessageView.\n"
+"\n"
+"Do you continue to export ?"
+msgstr ""
+"%1% 箇所の障害を検出しました。メッセージビュー内に出力される内容を確認してく"
+"ださい。\n"
+"\n"
+"エクスポートを続けますか ?"
+
+#: BodyMotionItem.cpp:103
+msgid "There is no ZMP data. Do you continue to export ?"
+msgstr "ZMPのデータがありませんが、エクスポートを続けますか？"
+
+#: BodyMotionItem.cpp:156
+msgid "BodyMotionItem"
+msgstr "ボディモーションアイテム"
+
+#: BodyMotionItem.cpp:158
+msgid "Number of joints"
+msgstr "関節数"
+
+#: BodyMotionItem.cpp:163
+msgid "Body Motion"
+msgstr "ボディモーション"
+
+#: BodyMotionItem.cpp:167
+msgid "Hrpsys sequence file set"
+msgstr "Hrpsys シーケンスファイル一式"
+
+#: BodyPlugin.cpp:76
+msgid "Body Plugin Version %1%\n"
+msgstr "Body Plugin バージョン %1%\n"
+
+#: BodyPlugin.cpp:78
+msgid ""
+"This plugin has been developed by Shin'ichiro Nakaoka and Choreonoid "
+"Development Team, AIST, and is distributed as a part of the Choreonoid "
+"package.\n"
+"\n"
+msgstr ""
+
+#: BodyPlugin.cpp:83
+msgid ""
+"The Collision deteciton module used in this plugin is implemented using the "
+"OPCODE library (http://www.codercorner.com/Opcode.htm).\n"
+msgstr ""
+
+#: DynamicsSimulatorItem.cpp:93
+msgid "DynamicsSimulatorItem"
+msgstr "動力学シミュレータアイテム"
+
+#: DynamicsSimulatorItem.cpp:524
+msgid "Static friction"
+msgstr "静止摩擦係数"
+
+#: DynamicsSimulatorItem.cpp:526
+msgid "Slip friction"
+msgstr "動摩擦係数"
+
+#: FilterDialogs.cpp:47 FilterDialogs.cpp:304
+msgid "Velocity Limiting Filter"
+msgstr "速度制限フィルター"
+
+#: FilterDialogs.cpp:54
+msgid "Selected joints only"
+msgstr "選択関節のみ"
+
+#: FilterDialogs.cpp:70
+msgid "Pollard method"
+msgstr "Pollard手法"
+
+#: FilterDialogs.cpp:87
+msgid "Gaussian Filter"
+msgstr "ガウシアンフィルタ"
+
+#: FilterDialogs.cpp:109 FilterDialogs.cpp:213
+msgid "Apply"
+msgstr "適用"
+
+#: FilterDialogs.cpp:110 FilterDialogs.cpp:214
+msgid "Cancel"
+msgstr "キャンセル"
+
+#: FilterDialogs.cpp:180 FilterDialogs.cpp:308
+msgid "Range Limiting Filter"
+msgstr "範囲制限フィルタ"
+
+#: FilterDialogs.cpp:188
+msgid "limit grad."
+msgstr "制約勾配"
+
+#: FilterDialogs.cpp:195
+msgid "edge grad. ratio"
+msgstr "辺勾配比率"
+
+#: FilterDialogs.cpp:202
+msgid "margin"
+msgstr "マージン"
+
+#: FilterDialogs.cpp:311
+msgid "Merge selected MultiValueSeqItems (Temporary version)"
+msgstr "選択したMultiValueSeqアイテムをマージ（試験的バージョン）"
+
+#: JointSliderView.cpp:231
+msgid "Joint Sliders"
+msgstr "関節スライダ"
+
+#: JointSliderView.cpp:241
+msgid "All"
+msgstr "全関節"
+
+#: JointSliderView.cpp:242
+msgid "Show all the joints including unselected ones"
+msgstr "全関節を表示"
+
+#: JointSliderView.cpp:248
+msgid "ID"
+msgstr ""
+
+#: JointSliderView.cpp:249
+msgid "Show joint IDs"
+msgstr "関節IDを表示"
+
+#: JointSliderView.cpp:255
+msgid "Name"
+msgstr "名前"
+
+#: JointSliderView.cpp:256
+msgid "Show joint names"
+msgstr "関節名の表示"
+
+#: JointSliderView.cpp:262
+msgid "Entry"
+msgstr "数値入力"
+
+#: JointSliderView.cpp:263
+msgid "Show spin entries for numerical input"
+msgstr "数値入力ボックスの表示"
+
+#: JointSliderView.cpp:269
+msgid "Slider"
+msgstr "スライダ"
+
+#: JointSliderView.cpp:270
+msgid "Show sliders for chaning joint positions"
+msgstr "スライダを表示"
+
+#: JointSliderView.cpp:276
+msgid "IL"
+msgstr "一列"
+
+#: JointSliderView.cpp:277
+msgid "Put all the components for each joint in-line"
+msgstr "各関節を一列に表示"
+
+#: JointSliderView.cpp:287
+msgid "The number of columns"
+msgstr "カラム数"
+
+#: KinematicFaultChecker.cpp:102 KinematicFaultChecker.cpp:136
+msgid "Kinematic Fault Checker"
+msgstr "運動学障害チェッカ"
+
+#: KinematicFaultChecker.cpp:143
+msgid "Joint position check"
+msgstr "関節位置チェック"
+
+#: KinematicFaultChecker.cpp:148
+msgid "Angle margin"
+msgstr "角度マージン"
+
+#: KinematicFaultChecker.cpp:156
+msgid "Translation margin"
+msgstr "並進量マージン"
+
+#: KinematicFaultChecker.cpp:167
+msgid "Joint velocity check"
+msgstr "関節速度チェック"
+
+#: KinematicFaultChecker.cpp:172
+msgid "Limit ratio"
+msgstr "仕様制約値に対する割合"
+
+#: KinematicFaultChecker.cpp:187
+msgid "All joints"
+msgstr "全関節"
+
+#: KinematicFaultChecker.cpp:191
+msgid "Selected joints"
+msgstr "選択関節"
+
+#: KinematicFaultChecker.cpp:194
+msgid "Non-selected joints"
+msgstr "非選択関節"
+
+#: KinematicFaultChecker.cpp:202
+msgid "Self-collision check"
+msgstr "自己干渉チェック"
+
+#: KinematicFaultChecker.cpp:212
+msgid "Time bar's range only"
+msgstr "タイムバーの範囲内に適用"
+
+#: KinematicFaultChecker.cpp:220
+msgid "&Apply"
+msgstr "適用(&A)"
+
+#: KinematicFaultChecker.cpp:274
+msgid "No BodyMotionItems are selected."
+msgstr "BodyMotionアイテムが選択されていません。"
+
+#: KinematicFaultChecker.cpp:280
+msgid "%1% is not owned by any BodyItem. Check skiped."
+msgstr "%1% はボディアイテムの所有ではありませんので、チェックをしません。"
+
+#: KinematicFaultChecker.cpp:283
+msgid "Applying the Kinematic Fault Checker to %1% ..."
+msgstr "%1%に対して運動学的障害チェッカを適用中…"
+
+#: KinematicFaultChecker.cpp:314
+msgid "A fault has been detected."
+msgstr "障害が検出されました。"
+
+#: KinematicFaultChecker.cpp:316
+msgid "%1% faults have been detected."
+msgstr "%1%の障害が検出されました。"
+
+#: KinematicFaultChecker.cpp:319
+msgid "No faults have been detected."
+msgstr "障害は検出されませんでした。"
+
+#: KinematicFaultChecker.cpp:459
+msgid ""
+"%1$7.3f [s]: Position limit over of %2% (%3% is beyond the range (%4% , %5%) "
+"with margin %6%.)"
+msgstr ""
+"%1$7.3f [秒]: %2%の関節位置制約オーバー (%3% は範囲(%4% , %5%)のマージン%6%を"
+"超えています。"
+
+#: KinematicFaultChecker.cpp:460
+msgid ""
+"%1$7.3f [s]: Position limit over of %2% (%3% is beyond the range (%4% , "
+"%5%).)"
+msgstr ""
+"%1$7.3f [秒]: %2%の関節位置制約オーバー (%3% は範囲(%4% , %5%)を超えていま"
+"す。"
+
+#: KinematicFaultChecker.cpp:490
+msgid ""
+"%1$7.3f [s]: Velocity limit over of %2% (%3% is %4$.0f %% of the range "
+"(%5% , %6%).)"
+msgstr ""
+"%1$7.3f [秒]: %2%の関節速度オーバー (%3% は範囲(%5% , %6%)の%4$.0f %%を超えて"
+"います。"
+
+#: KinematicFaultChecker.cpp:517
+msgid "%1$7.3f [s]: Collision between %2% and %3%"
+msgstr "%1$7.3f [秒]: %2% と %3% の干渉を検出"
+
+#: KinematicsBar.cpp:39
+msgid "Kinematics Operation Setup"
+msgstr "運動学操作の設定"
+
+#: KinematicsBar.cpp:45
+msgid "Snap thresholds:"
+msgstr "スナップ閾値"
+
+#: KinematicsBar.cpp:48
+msgid "distance"
+msgstr "足幅"
+
+#: KinematicsBar.cpp:55 KinematicsBar.cpp:74
+msgid "[m]"
+msgstr ""
+
+#: KinematicsBar.cpp:58
+msgid "angle"
+msgstr "角度"
+
+#: KinematicsBar.cpp:63
+msgid "[deg]"
+msgstr ""
+
+#: KinematicsBar.cpp:67
+msgid "Penetration block depth"
+msgstr "貫通防止における許容深度"
+
+#: KinematicsBar.cpp:78
+msgid "Lazy collision detection mode"
+msgstr "遅延干渉検出モード"
+
+#: KinematicsBar.cpp:84
+msgid "OK"
+msgstr "了解"
+
+#: KinematicsBar.cpp:119
+msgid "KinematicsBar"
+msgstr "運動学バー"
+
+#: KinematicsBar.cpp:125
+msgid "Forward kinematics mode"
+msgstr "順運動学モード"
+
+#: KinematicsBar.cpp:126
+msgid "Preset kinematics mode"
+msgstr "プリセット運動学モード"
+
+#: KinematicsBar.cpp:127
+msgid "Inverse kinematics mode"
+msgstr "逆運動学モード"
+
+#: KinematicsBar.cpp:132
+msgid "Enable link orientation editing"
+msgstr "リンク姿勢編集の許可"
+
+#: KinematicsBar.cpp:146
+msgid "Penetration block mode"
+msgstr "貫通ブロックモード"
+
+#: KinematicsBar.cpp:149
+msgid "Highlight colliding links"
+msgstr "干渉リンクのハイライト表示"
+
+#: KinematicsSimulatorItem.cpp:80
+msgid "KinematicsSimulatorItem"
+msgstr "運動学シミュレータアイテム"
+
+#: LinkSelectionView.cpp:57
+msgid "Links"
+msgstr "リンク"
+
+#: LinkTreeWidget.cpp:259
+msgid "link"
+msgstr "リンク"
+
+#: LinkTreeWidget.cpp:263
+msgid "id"
+msgstr ""
+
+#: LinkTreeWidget.cpp:281
+msgid "link list"
+msgstr "リンク一覧"
+
+#: LinkTreeWidget.cpp:282
+msgid "link tree"
+msgstr "リンクツリー"
+
+#: LinkTreeWidget.cpp:283
+msgid "joint list"
+msgstr "関節一覧"
+
+#: LinkTreeWidget.cpp:284
+msgid "joint tree"
+msgstr "関節ツリー"
+
+#: LinkTreeWidget.cpp:285
+msgid "part tree"
+msgstr "身体部位ツリー"
+
+#: MultiAffine3SeqGraphView.cpp:27
+msgid "Multi Affine3 Seq"
+msgstr "位置姿勢軌道グラフ"
+
+#: MultiValueSeqGraphView.cpp:29
+msgid "Multi Value Seq"
+msgstr "軌道グラフ"
+
+#: SceneBody.cpp:1049
+msgid "%1% / %2%"
+msgstr "%1% / %2%"
+
+#: SceneBody.cpp:1109
+msgid "Set Free"
+msgstr "フリーに"
+
+#: SceneBody.cpp:1111
+msgid "Set Base"
+msgstr "ベースに"
+
+#: SceneBody.cpp:1113
+msgid "Set Translation Pin"
+msgstr "並進ピンをセット"
+
+#: SceneBody.cpp:1115
+msgid "Set Rotation Pin"
+msgstr "回転ピンをセット"
+
+#: SceneBody.cpp:1117
+msgid "Set Both Pins"
+msgstr "両方のピンをセット"
+
+#: SceneBody.cpp:1122
+msgid "Level Attitude"
+msgstr "水平姿勢に"
+
+#: SceneBody.cpp:1127
+msgid "/Markers"
+msgstr "/マーカー"
+
+#: SceneBody.cpp:1129
+msgid "Center of Mass"
+msgstr "重心"
+
+#: SceneBody.cpp:1133
+msgid "ZMP"
+msgstr "ZMP"
+
+#: SceneBodyManager.cpp:112
+msgid "Show only selected links"
+msgstr "選択リンクのみ表示する"
+
+#: SimulationBar.cpp:25
+msgid "Simulation"
+msgstr "シミュレーション"
+
+#: SimulationBar.cpp:27
+msgid "Output all link positions"
+msgstr "全関節位置姿勢のSE3軌道を出力"
+
+#: SimulationBar.cpp:47 SimulationBar.cpp:111
+msgid "Start simulation"
+msgstr "シミュレーション開始"
+
+#: SimulationBar.cpp:86
+msgid "Stop simulation"
+msgstr "シミュレーション停止"
+
+#: SimulatorItem.cpp:130
+msgid "Simulation by %1% has started."
+msgstr "%1%によるシミュレーションを開始しました。"
+
+#: SimulatorItem.cpp:180
+msgid "Simulation by %1% has finished at %2% [s].\n"
+msgstr "%1%によるシミュレーションが終了しました。\n"
+
+#: SimulatorItem.cpp:181
+msgid " Actual elapsed time = %1% [s], actual / virtual = %2%."
+msgstr "実消費時間 = %1% [s], 実時間 / 仮想時間 = %2%。"
+
+#: WorldItem.cpp:102
+msgid "WorldItem"
+msgstr "ワールドアイテム"
+
+#: WorldItem.cpp:399 WorldView.cpp:76
+msgid "Collision detection"
+msgstr "干渉検出"
+
+#: WorldView.cpp:63 WorldView.cpp:69
+msgid "World"
+msgstr "ワールド"

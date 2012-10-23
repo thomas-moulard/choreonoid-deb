@@ -1,0 +1,12 @@
+
+CXXFLAGS += `pkg-config --cflags choreonoid`
+PLUGIN = libCnoidGLGearsPlugin.so
+SRC = GLGearsPlugin.o GLGearsView.o
+
+$(PLUGIN): $(SRC)
+	g++ -shared `pkg-config --libs choreonoid` -o $(PLUGIN) $(SRC)
+
+install: $(PLUGIN)
+	install -s $(PLUGIN) `pkg-config --variable=plugindir choreonoid`
+clean:
+	rm -f *.o *.so
