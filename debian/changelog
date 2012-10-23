@@ -1,0 +1,5 @@
+choreonoid (1.1.0-1) precise; urgency=low
+
+  * Import new upstream version 1.1.0.
+
+ -- Thomas Moulard <thomas.moulard@gmail.com>  Tue, 23 Oct 2012 13:18:24 +0200
