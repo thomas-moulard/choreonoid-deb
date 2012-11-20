@@ -23,7 +23,7 @@ Bugs: mailto:thomas.moulard@gmail.com
 
 Package: choreonoid
 Architecture: any
-Section: science
+Section: contrib/science
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: Integrated robotics GUI environment
  Choreonoid is an integrated robotics GUI environment, which allows
@@ -32,7 +32,7 @@ Description: Integrated robotics GUI environment
 
 Package: choreonoid-dev
 Architecture: any
-Section: science
+Section: contrib/devel
 Depends: choreonoid (= ${binary:Version}), ${misc:Depends}
 Description: Integrated robotics GUI environment development files
  Choreonoid is an integrated robotics GUI environment, which allows
@@ -45,7 +45,7 @@ Description: Integrated robotics GUI environment development files
 
 Package: choreonoid-dbg
 Architecture: any
-Section: debug
+Section: contrib/debug
 Depends: choreonoid (= ${binary:Version}), ${misc:Depends}
 Description: Choreonoid debugging symbols
  Choreonoid is an integrated robotics GUI environment, which allows
