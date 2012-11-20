@@ -1,3 +1,10 @@
+choreonoid (1.1.0-2) lucid oneiric precise quantal; urgency=low
+
+  * Remove unwanted building options and environment variables from rules file.
+  * Add support from lucid to quantal.
+
+ -- Thomas Moulard <thomas.moulard@gmail.com>  Tue, 20 Nov 2012 11:34:00 +0900
+
 choreonoid (1.1.0-1) precise; urgency=low
 
   * Import new upstream version 1.1.0.
