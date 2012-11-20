@@ -1,7 +1,10 @@
 choreonoid (1.1.0-2) lucid; urgency=low
 
   * Remove unwanted building options and environment variables from rules file.
-  * Switch to lucid for now.
+  * Switch to lucid.
+  * Add man page for choreonoid binary.
+  * Add desktop entry for choreonoid binary.
+  * Add lintian override file for choreonoid package.
 
  -- Thomas Moulard <thomas.moulard@gmail.com>  Tue, 20 Nov 2012 11:34:00 +0900
 
