@@ -1,15 +1,10 @@
-choreonoid (1.1.0-2) lucid; urgency=low
+choreonoid (1.1.0-1ubuntu1~rc1) lucid; urgency=low
 
-  * Remove unwanted building options and environment variables from rules file.
-  * Switch to lucid.
+  * Add symbols file for amd64 and i386 architectures.
   * Add man page for choreonoid binary.
   * Add desktop entry for choreonoid binary.
   * Add lintian override file for choreonoid package.
-
- -- Thomas Moulard <thomas.moulard@gmail.com>  Tue, 20 Nov 2012 11:34:00 +0900
-
-choreonoid (1.1.0-1) precise; urgency=low
-
+  * Set temporarily bug report address to thomas.moulard@gmail.com
   * Import new upstream version 1.1.0.
 
- -- Thomas Moulard <thomas.moulard@gmail.com>  Tue, 23 Oct 2012 13:18:24 +0200
+ -- Thomas Moulard <thomas.moulard@gmail.com>  Tue, 20 Nov 2012 15:21:16 +0900
