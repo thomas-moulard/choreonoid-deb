@@ -23,7 +23,6 @@ Bugs: mailto:thomas.moulard@gmail.com
 
 Package: choreonoid
 Architecture: any
-Section: contrib/science
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: Integrated robotics GUI environment
  Choreonoid is an integrated robotics GUI environment, which allows
