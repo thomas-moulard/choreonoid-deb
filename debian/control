@@ -16,9 +16,10 @@ Build-Depends: debhelper (>= 7.0.50), cmake (>= 2.6),
 	       qt4-dev-tools,
 	       qt4-qtconfig,
 	       gettext
-Standards-Version: 3.9.3
+Standards-Version: 3.8.4
 Section: libs
 Homepage: http://choreonoid.org/
+Bugs: mailto:thomas.moulard@gmail.com
 
 Package: choreonoid
 Architecture: any
@@ -27,8 +28,20 @@ Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: Integrated robotics GUI environment
  Choreonoid is an integrated robotics GUI environment, which allows
  users to add their own functions on the basis of various basic
- robotics functions. In this site, we distribute the program and
- provide the information on it.
+ robotics functions.
+
+Package: choreonoid-dev
+Architecture: any
+Section: science
+Depends: choreonoid (= ${binary:Version}), ${misc:Depends}
+Description: Integrated robotics GUI environment development files
+ Choreonoid is an integrated robotics GUI environment, which allows
+ users to add their own functions on the basis of various basic
+ robotics functions.
+ .
+ This package gathers development files required to compile Choreonoid
+ plug-ins.
+
 
 Package: choreonoid-dbg
 Architecture: any
@@ -37,7 +50,6 @@ Depends: choreonoid (= ${binary:Version}), ${misc:Depends}
 Description: Choreonoid debugging symbols
  Choreonoid is an integrated robotics GUI environment, which allows
  users to add their own functions on the basis of various basic
- robotics functions. In this site, we distribute the program and
- provide the information on it.
+ robotics functions.
  .
  This package contains the debugging symbols for the main binary.

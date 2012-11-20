@@ -7,6 +7,9 @@ debian/choreonoid.postinst.debhelper
 debian/choreonoid.postrm.debhelper
 debian/choreonoid.substvars
 debian/choreonoid/
+debian/choreonoid-dev.debhelper.log
+debian/choreonoid-dev.substvars
+debian/choreonoid-dev/
 debian/files
 debian/tmp/
 obj-x86_64-linux-gnu/

@@ -1,0 +1,2 @@
+choreonoid: package-name-doesnt-match-sonames libCnoidBase1.1 libCnoidBody1.1 libCnoidCollision1.1 libCnoidUtil1.1
+choreonoid: binary-without-manpage usr/bin/choreonoid
