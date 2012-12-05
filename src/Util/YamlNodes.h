@@ -17,7 +17,7 @@ namespace cnoid {
     class YamlNode;
 }
 
-namespace boost{
+namespace cnoid {
     void intrusive_ptr_add_ref(cnoid::YamlNode* obj);
     void intrusive_ptr_release(cnoid::YamlNode* obj);
 }
@@ -161,8 +161,8 @@ namespace cnoid {
         friend class YamlMapping;
         friend class YamlSequence;
 
-        friend void boost::intrusive_ptr_add_ref(YamlNode* obj);
-        friend void boost::intrusive_ptr_release(YamlNode* obj);
+        friend void intrusive_ptr_add_ref(YamlNode* obj);
+        friend void intrusive_ptr_release(YamlNode* obj);
     };
 
     typedef boost::intrusive_ptr<YamlNode> YamlNodePtr;
@@ -508,7 +508,7 @@ namespace cnoid {
 }
 
 
-namespace boost
+namespace cnoid
 {
     inline void intrusive_ptr_add_ref(cnoid::YamlNode* obj){
         obj->refCounter++;

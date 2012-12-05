@@ -11,7 +11,7 @@ namespace cnoid {
     class Referenced;
 }
 
-namespace boost{
+namespace cnoid {
     void intrusive_ptr_add_ref(cnoid::Referenced* obj);
     void intrusive_ptr_release(cnoid::Referenced* obj);
 }
@@ -28,8 +28,8 @@ namespace cnoid {
         inline int refCounter() { return refCounter_; }
 
       private:
-        friend void boost::intrusive_ptr_add_ref(Referenced* obj);
-        friend void boost::intrusive_ptr_release(Referenced* obj);
+        friend void intrusive_ptr_add_ref(Referenced* obj);
+        friend void intrusive_ptr_release(Referenced* obj);
 
         int refCounter_;
     };
@@ -37,7 +37,7 @@ namespace cnoid {
     typedef boost::intrusive_ptr<Referenced> ReferencedPtr;
 }
 
-namespace boost
+namespace cnoid
 {
     inline void intrusive_ptr_add_ref(cnoid::Referenced* obj){
         obj->refCounter_++;
