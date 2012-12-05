@@ -3,6 +3,10 @@
 
 #set(CMAKE_BUILD_TYPE Debug)
 
+# Prevent moc-qt from parsing Boost headers and failing.
+# See https://bugreports.qt-project.org/browse/QTBUG-22829
+add_definitions(-DBOOST_TT_HAS_OPERATOR_HPP_INCLUDED)
+
 if(ENABLE_INSTALL_RPATH)
   set(CMAKE_INSTALL_RPATH "$ORIGIN")
 endif()
