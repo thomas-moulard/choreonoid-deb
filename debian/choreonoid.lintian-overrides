@@ -1,1 +1,5 @@
-choreonoid: package-name-doesnt-match-sonames libCnoidBase1.1 libCnoidBody1.1 libCnoidCollision1.1 libCnoidUtil1.1
+package-name-doesnt-match-sonames libCnoidBase1.1 libCnoidBody1.1 libCnoidCollision1.1 libCnoidUtil1.1
+no-symbols-control-file usr/lib/libCnoidUtil.so.1.1
+no-symbols-control-file usr/lib/libCnoidBase.so.1.1
+no-symbols-control-file usr/lib/libCnoidBody.so.1.1
+no-symbols-control-file usr/lib/libCnoidCollision.so.1.1
