@@ -1,0 +1,24 @@
+From: Thomas Moulard <thomas.moulard@gmail.com>
+Date: Wed, 5 Dec 2012 16:23:42 +0900
+Subject: [PATCH] Prevent moc-qt from analyzing Boost headers.
+
+---
+ src/CMakeLists.txt |    4 ++++
+ 1 files changed, 4 insertions(+), 0 deletions(-)
+
+diff --git a/src/CMakeLists.txt b/src/CMakeLists.txt
+index e4898c8..93c9ccb 100644
+--- a/src/CMakeLists.txt
++++ b/src/CMakeLists.txt
+@@ -3,6 +3,10 @@
+ 
+ #set(CMAKE_BUILD_TYPE Debug)
+ 
++# Prevent moc-qt from parsing Boost headers and failing.
++# See https://bugreports.qt-project.org/browse/QTBUG-22829
++add_definitions(-DBOOST_TT_HAS_OPERATOR_HPP_INCLUDED)
++
+ if(ENABLE_INSTALL_RPATH)
+   set(CMAKE_INSTALL_RPATH "$ORIGIN")
+ endif()
+-- 
