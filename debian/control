@@ -19,7 +19,6 @@ Build-Depends: debhelper (>= 7.0.50), cmake (>= 2.6),
 Standards-Version: 3.8.4
 Section: contrib/science
 Homepage: http://choreonoid.org/
-Bugs: mailto:thomas.moulard@gmail.com
 
 Package: choreonoid
 Architecture: any
