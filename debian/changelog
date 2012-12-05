@@ -1,4 +1,4 @@
-choreonoid (1.1.0-1ubuntu1~rc1) lucid; urgency=low
+choreonoid (1.1.0-1~rc1) lucid; urgency=low
 
   * Add symbols file for amd64 and i386 architectures.
   * Add man page for choreonoid binary.
