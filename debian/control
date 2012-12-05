@@ -16,7 +16,7 @@ Build-Depends: debhelper (>= 7.0.50), cmake (>= 2.6),
 	       qt4-dev-tools,
 	       qt4-qtconfig,
 	       gettext
-Standards-Version: 3.8.4
+Standards-Version: 3.9.3
 Section: contrib/science
 Homepage: http://choreonoid.org/
 
