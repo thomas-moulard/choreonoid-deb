@@ -19,6 +19,8 @@ Build-Depends: debhelper (>= 7.0.50), cmake (>= 2.6),
 Standards-Version: 3.9.3
 Section: contrib/science
 Homepage: http://choreonoid.org/
+Vcs-Git: git://github.com/thomas-moulard/choreonoid-deb.git
+Vcs-browser: https://github.com/thomas-moulard/choreonoid-deb
 
 Package: choreonoid
 Architecture: any
