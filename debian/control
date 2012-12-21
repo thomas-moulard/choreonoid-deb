@@ -24,6 +24,7 @@ Vcs-browser: https://github.com/thomas-moulard/choreonoid-deb
 
 Package: choreonoid
 Architecture: any
+Pre-depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: Integrated robotics GUI environment
  Choreonoid is an integrated robotics GUI environment, which allows
