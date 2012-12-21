@@ -9,7 +9,7 @@
 # Uncomment this to turn on verbose mode.
 export DH_VERBOSE=1
 
-.PHONY: override_dh_auto_clean override_dh_strip
+.PHONY: override_dh_auto_clean override_dh_auto_configure override_dh_strip
 
 override_dh_auto_clean:
 	dh_auto_clean
@@ -18,6 +18,15 @@ override_dh_auto_clean:
 	      src/BodyPlugin/gettext.h 		\
 	      src/PoseSeqPlugin/gettext.h 	\
 	      src/Util/Config.h
+
+override_dh_auto_configure:
+	dh_auto_configure --				\
+		-DINSTALL_SDK:BOOL=TRUE			\
+		-DINSTALL_DEPENDENCIES:BOOL=TRUE	\
+		-DCNOID_ENABLE_GETTEXT:BOOL=TRUE	\
+		-DUSE_EXTERNAL_EIGEN:BOOL=TRUE		\
+		-DUSE_EXTERNAL_YAML:BOOL=TRUE
+
 
 override_dh_strip:
 	dh_strip -a --dbg-package=choreonoid-dbg
