@@ -1,0 +1,48 @@
+From: Thomas Moulard <thomas.moulard@gmail.com>
+Date: Fri, 21 Dec 2012 14:59:32 +0900
+Subject: Fix multiarchi support.
+
+Do not make the assumption that the library directory is lib.
+
+Forwarded: no
+Author: Thomas Moulard <thomas.moulard@gmail.com>
+---
+ CMakeLists.txt |   11 +++++++----
+ 1 file changed, 7 insertions(+), 4 deletions(-)
+
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index e315b1f..bdcf472 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -265,7 +265,7 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR}/bin)
+ 
+ set(CNOID_DIR ${CMAKE_INSTALL_PREFIX})
+ set(CNOID_SUBDIR choreonoid-${CNOID_VERSION})
+-set(CNOID_PLUGIN_SUBDIR lib/${CNOID_SUBDIR})
++set(CNOID_PLUGIN_SUBDIR lib//${CMAKE_LIBRARY_ARCHITECTURE}/${CNOID_SUBDIR})
+ 
+ if(WIN32)
+   set(CNOID_HEADER_SUBDIR "include")
+@@ -336,8 +336,10 @@ function(apply_common_setting_for_library target)
+   if(INSTALL_SDK)
+     install(TARGETS ${target}
+       RUNTIME DESTINATION bin CONFIGURATIONS Release Debug RelWithDebInfo MinSizeRel
+-      LIBRARY DESTINATION lib CONFIGURATIONS Release Debug RelWithDebInfo MinSizeRel
+-      ARCHIVE DESTINATION lib CONFIGURATIONS Release Debug RelWithDebInfo MinSizeRel)
++      LIBRARY DESTINATION lib/${CMAKE_LIBRARY_ARCHITECTURE}
++      CONFIGURATIONS Release Debug RelWithDebInfo MinSizeRel
++      ARCHIVE DESTINATION lib/${CMAKE_LIBRARY_ARCHITECTURE}
++      CONFIGURATIONS Release Debug RelWithDebInfo MinSizeRel)
+     if(headers)
+       get_filename_component(subdir ${CMAKE_CURRENT_SOURCE_DIR} NAME_WE)
+       install(FILES ${headers} DESTINATION ${CNOID_HEADER_SUBDIR}/cnoid/src/${subdir})
+@@ -345,7 +347,8 @@ function(apply_common_setting_for_library target)
+   else()
+     install(TARGETS ${target}
+       RUNTIME DESTINATION bin CONFIGURATIONS Release Debug RelWithDebInfo MinSizeRel
+-      LIBRARY DESTINATION lib CONFIGURATIONS Release Debug RelWithDebInfo MinSizeRel)
++      LIBRARY DESTINATION lib/${CMAKE_LIBRARY_ARCHITECTURE}
++      CONFIGURATIONS Release Debug RelWithDebInfo MinSizeRel)
+   endif()
+ 
+ endfunction()
