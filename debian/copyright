@@ -1,24 +1,14 @@
-This work was packaged for Debian by:
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Choreonoid
+Upstream-Contact: Shin'ichiro Nakaoka <s.nakaoka@aist.go.jp>
+Source: http://choreonoid.org/
 
-    Thomas Moulard <thomas.moulard@gmail.com> on Tue, 23 Sep 2012 15:53:00 +0200
+Files: *
+Copyright: 2012, Shin'ichiro Nakaoka and Choreonoid Development Team, AIST
+License: LGPL-2.1+
+ See `/usr/share/common-licenses/LGPL-2.1'.
 
-It was downloaded from http://choreonoid.org/en/download.html
-
-Upstream Authors:
-
-    Shin'ichiro Nakaoka and Choreonoid Development Team, AIST
-
-Copyright:
-
-    This program has been developed by Shin'ichiro Nakaoka
-    and Choreonoid Development Team, AIST.
-
-License:
-
-    See `/usr/share/common-licenses/LGPL-2'.
-
-The Debian packaging is:
-
-    Copyright (C) 2010-2012 Thomas Moulard <thomas.moulard@gmail.com>
-    and is licensed under the GPL version 3,
-    see `/usr/share/common-licenses/GPL-3'.
+Files: debian/*
+Copyright: 2012, Thomas Moulard <thomas.moulard@gmail.com>
+License: LGPL-2.1+
+ See `/usr/share/common-licenses/LGPL-2.1'.

@@ -6,6 +6,9 @@ intrusive_ptr_add_ref and intrusive_ptr_release should be in the
 class namespace and not boost namespace.
 
 See https://svn.boost.org/trac/boost/ticket/6943
+
+Forwarded: yes
+Author: Thomas Moulard <thomas.moulard@gmail.com>
 ---
  src/Util/Referenced.h |    8 ++++----
  src/Util/YamlNodes.h  |    8 ++++----
