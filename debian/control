@@ -35,7 +35,7 @@ Description: Integrated robotics GUI environment
 Package: choreonoid-dev
 Architecture: any
 Section: contrib/devel
-Depends: choreonoid (= ${binary:Version}), ${misc:Depends}
+Depends: choreonoid (= ${binary:Version}), ${misc:Depends}, libopenscenegraph-dev, libboost-all-dev, libeigen3-dev, libqt4-dev
 Description: Integrated robotics GUI environment development files
  Choreonoid is an integrated robotics GUI environment, which allows
  users to add their own functions on the basis of various basic
