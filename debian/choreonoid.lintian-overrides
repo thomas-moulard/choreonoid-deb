@@ -1,9 +1,9 @@
-package-name-doesnt-match-sonames libCnoidBase1.1 libCnoidBody1.1 libCnoidCollision1.1 libCnoidUtil1.1
-no-symbols-control-file usr/lib/*/libCnoidUtil.so.1.1
-no-symbols-control-file usr/lib/*/libCnoidBase.so.1.1
-no-symbols-control-file usr/lib/*/libCnoidBody.so.1.1
-no-symbols-control-file usr/lib/*/libCnoidCollision.so.1.1
-hardening-no-fortify-functions usr/lib/*/choreonoid-1.1/libCnoidBodyPlugin.so
-hardening-no-fortify-functions usr/lib/*/choreonoid-1.1/libCnoidPoseSeqPlugin.so
-hardening-no-fortify-functions usr/lib/*/libCnoidBase.so.1.1
-hardening-no-fortify-functions usr/lib/*/libCnoidBody.so.1.1
+package-name-doesnt-match-sonames libCnoidBase* libCnoidBody* libCnoidCollision* libCnoidUtil*
+# False positive.
+hardening-no-fortify-functions usr/lib/*/choreonoid-*/libCnoidBodyPlugin.so
+# False positive.
+hardening-no-fortify-functions usr/lib/*/choreonoid-*/libCnoidPoseSeqPlugin.so
+# False positive.
+hardening-no-fortify-functions usr/lib/*/libCnoidBase.so.*
+# False positive.
+hardening-no-fortify-functions usr/lib/*/libCnoidBody.so.*
