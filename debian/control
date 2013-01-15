@@ -5,13 +5,12 @@ Build-Depends: debhelper, cmake,
 	       doxygen, doxygen-latex, graphviz,
 	       libboost-all-dev,
 	       libeigen3-dev,
-	       zlib1g-dev,
+	       libz-dev,
 	       libjpeg-dev,
 	       libpng-dev,
 	       libopenscenegraph-dev,
 	       libsimage-dev,
 	       libyaml-dev,
-	       libqt4-dev,
 	       libqt4-opengl-dev,
 	       qt4-dev-tools,
 	       qt4-qtconfig,
@@ -34,7 +33,16 @@ Description: Integrated robotics GUI environment
 Package: choreonoid-dev
 Architecture: any
 Section: contrib/devel
-Depends: choreonoid (= ${binary:Version}), ${misc:Depends}, libopenscenegraph-dev, libboost-all-dev, libeigen3-dev, libqt4-dev
+Depends: choreonoid (= ${binary:Version}), ${misc:Depends},
+	 libboost-all-dev,
+	 libeigen3-dev,
+	 libz-dev,
+	 libjpeg-dev,
+	 libpng-dev,
+	 libopenscenegraph-dev,
+	 libsimage-dev,
+	 libyaml-dev,
+	 libqt4-opengl-dev
 Description: Integrated robotics GUI environment development files
  Choreonoid is an integrated robotics GUI environment, which allows
  users to add their own functions on the basis of various basic
@@ -42,7 +50,6 @@ Description: Integrated robotics GUI environment development files
  .
  This package gathers development files required to compile Choreonoid
  plug-ins.
-
 
 Package: choreonoid-dbg
 Architecture: any
