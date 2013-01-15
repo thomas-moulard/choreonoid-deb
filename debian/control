@@ -1,14 +1,13 @@
 Source: choreonoid
 Priority: extra
 Maintainer: Thomas Moulard <thomas.moulard@gmail.com>
-Build-Depends: debhelper (>= 9), cmake (>= 2.6),
-	       doxygen (>= 1.6.3),
-	       graphviz,
+Build-Depends: debhelper, cmake,
+	       doxygen, doxygen-latex, graphviz,
 	       libboost-all-dev,
 	       libeigen3-dev,
 	       zlib1g-dev,
 	       libjpeg-dev,
-	       libpng12-dev,
+	       libpng-dev,
 	       libopenscenegraph-dev,
 	       libsimage-dev,
 	       libyaml-dev,
@@ -17,15 +16,15 @@ Build-Depends: debhelper (>= 9), cmake (>= 2.6),
 	       qt4-dev-tools,
 	       qt4-qtconfig,
 	       gettext
-Standards-Version: 3.9.3
+Standards-Version: 3.9.4
 Section: contrib/science
 Homepage: http://choreonoid.org/
 Vcs-Git: git://github.com/thomas-moulard/choreonoid-deb.git
-Vcs-browser: https://github.com/thomas-moulard/choreonoid-deb
+Vcs-Browser: https://github.com/thomas-moulard/choreonoid-deb
 
 Package: choreonoid
 Architecture: any
-Pre-depends: ${misc:Pre-Depends}
+Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: Integrated robotics GUI environment
  Choreonoid is an integrated robotics GUI environment, which allows
