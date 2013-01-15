@@ -1,7 +1,7 @@
 Source: choreonoid
 Priority: extra
 Maintainer: Thomas Moulard <thomas.moulard@gmail.com>
-Build-Depends: debhelper, cmake,
+Build-Depends: debhelper (>= 9), cmake,
 	       doxygen, doxygen-latex, graphviz,
 	       libboost-all-dev,
 	       libeigen3-dev,
