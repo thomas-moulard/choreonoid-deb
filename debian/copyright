@@ -3,7 +3,22 @@ Upstream-Name: Choreonoid
 Upstream-Contact: Shin'ichiro Nakaoka <s.nakaoka@aist.go.jp>
 Source: http://choreonoid.org/
 
-Files: *
+# Important:
+# Directories proprietary/ and thirdparty/ are intentionally not mentioned.
+# They will *not* be part of the Debian package as the proprietary/ optional
+# plug-in is not free and the thirdparty/ embedded libraries will be replaced
+# by the corresponding system dependencies.
+
+Files: CMakeLists.txt \
+       Doxyfile.in    \
+       INSTALL	      \
+       LICENSE	      \
+       NEWS	      \
+       extplugin      \
+       include	      \
+       misc	      \
+       share	      \
+       src
 Copyright: 2012, Shin'ichiro Nakaoka and Choreonoid Development Team, AIST
 License: LGPL-2.1+
  See `/usr/share/common-licenses/LGPL-2.1'.
