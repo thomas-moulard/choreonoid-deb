@@ -1,5 +1,9 @@
 package-name-doesnt-match-sonames libCnoidBase* libCnoidBody* libCnoidCollision* libCnoidUtil*
+# False positive.
 hardening-no-fortify-functions usr/lib/*/choreonoid-*/libCnoidBodyPlugin.so
+# False positive.
 hardening-no-fortify-functions usr/lib/*/choreonoid-*/libCnoidPoseSeqPlugin.so
+# False positive.
 hardening-no-fortify-functions usr/lib/*/libCnoidBase.so.*
+# False positive.
 hardening-no-fortify-functions usr/lib/*/libCnoidBody.so.*
