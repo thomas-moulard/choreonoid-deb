@@ -1,6 +1,0 @@
-# Rationale: upstream does not provide any other tarball. Ignore.
-source-contains-hg-tags-file
-# Rationale: upstream contains one proprietary (optional) plug-in, ignore.
-source-contains-prebuilt-binary
-# Rationale: upstream does not provide any other tarball. Ignore.
-source-contains-prebuilt-windows-binary
