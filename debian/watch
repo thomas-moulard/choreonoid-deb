@@ -4,5 +4,5 @@
 # See uscan(1) for format
 
 version=3
-
+opts=dversionmangle=s/\.dfsg// \
 http://choreonoid.org/en/download.html .*/_downloads/choreonoid-(.*).zip

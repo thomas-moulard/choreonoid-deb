@@ -1,4 +1,4 @@
-choreonoid (1.1.0.dfsg-1) unstable; urgency=low
+choreonoid (1.1.0+dfsg-1) unstable; urgency=low
 
   * Add man page for choreonoid binary.
   * Add desktop entry for choreonoid binary.
