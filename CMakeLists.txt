@@ -295,7 +295,7 @@ if(MSVC)
   link_directories(${PROJECT_SOURCE_DIR}/thirdparty/windows/lib)
 endif()
 
-add_subdirectory(thirdparty)
+#add_subdirectory(thirdparty)
 
 
 function(apply_common_setting_for_target target)
