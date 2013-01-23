@@ -1,0 +1,27 @@
+From: Thomas Moulard <thomas.moulard@gmail.com>
+Date: Fri, 21 Dec 2012 14:59:32 +0900
+Subject: Remove chorenoid version in installation directories.
+
+Remove choreonoid version from library private directory name as this is
+unnecessary.
+
+Forwarded: yes
+Author: Thomas Moulard <thomas.moulard@gmail.com>
+---
+
+ CMakeLists.txt |    2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 44dfed6..f528517 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -264,7 +264,7 @@ set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR}/lib)
+ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR}/bin)
+ 
+ set(CNOID_DIR ${CMAKE_INSTALL_PREFIX})
+-set(CNOID_SUBDIR choreonoid-${CNOID_VERSION})
++set(CNOID_SUBDIR choreonoid)
+ set(CNOID_PLUGIN_SUBDIR lib/${CMAKE_LIBRARY_ARCHITECTURE}/${CNOID_SUBDIR})
+ 
+ if(WIN32)

@@ -14,7 +14,7 @@ Author: Thomas Moulard <thomas.moulard@gmail.com>
  1 file changed, 7 insertions(+), 4 deletions(-)
 
 diff --git a/CMakeLists.txt b/CMakeLists.txt
-index e315b1f..bdcf472 100644
+index 317e54c..44dfed6 100644
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
 @@ -265,7 +265,7 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR}/bin)
@@ -32,7 +32,7 @@ index e315b1f..bdcf472 100644
        RUNTIME DESTINATION bin CONFIGURATIONS Release Debug RelWithDebInfo MinSizeRel
 -      LIBRARY DESTINATION lib CONFIGURATIONS Release Debug RelWithDebInfo MinSizeRel
 -      ARCHIVE DESTINATION lib CONFIGURATIONS Release Debug RelWithDebInfo MinSizeRel)
-+      LIBRARY DESTINATION lib/${CMAKE_LIBRARY_ARCHITECTURE}/chorenoid
++      LIBRARY DESTINATION lib/${CMAKE_LIBRARY_ARCHITECTURE}/${CNOID_SUBDIR}
 +      CONFIGURATIONS Release Debug RelWithDebInfo MinSizeRel
 +      ARCHIVE DESTINATION lib/${CMAKE_LIBRARY_ARCHITECTURE}
 +      CONFIGURATIONS Release Debug RelWithDebInfo MinSizeRel)
@@ -44,7 +44,7 @@ index e315b1f..bdcf472 100644
      install(TARGETS ${target}
        RUNTIME DESTINATION bin CONFIGURATIONS Release Debug RelWithDebInfo MinSizeRel
 -      LIBRARY DESTINATION lib CONFIGURATIONS Release Debug RelWithDebInfo MinSizeRel)
-+      LIBRARY DESTINATION lib/${CMAKE_LIBRARY_ARCHITECTURE}/chorenoid
++      LIBRARY DESTINATION lib/${CMAKE_LIBRARY_ARCHITECTURE}/${CNOID_SUBDIR}
 +      CONFIGURATIONS Release Debug RelWithDebInfo MinSizeRel)
    endif()
  

@@ -1,3 +1,4 @@
 0001-Fix-compilation-failure-with-recent-Boost-version.patch
 0002-Prevent-moc-qt-from-analyzing-Boost-headers.patch
-0003-Fix-multiarchi-support.patch
+0003-Fix-library-installation-directory.patch
+0004-Remove-chorenoid-version-in-installation-directories.patch
