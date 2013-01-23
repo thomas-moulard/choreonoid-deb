@@ -24,8 +24,8 @@ override_dh_auto_configure:
 		-DINSTALL_DEPENDENCIES:BOOL=TRUE	\
 		-DCNOID_ENABLE_GETTEXT:BOOL=TRUE	\
 		-DUSE_EXTERNAL_EIGEN:BOOL=TRUE		\
-		-DUSE_EXTERNAL_YAML:BOOL=TRUE
-
+		-DUSE_EXTERNAL_YAML:BOOL=TRUE		\
+		-DCMAKE_RULE_MESSAGES:BOOL=TRUE
 
 override_dh_strip:
 	dh_strip -a --dbg-package=choreonoid-dbg
