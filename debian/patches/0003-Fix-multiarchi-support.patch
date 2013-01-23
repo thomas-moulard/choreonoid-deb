@@ -1,8 +1,11 @@
 From: Thomas Moulard <thomas.moulard@gmail.com>
 Date: Fri, 21 Dec 2012 14:59:32 +0900
-Subject: Fix multiarchi support.
+Subject: Fix library installation directory.
 
-Do not make the assumption that the library directory is lib.
+Install libraries in architecture-dependent directory to add
+multiarch support and in a package-specific directory as this
+package does not a provide a library, but only an API to build
+plug-ins.
 
 Forwarded: yes
 Author: Thomas Moulard <thomas.moulard@gmail.com>
@@ -19,7 +22,7 @@ index e315b1f..bdcf472 100644
  set(CNOID_DIR ${CMAKE_INSTALL_PREFIX})
  set(CNOID_SUBDIR choreonoid-${CNOID_VERSION})
 -set(CNOID_PLUGIN_SUBDIR lib/${CNOID_SUBDIR})
-+set(CNOID_PLUGIN_SUBDIR lib//${CMAKE_LIBRARY_ARCHITECTURE}/${CNOID_SUBDIR})
++set(CNOID_PLUGIN_SUBDIR lib/${CMAKE_LIBRARY_ARCHITECTURE}/${CNOID_SUBDIR})
  
  if(WIN32)
    set(CNOID_HEADER_SUBDIR "include")
@@ -29,7 +32,7 @@ index e315b1f..bdcf472 100644
        RUNTIME DESTINATION bin CONFIGURATIONS Release Debug RelWithDebInfo MinSizeRel
 -      LIBRARY DESTINATION lib CONFIGURATIONS Release Debug RelWithDebInfo MinSizeRel
 -      ARCHIVE DESTINATION lib CONFIGURATIONS Release Debug RelWithDebInfo MinSizeRel)
-+      LIBRARY DESTINATION lib/${CMAKE_LIBRARY_ARCHITECTURE}
++      LIBRARY DESTINATION lib/${CMAKE_LIBRARY_ARCHITECTURE}/chorenoid
 +      CONFIGURATIONS Release Debug RelWithDebInfo MinSizeRel
 +      ARCHIVE DESTINATION lib/${CMAKE_LIBRARY_ARCHITECTURE}
 +      CONFIGURATIONS Release Debug RelWithDebInfo MinSizeRel)
@@ -41,7 +44,7 @@ index e315b1f..bdcf472 100644
      install(TARGETS ${target}
        RUNTIME DESTINATION bin CONFIGURATIONS Release Debug RelWithDebInfo MinSizeRel
 -      LIBRARY DESTINATION lib CONFIGURATIONS Release Debug RelWithDebInfo MinSizeRel)
-+      LIBRARY DESTINATION lib/${CMAKE_LIBRARY_ARCHITECTURE}
++      LIBRARY DESTINATION lib/${CMAKE_LIBRARY_ARCHITECTURE}/chorenoid
 +      CONFIGURATIONS Release Debug RelWithDebInfo MinSizeRel)
    endif()
  
