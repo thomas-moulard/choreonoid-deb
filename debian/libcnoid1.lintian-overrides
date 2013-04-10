@@ -1,0 +1,5 @@
+package-name-doesnt-match-sonames libCnoidBase1.1 libCnoidBody1.1 libCnoidCollision1.1 libCnoidUtil1.1
+# False positive.
+hardening-no-fortify-functions usr/lib/*/libCnoidBase.so.*
+# False positive.
+hardening-no-fortify-functions usr/lib/*/libCnoidBody.so.*

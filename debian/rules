@@ -1,14 +1,19 @@
 #!/usr/bin/make -f
 # -*- makefile -*-
 
-export DEB_BUILD_HARDENING=1
-export DEB_BUILD_HARDENING_PIE=0
+# Hardening.
+export DEB_BUILD_MAINT_OPTIONS=hardening=+all,-pie,+fortify
 
-.PHONY: override_dh_auto_clean override_dh_auto_configure override_dh_strip
+CPPFLAGS:=$(shell dpkg-buildflags --get CPPFLAGS)
+CFLAGS:=$(shell dpkg-buildflags --get CFLAGS)
+CXXFLAGS:=$(shell dpkg-buildflags --get CXXFLAGS)
+LDFLAGS:=$(shell dpkg-buildflags --get LDFLAGS)
 
-%:
-	dh  $@
+CFLAGS+=$(CPPFLAGS)
+CXXFLAGS+=$(CPPFLAGS)
 
+.PHONY: override_dh_auto_clean override_dh_auto_configure override_dh_strip \
+	override_dh_auto_build
 
 override_dh_auto_clean:
 	dh_auto_clean
@@ -17,6 +22,7 @@ override_dh_auto_clean:
 	      src/BodyPlugin/gettext.h 		\
 	      src/PoseSeqPlugin/gettext.h 	\
 	      src/Util/Config.h
+	rm -Rf html
 
 override_dh_auto_configure:
 	dh_auto_configure --				\
@@ -26,8 +32,14 @@ override_dh_auto_configure:
 		-DUSE_EXTERNAL_EIGEN:BOOL=TRUE		\
 		-DUSE_EXTERNAL_YAML:BOOL=TRUE
 
+override_dh_auto_build:
+	dh_auto_build -- # Compile the software.
+	doxygen Doxyfile # Generate documentation.
 
 override_dh_strip:
 	dh_strip -a --dbg-package=choreonoid-dbg
 
 override_dh_auto_test:
+
+%:
+	dh  $@ --parallel --with pkgkde_symbolshelper

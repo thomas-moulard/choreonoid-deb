@@ -1,0 +1,4 @@
+# False positive.
+hardening-no-fortify-functions usr/lib/*/choreonoid-*/libCnoidBodyPlugin.so
+# False positive.
+hardening-no-fortify-functions usr/lib/*/choreonoid-*/libCnoidPoseSeqPlugin.so

@@ -1,5 +1,1 @@
 usr/bin/*
-usr/lib/*/lib*.so.*
-usr/lib/*/choreonoid-*/*
-usr/share/choreonoid-*/
-usr/share/locale/

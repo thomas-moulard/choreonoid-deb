@@ -1,17 +1,4 @@
 Doxyfile
-debian/choreonoid-dbg.debhelper.log
-debian/choreonoid-dbg.substvars
-debian/choreonoid-dbg/
-debian/choreonoid.debhelper.log
-debian/choreonoid.postinst.debhelper
-debian/choreonoid.postrm.debhelper
-debian/choreonoid.substvars
-debian/choreonoid/
-debian/choreonoid-dev.debhelper.log
-debian/choreonoid-dev.substvars
-debian/choreonoid-dev/
-debian/files
-debian/tmp/
 obj-x86_64-linux-gnu/
 src/Base/gettext.h
 src/BodyPlugin/gettext.h
