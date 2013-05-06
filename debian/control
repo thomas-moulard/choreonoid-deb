@@ -39,7 +39,7 @@ Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends},
 	 libcnoid1 (= ${binary:Version}),
 	 choreonoid-data (= ${source:Version})
-Suggest: choreonoid-doc
+Suggests: choreonoid-doc
 Multi-Arch: foreign
 Description: Integrated robotics GUI environment
  Choreonoid is an integrated robotics GUI environment, which allows
