@@ -1,0 +1,22 @@
+From: Thomas Moulard <thomas.moulard@gmail.com>
+Date: Thu, 9 May 2013 00:11:16 +0900
+Subject: Install choreonoid program when build type is RelWithDebInfo.
+
+Install choreonoid program when build type is RelWithDebInfo.
+
+Forwarded: yes
+Author: Thomas Moulard <thomas.moulard@gmail.com>
+---
+ src/Choreonoid/CMakeLists.txt |    2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/src/Choreonoid/CMakeLists.txt b/src/Choreonoid/CMakeLists.txt
+index 80d3c4c..39715b5 100644
+--- a/src/Choreonoid/CMakeLists.txt
++++ b/src/Choreonoid/CMakeLists.txt
+@@ -30,4 +30,4 @@ if(MSVC)
+   set_target_properties(${target} PROPERTIES DEBUG_POSTFIX -debug)
+ endif()
+ 
+-install(TARGETS ${target} RUNTIME DESTINATION bin CONFIGURATIONS Release Debug)
++install(TARGETS ${target} RUNTIME DESTINATION bin CONFIGURATIONS Release Debug RelWithDebInfo)
