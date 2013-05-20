@@ -17,6 +17,6 @@ index 80d3c4c..39715b5 100644
 @@ -30,4 +30,4 @@ if(MSVC)
    set_target_properties(${target} PROPERTIES DEBUG_POSTFIX -debug)
  endif()
- 
+
 -install(TARGETS ${target} RUNTIME DESTINATION bin CONFIGURATIONS Release Debug)
 +install(TARGETS ${target} RUNTIME DESTINATION bin CONFIGURATIONS Release Debug RelWithDebInfo)

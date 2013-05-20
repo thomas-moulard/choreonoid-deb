@@ -17,7 +17,7 @@ Build-Depends: debhelper (>= 9), cmake,
 	       qt4-qtconfig,
 	       gettext
 Standards-Version: 3.9.4
-Section: contrib/science
+Section: science
 Homepage: http://choreonoid.org/
 Vcs-Git: git://github.com/thomas-moulard/choreonoid-deb.git
 Vcs-Browser: https://github.com/thomas-moulard/choreonoid-deb
@@ -48,7 +48,7 @@ Description: Integrated robotics GUI environment
 
 Package: libcnoid1
 Architecture: any
-Section: contrib/libs
+Section: libs
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Multi-Arch: same
@@ -61,7 +61,7 @@ Description: Integrated robotics GUI environment - shared library
 
 Package: libcnoid-dev
 Architecture: any
-Section: contrib/libdevel
+Section: libdevel
 Depends: libcnoid1 (= ${binary:Version}), ${misc:Depends},
 	 libboost-all-dev,
 	 libeigen3-dev,
@@ -84,7 +84,7 @@ Description: Integrated robotics GUI environment - development files
 
 Package: choreonoid-dbg
 Architecture: any
-Section: contrib/debug
+Section: debug
 Depends: choreonoid (= ${binary:Version}), ${misc:Depends}
 Multi-Arch: foreign
 Description: Choreonoid debugging symbols
@@ -110,7 +110,7 @@ Description: Integrated robotics GUI environment - core plug-ins
 
 Package: choreonoid-doc
 Architecture: all
-Section: contrib/doc
+Section: doc
 Depends: ${misc:Depends}
 Multi-Arch: foreign
 Description: Integrated robotics GUI environment - documentation

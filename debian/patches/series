@@ -2,3 +2,4 @@
 0002-Prevent-moc-qt-from-analyzing-Boost-headers.patch
 0003-Fix-multiarchi-support.patch
 0004-Install-choreonoid-program-when-build-type-is-RelWit.patch
+0005-Install-pkg-config-file-in-lib-arch-directory.patch
