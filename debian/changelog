@@ -3,6 +3,8 @@ choreonoid (1.1.0+dfsg-2) unstable; urgency=low
   * Fix section. Initial upload was put in contrib/ by mistake.
   * Update symbols using pkgkde-getbuildlogs and pkgkde-symbolshelper.
   * Install pkg-config files in lib/arch (Closes: #708964).
+  * Add debian/menu file.
+  * Install desktop file and associated icons (png and svg files).
 
  -- Thomas Moulard <thomas.moulard@gmail.com>  Mon, 20 May 2013 12:52:05 +0900
 
