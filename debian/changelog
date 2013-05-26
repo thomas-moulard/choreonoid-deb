@@ -1,3 +1,10 @@
+choreonoid (1.1.0+dfsg-3) unstable; urgency=low
+
+  * Update symbols for amd64 armhf i386 kfreebsd-amd64
+    kfreebsd-i386 mipsel powerpc s390 sparc architectures.
+
+ -- Thomas Moulard <thomas.moulard@gmail.com>  Sun, 26 May 2013 21:36:56 +0900
+
 choreonoid (1.1.0+dfsg-2) unstable; urgency=low
 
   * Fix section. Initial upload was put in contrib/ by mistake.
