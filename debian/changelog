@@ -1,3 +1,9 @@
+choreonoid (1.1.0+dfsg-4) unstable; urgency=low
+
+  * debian/changelog: Refer to git.debian.org in Vcs-* fields.
+
+ -- Thomas Moulard <thomas.moulard@gmail.com>  Wed, 29 May 2013 17:18:35 +0900
+
 choreonoid (1.1.0+dfsg-3) unstable; urgency=low
 
   * Update symbols for amd64 armhf i386 kfreebsd-amd64
