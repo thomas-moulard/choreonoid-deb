@@ -1,0 +1,388 @@
+From: Thomas Moulard <thomas.moulard@gmail.com>
+Date: Tue, 4 Jun 2013 08:10:10 +0900
+Subject: Port to Boost Filesystem v3.
+
+Port to Boost Filesystem v3.
+
+Forwarded: yes
+Author: Thomas Moulard <thomas.moulard@gmail.com>
+---
+ CMakeLists.txt                       |    4 ----
+ src/Base/App.cpp                     |   20 ++++++++++----------
+ src/Base/AppConfig.cpp               |    6 +++---
+ src/Base/Archive.cpp                 |    8 ++++----
+ src/Base/ItemManager.cpp             |    2 +-
+ src/Base/MovieGenerator.cpp          |    2 +-
+ src/Base/PluginManager.cpp           |    2 +-
+ src/Base/ProjectManager.cpp          |    4 ++--
+ src/Base/SceneItem.cpp               |    4 ++--
+ src/Body/BodyCustomizerInterface.cpp |    8 ++++----
+ src/Body/BodyLoader.cpp              |    4 ++--
+ src/Body/BodyMotionUtil.cpp          |   16 ++++++++--------
+ src/BodyPlugin/BodyItem.cpp          |    2 +-
+ src/Util/VrmlParser.cpp              |   10 +++++-----
+ 14 files changed, 44 insertions(+), 48 deletions(-)
+
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index b10df21..056d687 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -133,10 +133,6 @@ link_directories(${Boost_LIBRARY_DIRS})
+ 
+ set_property(DIRECTORY APPEND PROPERTY COMPILE_DEFINITIONS_RELEASE BOOST_DISABLE_ASSERTS)
+ 
+-# todo: update filesystem version to 3
+-set_property(DIRECTORY APPEND PROPERTY COMPILE_DEFINITIONS BOOST_FILESYSTEM_VERSION=2)
+-
+-
+ if(MSVC)
+   set_property(DIRECTORY APPEND PROPERTY COMPILE_DEFINITIONS BOOST_ALL_DYN_LINK ${BOOST_LIB_DIAGNOSTIC})
+ 
+diff --git a/src/Base/App.cpp b/src/Base/App.cpp
+index 01ccc6d..104a79d 100644
+--- a/src/Base/App.cpp
++++ b/src/Base/App.cpp
+@@ -192,16 +192,16 @@ void AppImpl::findProgramTopDirectory()
+     TCHAR execFilePath[BUFSIZE];
+     if(GetModuleFileName(NULL, execFilePath, BUFSIZE)){
+ #ifndef UNICODE
+-        programDirectory_ = filesystem::path(execFilePath).branch_path().file_string();
+-        programTopDirectory_ = filesystem::path(execFilePath).branch_path().branch_path().file_string();
++        programDirectory_ = filesystem::path(execFilePath).branch_path().native();
++        programTopDirectory_ = filesystem::path(execFilePath).branch_path().branch_path().native();
+ #else
+         int codepage = _getmbcp();
+         const int newSize = WideCharToMultiByte(codepage, 0, execFilePath, -1, NULL, 0, NULL, NULL);
+         if(newSize > 0){
+             vector<filesystem::path::String> execFilePathMB(newSize + 1);
+             newSize = WideCharToMultiByte(codepage, 0, execFilePath, -1, &execFilePathMB[0], newSize + 1, NULL, NULL);
+-            programDirectory_ = filesystem::path(execFilePathUtf8).branch_path().file_string();
+-            programTopDirectory_ = filesystem::path(execFilePathUtf8).branch_path().branch_path().file_string();
++            programDirectory_ = filesystem::path(execFilePathUtf8).branch_path().native();
++            programTopDirectory_ = filesystem::path(execFilePathUtf8).branch_path().branch_path().native();
+         }
+ #endif // UNICODE
+     }
+@@ -215,8 +215,8 @@ void AppImpl::findProgramTopDirectory()
+             char buf[BUFSIZE];
+             int n = readlink("/proc/self/exe", buf, BUFSIZE - 1);
+             buf[n] = 0;
+-	    programDirectory_ = filesystem::path(buf).branch_path().file_string();
+-            programTopDirectory_ = filesystem::path(buf).branch_path().branch_path().file_string();
++	    programDirectory_ = filesystem::path(buf).branch_path().native();
++            programTopDirectory_ = filesystem::path(buf).branch_path().branch_path().native();
+         }
+     }
+ #endif // Q_OS_LINUX
+@@ -225,16 +225,16 @@ void AppImpl::findProgramTopDirectory()
+     char buf[1024];
+     uint32_t n = sizeof(buf);
+     if(_NSGetExecutablePath(buf, &n) == 0){
+-        programDirectory_ = filesystem::path(buf).branch_path().file_string();
+-        programTopDirectory_ = filesystem::path(buf).branch_path().branch_path().file_string();
++        programDirectory_ = filesystem::path(buf).branch_path().native();
++        programTopDirectory_ = filesystem::path(buf).branch_path().branch_path().native();
+     }
+ #endif // Q_OS_DARWIN
+ 
+     filesystem::path sharePath = filesystem::path(programTopDirectory_) / CNOID_SHARE_SUBDIR;
+     if(filesystem::is_directory(sharePath)){
+-        shareDirectory_ = sharePath.file_string();
++        shareDirectory_ = sharePath.native();
+     } else {
+-        shareDirectory_ = sharePath.parent_path().file_string();
++        shareDirectory_ = sharePath.parent_path().native();
+     }
+ }
+ 
+diff --git a/src/Base/AppConfig.cpp b/src/Base/AppConfig.cpp
+index 3dc150a..0e30e00 100644
+--- a/src/Base/AppConfig.cpp
++++ b/src/Base/AppConfig.cpp
+@@ -48,7 +48,7 @@ bool AppConfig::initialize(const std::string& application_, const std::string& o
+ 
+     if(!configDirPath.empty()){
+         fullPath = configDirPath / filePath;
+-        std::string fullPathString = fullPath.file_string(); 
++        std::string fullPathString = fullPath.native(); 
+         load(fullPathString);
+     }
+ 
+@@ -80,7 +80,7 @@ bool AppConfig::flush()
+                     "\"%1%\" is not a directory.\n"
+                     "It should be directory to contain the config file.\n"
+                     "The configuration cannot be stored into the file system";
+-                showWarningDialog(format(_(m)) % configDirPath.file_string());
++                showWarningDialog(format(_(m)) % configDirPath.native());
+                 return false;
+             }
+         } else {
+@@ -88,7 +88,7 @@ bool AppConfig::flush()
+         }
+     }
+ 
+-    return save(fullPath.file_string());
++    return save(fullPath.native());
+ }
+ 
+ 
+diff --git a/src/Base/Archive.cpp b/src/Base/Archive.cpp
+index 529e3fa..4d03202 100644
+--- a/src/Base/Archive.cpp
++++ b/src/Base/Archive.cpp
+@@ -122,7 +122,7 @@ void Archive::initSharedInfo(const std::string& projectFile)
+ 
+     shared->directoryVariableMap = AppConfig::archive()->openMapping("PathVariables");
+ 
+-    shared->projectDirPath = filesystem::complete(filesystem::path(projectFile)).branch_path();
++    shared->projectDirPath = filesystem3::absolute(filesystem::path(projectFile)).branch_path();
+     shared->topDirPath = App::topDirectory();
+     shared->shareDirPath = App::shareDirectory();
+ 
+@@ -195,15 +195,15 @@ bool Archive::readRelocatablePath(const std::string& key, std::string& out_value
+             
+         filesystem::path path(pathString.toStdString());
+         if(path.is_complete()){
+-            out_value = path.file_string();
++            out_value = path.native();
+         } else {
+             filesystem::path fullPath = shared->projectDirPath / path;
+             if(!path.empty() && (*path.begin() == "..")){
+                 filesystem::path compact;
+                 makePathCompact(fullPath, compact);
+-                out_value = compact.file_string();
++                out_value = compact.native();
+             } else {
+-                out_value = fullPath.file_string();
++                out_value = fullPath.native();
+             }
+         } 
+         return true;
+diff --git a/src/Base/ItemManager.cpp b/src/Base/ItemManager.cpp
+index ec016e5..d73170b 100644
+--- a/src/Base/ItemManager.cpp
++++ b/src/Base/ItemManager.cpp
+@@ -714,7 +714,7 @@ void ItemManagerImpl::onLoadSpecificTypeItemActivated(LoaderPtr loader)
+         
+         for(int i=0; i < filenames.size(); ++i){
+             ItemPtr item = loader->factory->create();
+-            if(load(loader, item.get(), filesystem::path(filenames[i].toStdString()).file_string(), parentItem)){
++            if(load(loader, item.get(), filesystem::path(filenames[i].toStdString()).native(), parentItem)){
+                 parentItem->addChildItem(item);
+             }
+        }
+diff --git a/src/Base/MovieGenerator.cpp b/src/Base/MovieGenerator.cpp
+index 1c6482c..2fe33d1 100644
+--- a/src/Base/MovieGenerator.cpp
++++ b/src/Base/MovieGenerator.cpp
+@@ -241,7 +241,7 @@ bool MovieGenerator::doRecordingLoop()
+         }
+     }
+     
+-    format filenameFormat((folder / basename).file_string());
++    format filenameFormat((folder / basename).native());
+ 
+     sceneView->setScreenSize(imageWidthSpin.get_value_as_int(), imageHeightSpin.get_value_as_int());
+ 
+diff --git a/src/Base/PluginManager.cpp b/src/Base/PluginManager.cpp
+index 3ce7543..afba506 100644
+--- a/src/Base/PluginManager.cpp
++++ b/src/Base/PluginManager.cpp
+@@ -233,7 +233,7 @@ void PluginManagerImpl::scanPluginFiles(const std::string& pathString, bool isRe
+                filesystem::directory_iterator end;
+                for(filesystem::directory_iterator it(pluginPath); it != end; ++it){
+                    const filesystem::path& filepath = *it;
+-                   scanPluginFiles(filepath.file_string(), true);
++                   scanPluginFiles(filepath.native(), true);
+                }
+            }
+        } else {
+diff --git a/src/Base/ProjectManager.cpp b/src/Base/ProjectManager.cpp
+index 4252cd2..a2b52f4 100644
+--- a/src/Base/ProjectManager.cpp
++++ b/src/Base/ProjectManager.cpp
+@@ -404,7 +404,7 @@ void ProjectManagerImpl::openDialogToLoadProject()
+     if(dialog.exec()){
+         AppConfig::archive()->writePath("currentFileDialogDirectory", dialog.directory().absolutePath().toStdString());
+ 
+-        loadProject(filesystem::path(dialog.selectedFiles().front().toStdString()).file_string(), false);
++        loadProject(filesystem::path(dialog.selectedFiles().front().toStdString()).native(), false);
+     }
+ }
+ 
+@@ -428,7 +428,7 @@ void ProjectManagerImpl::openDialogToSaveProject()
+     if(dialog.exec()){
+         AppConfig::archive()->writePath("currentFileDialogDirectory", dialog.directory().absolutePath().toStdString());        
+         filesystem::path path(dialog.selectedFiles().front().toStdString());
+-        string filename(path.file_string());
++        string filename(path.native());
+         string ext = filesystem::extension(path);
+         if(ext != ".cnoid"){
+             filename += ".cnoid";
+diff --git a/src/Base/SceneItem.cpp b/src/Base/SceneItem.cpp
+index 712630a..5bd2e4d 100644
+--- a/src/Base/SceneItem.cpp
++++ b/src/Base/SceneItem.cpp
+@@ -29,7 +29,7 @@ namespace {
+         SceneObject::ReadResult result = item->loadScene(filename);
+         if(result.success()){
+             if(item->name().empty()){
+-                item->setName(filesystem::path(filename).leaf());
++	      item->setName(filesystem::path(filename).filename().string());
+             }
+         } else {
+             os << result.message();
+@@ -153,7 +153,7 @@ ItemPtr SceneItem::doDuplicate() const
+ 
+ void SceneItem::doPutProperties(PutPropertyFunction& putProperty)
+ {
+-    putProperty(_("Scene file"), filesystem::path(lastAccessedFileName()).leaf());
++  putProperty(_("Scene file"), filesystem::path(lastAccessedFileName()).filename().string());
+ }
+ 
+ 
+diff --git a/src/Body/BodyCustomizerInterface.cpp b/src/Body/BodyCustomizerInterface.cpp
+index 3c7ff4a..a9980f0 100644
+--- a/src/Body/BodyCustomizerInterface.cpp
++++ b/src/Body/BodyCustomizerInterface.cpp
+@@ -55,9 +55,9 @@ namespace {
+ 
+     inline string toNativePathString(const filesystem::path& path) {
+ #if (BOOST_VERSION <= 103301)
+-        return path.native_file_string();
++        return path.native_native();
+ #else
+-        return path.file_string();
++        return path.native();
+ #endif
+     }
+ 
+@@ -141,7 +141,7 @@ int cnoid::loadBodyCustomizers(const std::string pathString, BodyInterface* body
+ 	
+     int numLoaded = 0;
+ 
+-    filesystem::path pluginPath(pathString, filesystem::native);
++    filesystem::path pluginPath(pathString);
+ 	
+     if(filesystem::exists(pluginPath)){
+ 
+@@ -155,7 +155,7 @@ int cnoid::loadBodyCustomizers(const std::string pathString, BodyInterface* body
+             for(filesystem::directory_iterator it(pluginPath); it != end; ++it){
+                 const filesystem::path& filepath = *it;
+                 if(!filesystem::is_directory(filepath)){
+-                    string filename(filepath.leaf());
++		  string filename(filepath.filename().string());
+                     size_t pos = filename.rfind(pluginNamePattern);
+                     if(pos == (filename.size() - pluginNamePattern.size())){
+                         if(loadCustomizerDll(bodyInterface, toNativePathString(filepath))){
+diff --git a/src/Body/BodyLoader.cpp b/src/Body/BodyLoader.cpp
+index 8482698..67175aa 100644
+--- a/src/Body/BodyLoader.cpp
++++ b/src/Body/BodyLoader.cpp
+@@ -241,9 +241,9 @@ BodyPtr BodyLoaderImpl::loadModelFile
+                 info = parser.document()->toMapping();
+                 filesystem::path vrmlFilePath(info->get("modelFile"));
+                 if(vrmlFilePath.has_root_path()){
+-                    vrmlFile = vrmlFilePath.file_string();
++                    vrmlFile = vrmlFilePath.native();
+                 } else {
+-                    vrmlFile = (orgpath.branch_path() / vrmlFilePath).file_string();
++                    vrmlFile = (orgpath.branch_path() / vrmlFilePath).native();
+                 }
+             }
+         }
+diff --git a/src/Body/BodyMotionUtil.cpp b/src/Body/BodyMotionUtil.cpp
+index 0be372c..ff9f1d4 100644
+--- a/src/Body/BodyMotionUtil.cpp
++++ b/src/Body/BodyMotionUtil.cpp
+@@ -140,7 +140,7 @@ bool cnoid::loadHrpsysSeqFileSet(BodyMotion& motion, const std::string& filename
+     
+     filesystem::path posFile = filesystem::change_extension(orgpath, ".pos");
+     if(filesystem::exists(posFile) && !filesystem::is_directory(posFile)){
+-        string posFileString(posFile.file_string());
++        string posFileString(posFile.native());
+         if(motion.jointPosSeq()->loadPlainFormat(posFileString)){
+             if(posFileString == filename){
+                 loaded = true;
+@@ -149,7 +149,7 @@ bool cnoid::loadHrpsysSeqFileSet(BodyMotion& motion, const std::string& filename
+     }
+     filesystem::path waistFile = filesystem::change_extension(orgpath, ".waist");
+     if(filesystem::exists(waistFile) && !filesystem::is_directory(waistFile)){
+-        string waistFileString(waistFile.file_string());
++        string waistFileString(waistFile.native());
+         if(motion.linkPosSeq()->loadPlainFormat(waistFileString)){
+             if(waistFileString == filename){
+                 loaded = true;
+@@ -158,7 +158,7 @@ bool cnoid::loadHrpsysSeqFileSet(BodyMotion& motion, const std::string& filename
+     }
+     filesystem::path zmpFile = filesystem::change_extension(orgpath, ".zmp");
+     if(filesystem::exists(zmpFile) && !filesystem::is_directory(zmpFile)){
+-        string zmpFileString(zmpFile.file_string());
++        string zmpFileString(zmpFile.native());
+         if(motion.relativeZmpSeq()->loadPlainFormat(zmpFileString)){
+             if(zmpFileString == filename){
+                 loaded = true;
+@@ -180,14 +180,14 @@ bool cnoid::saveHrpsysSeqFileSet(BodyMotion& motion, BodyPtr body, const std::st
+     filesystem::path orgpath(filename);
+     filesystem::path bpath(orgpath.branch_path() / filesystem::path(basename(orgpath)));
+ 
+-    if(motion.jointPosSeq()->saveAsPlainFormat(filesystem::change_extension(orgpath, ".pos").file_string()) &&
+-       motion.linkPosSeq()->saveTopPartAsPlainFormat(filesystem::change_extension(orgpath, ".waist").file_string()) &&
+-       saveRootLinkAttAsRpyFormat(motion, filesystem::change_extension(orgpath, ".hip").file_string(), os)){
++    if(motion.jointPosSeq()->saveAsPlainFormat(filesystem::change_extension(orgpath, ".pos").native()) &&
++       motion.linkPosSeq()->saveTopPartAsPlainFormat(filesystem::change_extension(orgpath, ".waist").native()) &&
++       saveRootLinkAttAsRpyFormat(motion, filesystem::change_extension(orgpath, ".hip").native(), os)){
+ 
+-        saveRootLinkAccAsGsensFile(motion, body, filesystem::change_extension(orgpath, ".gsens").file_string(), os);
++        saveRootLinkAccAsGsensFile(motion, body, filesystem::change_extension(orgpath, ".gsens").native(), os);
+         
+         if(motion.hasRelativeZmpSeq()){
+-            return motion.relativeZmpSeq()->saveAsPlainFormat(filesystem::change_extension(orgpath, ".zmp").file_string());
++            return motion.relativeZmpSeq()->saveAsPlainFormat(filesystem::change_extension(orgpath, ".zmp").native());
+         }
+         return true;
+     }
+diff --git a/src/BodyPlugin/BodyItem.cpp b/src/BodyPlugin/BodyItem.cpp
+index 46dc897..75b28e3 100644
+--- a/src/BodyPlugin/BodyItem.cpp
++++ b/src/BodyPlugin/BodyItem.cpp
+@@ -822,7 +822,7 @@ void BodyItem::doPutProperties(PutPropertyFunction& putProperty)
+     putProperty(_("Base link"), currentBaseLink_ ? currentBaseLink_->name() : "none");
+     putProperty(_("Mass"), body_->totalMass());
+     putProperty(_("Static model ?"), body_->isStaticModel());
+-    putProperty(_("Model file"), filesystem::path(modelFilePath_).leaf());
++    putProperty(_("Model file"), filesystem::path(modelFilePath_).filename().string());
+ 
+     putProperty(_("Self-collision"), isSelfCollisionDetectionEnabled_,
+                 (bind(&BodyItem::onSelfCollisionDetectionPropertyChanged, this, _1)));
+diff --git a/src/Util/VrmlParser.cpp b/src/Util/VrmlParser.cpp
+index 25f2927..e602c69 100644
+--- a/src/Util/VrmlParser.cpp
++++ b/src/Util/VrmlParser.cpp
+@@ -89,13 +89,13 @@ namespace {
+     void getPathFromUrl(string& refUrl, const string& rootDir, string srcUrl)
+     {
+         if ( isFileProtocol(srcUrl) ){   // ローカルファイル //
+-            filesystem::path filepath( deleteURLScheme(srcUrl), filesystem::native);
++            filesystem::path filepath( deleteURLScheme(srcUrl) );
+             if(filesystem::exists(filepath)){    // 元が絶対パス //
+-                refUrl = filesystem::system_complete(filepath).file_string();
++                refUrl = filesystem::system_complete(filepath).native();
+             }else{               // 元が相対パス //
+-                filesystem::path filepath(rootDir + deleteURLScheme(srcUrl), filesystem::native);
++                filesystem::path filepath(rootDir + deleteURLScheme(srcUrl) );
+                 if(filesystem::exists(filepath)){
+-                    refUrl = filesystem::system_complete(filepath).file_string();
++                    refUrl = filesystem::system_complete(filepath).native();
+                 }
+             }
+         } else {
+@@ -540,7 +540,7 @@ void VrmlParserImpl::load(const string& filename)
+ {
+     filesystem::path path(filename);
+     path.normalize();
+-    string pathString(path.file_string());
++    string pathString(path.native());
+     ancestorPathsList.push_back(pathString);
+     scanner->loadFile(pathString);
+     

@@ -1,0 +1,51 @@
+From: Thomas Moulard <thomas.moulard@gmail.com>
+Date: Tue, 4 Jun 2013 08:13:54 +0900
+Subject: Fix cast from pointer to udword losing precision.
+
+Fix cast from pointer to udword losing precision.
+
+Forwarded: yes
+Author: Thomas Moulard <thomas.moulard@gmail.com>
+---
+ src/Collision/Opcode/OPC_AABBTree.h      |    7 ++-----
+ src/Collision/Opcode/OPC_OptimizedTree.h |    7 ++-----
+ 2 files changed, 4 insertions(+), 10 deletions(-)
+
+diff --git a/src/Collision/Opcode/OPC_AABBTree.h b/src/Collision/Opcode/OPC_AABBTree.h
+index b657130..2d0f90f 100644
+--- a/src/Collision/Opcode/OPC_AABBTree.h
++++ b/src/Collision/Opcode/OPC_AABBTree.h
+@@ -19,12 +19,9 @@
+ // Include Guard
+ #ifndef __OPC_AABBTREE_H__
+ #define __OPC_AABBTREE_H__
++#include <stdint.h>
+ 
+-#ifdef __x86_64
+-#define EXWORD uqword
+-#else
+-#define EXWORD udword
+-#endif
++#define EXWORD uintptr_t
+ 
+ #ifdef OPC_NO_NEG_VANILLA_TREE
+ 	//! TO BE DOCUMENTED
+diff --git a/src/Collision/Opcode/OPC_OptimizedTree.h b/src/Collision/Opcode/OPC_OptimizedTree.h
+index 11bf0ab..da79e5b 100644
+--- a/src/Collision/Opcode/OPC_OptimizedTree.h
++++ b/src/Collision/Opcode/OPC_OptimizedTree.h
+@@ -19,12 +19,9 @@
+ // Include Guard
+ #ifndef __OPC_OPTIMIZEDTREE_H__
+ #define __OPC_OPTIMIZEDTREE_H__
++#include <stdint.h>
+ 
+-#ifdef __x86_64
+-#define EXWORD uqword
+-#else
+-#define EXWORD udword
+-#endif
++#define EXWORD uintptr_t
+ 
+ 	//! Common interface for a node of an implicit tree
+ 	#define IMPLEMENT_IMPLICIT_NODE(base_class, volume)														\
