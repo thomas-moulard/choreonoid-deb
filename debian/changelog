@@ -1,4 +1,4 @@
-choreonoid (1.1.0+dfsg-5) UNRELEASED; urgency=low
+choreonoid (1.1.0+dfsg-5) unstable; urgency=low
 
   * Add patch to use Boost Filesystem v3 (fix compilation on Ubuntu).
   * Add patch to fix opcode portability issue.
