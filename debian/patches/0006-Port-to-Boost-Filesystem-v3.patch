@@ -135,7 +135,7 @@ index 529e3fa..4d03202 100644
      shared->directoryVariableMap = AppConfig::archive()->openMapping("PathVariables");
  
 -    shared->projectDirPath = filesystem::complete(filesystem::path(projectFile)).branch_path();
-+    shared->projectDirPath = filesystem3::absolute(filesystem::path(projectFile)).branch_path();
++    shared->projectDirPath = filesystem::absolute(filesystem::path(projectFile)).branch_path();
      shared->topDirPath = App::topDirectory();
      shared->shareDirPath = App::shareDirectory();
  
