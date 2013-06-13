@@ -2,7 +2,7 @@
 libCnoidBase.so.1.1 libcnoid1 #MINVER#
  _Z19qInitResources_Basev@Base 1.1.0
  _Z22qCleanupResources_Basev@Base 1.1.0
- (arch=!amd64)_ZGVZN5boost11filesystem212initial_pathINS0_10basic_pathISsNS0_11path_traitsEEEEERKT_vE9init_path@Base 1.1.0+dfsg
+ (arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZGVZN5boost11filesystem212initial_pathINS0_10basic_pathISsNS0_11path_traitsEEEEERKT_vE9init_path@Base 1.1.0+dfsg
  (arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN10QByteArray6detachEv@Base 1.1.0+dfsg
  _ZN10QByteArrayD1Ev@Base 1.1.0
  _ZN10QByteArrayD2Ev@Base 1.1.0
@@ -225,77 +225,56 @@ libCnoidBase.so.1.1 libcnoid1 #MINVER#
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost10shared_ptrIN5cnoid17PluginManagerImpl10PluginInfoEED1Ev@Base 1.1.0
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost10shared_ptrIN5cnoid17PluginManagerImpl10PluginInfoEED2Ev@Base 1.1.0
  (optional=templinst)_ZN5boost10shared_ptrIN5cnoid17PluginManagerImpl10PluginInfoEEaSERKS4_@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost10shared_ptrINS_11filesystem222basic_filesystem_errorINS1_10basic_pathISsNS1_11path_traitsEEEE5m_impEE5resetEv@Base 1.1.0
- (optional=templinst|arch=i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost10shared_ptrINS_11filesystem222basic_filesystem_errorINS1_10basic_pathISsNS1_11path_traitsEEEE5m_impEED1Ev@Base 1.1.0
- (optional=templinst|arch=i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost10shared_ptrINS_11filesystem222basic_filesystem_errorINS1_10basic_pathISsNS1_11path_traitsEEEE5m_impEED2Ev@Base 1.1.0
- (optional=templinst|arch=!amd64 !mipsel !powerpc)_ZN5boost10shared_ptrINS_11filesystem26detail11dir_itr_impINS1_10basic_pathISsNS1_11path_traitsEEEEEE5resetEv@Base 1.1.0
- (optional=templinst|arch=i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost10shared_ptrINS_11filesystem26detail11dir_itr_impINS1_10basic_pathISsNS1_11path_traitsEEEEEED1Ev@Base 1.1.0
- (optional=templinst|arch=i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost10shared_ptrINS_11filesystem26detail11dir_itr_impINS1_10basic_pathISsNS1_11path_traitsEEEEEED2Ev@Base 1.1.0
- (optional=templinst|arch=amd64)_ZN5boost10shared_ptrINS_11filesystem36detail11dir_itr_impEED1Ev@Base 1.1.0+dfsg
- (optional=templinst|arch=amd64)_ZN5boost10shared_ptrINS_11filesystem36detail11dir_itr_impEED2Ev@Base 1.1.0+dfsg
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost10shared_ptrINS_11filesystem222basic_filesystem_errorINS1_10basic_pathISsNS1_11path_traitsEEEE5m_impEE5resetEv@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mipsel !powerpc)_ZN5boost10shared_ptrINS_11filesystem26detail11dir_itr_impINS1_10basic_pathISsNS1_11path_traitsEEEEEE5resetEv@Base 1.1.0
+ (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost10shared_ptrINS_11filesystem36detail11dir_itr_impEED1Ev@Base 1.1.0+dfsg
+ (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost10shared_ptrINS_11filesystem36detail11dir_itr_impEED2Ev@Base 1.1.0+dfsg
  (optional=templinst|arch=mipsel powerpc)_ZN5boost10shared_ptrINS_7signals6detail9slot_base6data_tEE5resetIS4_EEvPT_@Base 1.1.0
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost10shared_ptrIvED1Ev@Base 1.1.0
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost10shared_ptrIvED2Ev@Base 1.1.0
- (optional=templinst|arch=i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost11filesystem210basic_pathISsNS0_11path_traitsEE15remove_filenameEv@Base 1.1.0
- (optional=templinst|arch=i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost11filesystem210basic_pathISsNS0_11path_traitsEE28m_append_separator_if_neededEv@Base 1.1.0
- (optional=templinst|arch=i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost11filesystem210basic_pathISsNS0_11path_traitsEE8iteratorD1Ev@Base 1.1.0
- (optional=templinst|arch=i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost11filesystem210basic_pathISsNS0_11path_traitsEE8iteratorD2Ev@Base 1.1.0
- (optional=templinst|arch=!amd64 !armhf !powerpc !sparc)_ZN5boost11filesystem210basic_pathISsNS0_11path_traitsEEC1ERKSs@Base 1.1.0
- (optional=templinst|arch=!amd64 !armhf !powerpc !sparc)_ZN5boost11filesystem210basic_pathISsNS0_11path_traitsEEC2ERKSs@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost11filesystem210basic_pathISsNS0_11path_traitsEED1Ev@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost11filesystem210basic_pathISsNS0_11path_traitsEED2Ev@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost11filesystem210basic_pathISsNS0_11path_traitsEEdVEPKc@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost11filesystem212current_pathINS0_10basic_pathISsNS0_11path_traitsEEEEET_v@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost11filesystem212initial_pathINS0_10basic_pathISsNS0_11path_traitsEEEEERKT_v@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost11filesystem212is_directoryINS0_10basic_pathISsNS0_11path_traitsEEEEENS_9enable_ifINS0_13is_basic_pathIT_EEbE4typeERKS7_@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost11filesystem215last_write_timeINS0_10basic_pathISsNS0_11path_traitsEEEEENS_9enable_ifINS0_13is_basic_pathIT_EElE4typeERKS7_@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost11filesystem216create_directoryINS0_10basic_pathISsNS0_11path_traitsEEEEENS_9enable_ifINS0_13is_basic_pathIT_EEbE4typeERKS7_@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost11filesystem218create_directoriesINS0_10basic_pathISsNS0_11path_traitsEEEEENS_9enable_ifINS0_13is_basic_pathIT_EEbE4typeERKS7_@Base 1.1.0
- (optional=templinst|arch=i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost11filesystem221basic_directory_entryINS0_10basic_pathISsNS0_11path_traitsEEEE6assignERKS4_NS0_11file_statusES8_@Base 1.1.0
- (optional=templinst|arch=i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost11filesystem221basic_directory_entryINS0_10basic_pathISsNS0_11path_traitsEEEED1Ev@Base 1.1.0
- (optional=templinst|arch=i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost11filesystem221basic_directory_entryINS0_10basic_pathISsNS0_11path_traitsEEEED2Ev@Base 1.1.0
- (optional=templinst|arch=i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost11filesystem222basic_filesystem_errorINS0_10basic_pathISsNS0_11path_traitsEEEE5m_impD1Ev@Base 1.1.0
- (optional=templinst|arch=i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost11filesystem222basic_filesystem_errorINS0_10basic_pathISsNS0_11path_traitsEEEE5m_impD2Ev@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost11filesystem222basic_filesystem_errorINS0_10basic_pathISsNS0_11path_traitsEEEEC1ERKSsNS_6system10error_codeE@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost11filesystem222basic_filesystem_errorINS0_10basic_pathISsNS0_11path_traitsEEEEC1ERKSsRKS4_NS_6system10error_codeE@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost11filesystem222basic_filesystem_errorINS0_10basic_pathISsNS0_11path_traitsEEEEC2ERKSsNS_6system10error_codeE@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost11filesystem222basic_filesystem_errorINS0_10basic_pathISsNS0_11path_traitsEEEEC2ERKSsRKS4_NS_6system10error_codeE@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost11filesystem222basic_filesystem_errorINS0_10basic_pathISsNS0_11path_traitsEEEED0Ev@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost11filesystem222basic_filesystem_errorINS0_10basic_pathISsNS0_11path_traitsEEEED1Ev@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost11filesystem222basic_filesystem_errorINS0_10basic_pathISsNS0_11path_traitsEEEED2Ev@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost11filesystem224basic_directory_iteratorINS0_10basic_pathISsNS0_11path_traitsEEEE6m_initERKS4_@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost11filesystem224basic_directory_iteratorINS0_10basic_pathISsNS0_11path_traitsEEEE9incrementEv@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost11filesystem224basic_directory_iteratorINS0_10basic_pathISsNS0_11path_traitsEEEEC1ERKS4_@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost11filesystem224basic_directory_iteratorINS0_10basic_pathISsNS0_11path_traitsEEEEC2ERKS4_@Base 1.1.0
- (optional=templinst|arch=i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost11filesystem224basic_directory_iteratorINS0_10basic_pathISsNS0_11path_traitsEEEED1Ev@Base 1.1.0
- (optional=templinst|arch=i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost11filesystem224basic_directory_iteratorINS0_10basic_pathISsNS0_11path_traitsEEEED2Ev@Base 1.1.0
- (optional=templinst|arch=i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost11filesystem26detail11dir_itr_impINS0_10basic_pathISsNS0_11path_traitsEEEED1Ev@Base 1.1.0
- (optional=templinst|arch=i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost11filesystem26detail11dir_itr_impINS0_10basic_pathISsNS0_11path_traitsEEEED2Ev@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost11filesystem26detail12filename_posISsNS0_11path_traitsEEENT_9size_typeERKS4_S5_@Base 1.1.0
+ (optional=templinst|arch=!amd64 !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !powerpc !sparc)_ZN5boost11filesystem210basic_pathISsNS0_11path_traitsEEC1ERKSs@Base 1.1.0
+ (optional=templinst|arch=!amd64 !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !powerpc !sparc)_ZN5boost11filesystem210basic_pathISsNS0_11path_traitsEEC2ERKSs@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost11filesystem210basic_pathISsNS0_11path_traitsEED1Ev@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost11filesystem210basic_pathISsNS0_11path_traitsEED2Ev@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost11filesystem210basic_pathISsNS0_11path_traitsEEdVEPKc@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost11filesystem212current_pathINS0_10basic_pathISsNS0_11path_traitsEEEEET_v@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost11filesystem212initial_pathINS0_10basic_pathISsNS0_11path_traitsEEEEERKT_v@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost11filesystem212is_directoryINS0_10basic_pathISsNS0_11path_traitsEEEEENS_9enable_ifINS0_13is_basic_pathIT_EEbE4typeERKS7_@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost11filesystem215last_write_timeINS0_10basic_pathISsNS0_11path_traitsEEEEENS_9enable_ifINS0_13is_basic_pathIT_EElE4typeERKS7_@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost11filesystem216create_directoryINS0_10basic_pathISsNS0_11path_traitsEEEEENS_9enable_ifINS0_13is_basic_pathIT_EEbE4typeERKS7_@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost11filesystem218create_directoriesINS0_10basic_pathISsNS0_11path_traitsEEEEENS_9enable_ifINS0_13is_basic_pathIT_EEbE4typeERKS7_@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost11filesystem222basic_filesystem_errorINS0_10basic_pathISsNS0_11path_traitsEEEEC1ERKSsNS_6system10error_codeE@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost11filesystem222basic_filesystem_errorINS0_10basic_pathISsNS0_11path_traitsEEEEC1ERKSsRKS4_NS_6system10error_codeE@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost11filesystem222basic_filesystem_errorINS0_10basic_pathISsNS0_11path_traitsEEEEC2ERKSsNS_6system10error_codeE@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost11filesystem222basic_filesystem_errorINS0_10basic_pathISsNS0_11path_traitsEEEEC2ERKSsRKS4_NS_6system10error_codeE@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost11filesystem222basic_filesystem_errorINS0_10basic_pathISsNS0_11path_traitsEEEED0Ev@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost11filesystem222basic_filesystem_errorINS0_10basic_pathISsNS0_11path_traitsEEEED1Ev@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost11filesystem222basic_filesystem_errorINS0_10basic_pathISsNS0_11path_traitsEEEED2Ev@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost11filesystem224basic_directory_iteratorINS0_10basic_pathISsNS0_11path_traitsEEEE6m_initERKS4_@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost11filesystem224basic_directory_iteratorINS0_10basic_pathISsNS0_11path_traitsEEEE9incrementEv@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost11filesystem224basic_directory_iteratorINS0_10basic_pathISsNS0_11path_traitsEEEEC1ERKS4_@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost11filesystem224basic_directory_iteratorINS0_10basic_pathISsNS0_11path_traitsEEEEC2ERKS4_@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost11filesystem26detail12filename_posISsNS0_11path_traitsEEENT_9size_typeERKS4_S5_@Base 1.1.0
  (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost11filesystem26detail13first_elementISsNS0_11path_traitsEEEvRKT_RNS4_9size_typeES8_S7_@Base 1.1.0+dfsg
- (optional=templinst|arch=!amd64 !mipsel !powerpc)_ZN5boost11filesystem26detail17is_non_root_slashISsNS0_11path_traitsEEEbRKT_NS4_9size_typeE@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost11filesystem26detail20root_directory_startISsNS0_11path_traitsEEENT_9size_typeERKS4_S5_@Base 1.1.0
- (arch=i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost11filesystem26detail4whatEPKcRKNS0_10basic_pathISsNS0_11path_traitsEEES8_RSs@Base 1.1.0+dfsg
- (optional=templinst|arch=!amd64)_ZN5boost11filesystem26existsINS0_10basic_pathISsNS0_11path_traitsEEEEENS_9enable_ifINS0_13is_basic_pathIT_EEbE4typeERKS7_@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost11filesystem26statusINS0_10basic_pathISsNS0_11path_traitsEEEEENS_9enable_ifINS0_13is_basic_pathIT_EENS0_11file_statusEE4typeERKS7_@Base 1.1.0
- (optional=templinst|arch=i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost11filesystem28basenameINS0_10basic_pathISsNS0_11path_traitsEEEEENS_9enable_ifINS0_13is_basic_pathIT_EENS7_11string_typeEE4typeERKS7_@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mipsel !powerpc)_ZN5boost11filesystem26detail17is_non_root_slashISsNS0_11path_traitsEEEbRKT_NS4_9size_typeE@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost11filesystem26detail20root_directory_startISsNS0_11path_traitsEEENT_9size_typeERKS4_S5_@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost11filesystem26existsINS0_10basic_pathISsNS0_11path_traitsEEEEENS_9enable_ifINS0_13is_basic_pathIT_EEbE4typeERKS7_@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost11filesystem26statusINS0_10basic_pathISsNS0_11path_traitsEEEEENS_9enable_ifINS0_13is_basic_pathIT_EENS0_11file_statusEE4typeERKS7_@Base 1.1.0
  (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mipsel !powerpc)_ZN5boost11filesystem28completeINS0_10basic_pathISsNS0_11path_traitsEEEEENS_9enable_ifINS0_13is_basic_pathIT_EES7_E4typeERKS7_SC_@Base 1.1.0
  (arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost11filesystem29extensionERKNS0_10basic_pathISsNS0_11path_traitsEEE@Base 1.1.0+dfsg
- (optional=templinst|arch=i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost11filesystem29extensionINS0_10basic_pathISsNS0_11path_traitsEEEEENS_9enable_ifINS0_13is_basic_pathIT_EENS7_11string_typeEE4typeERKS7_@Base 1.1.0
- (optional=templinst|arch=i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost11filesystem2dvISsNS0_11path_traitsEEENS0_10basic_pathIT_T0_EERKS6_RKS4_@Base 1.1.0
- (arch=amd64)_ZN5boost11filesystem315directory_entryD1Ev@Base 1.1.0+dfsg
- (arch=amd64)_ZN5boost11filesystem315directory_entryD2Ev@Base 1.1.0+dfsg
- (arch=amd64)_ZN5boost11filesystem318directory_iteratorC1ERKNS0_4pathE@Base 1.1.0+dfsg
- (arch=amd64)_ZN5boost11filesystem318directory_iteratorC2ERKNS0_4pathE@Base 1.1.0+dfsg
- (arch=amd64)_ZN5boost11filesystem318directory_iteratorD1Ev@Base 1.1.0+dfsg
- (arch=amd64)_ZN5boost11filesystem318directory_iteratorD2Ev@Base 1.1.0+dfsg
- (arch=amd64)_ZN5boost11filesystem34pathD1Ev@Base 1.1.0+dfsg
- (arch=amd64)_ZN5boost11filesystem34pathD2Ev@Base 1.1.0+dfsg
- (arch=amd64)_ZN5boost11filesystem36detail11dir_itr_impD1Ev@Base 1.1.0+dfsg
- (arch=amd64)_ZN5boost11filesystem36detail11dir_itr_impD2Ev@Base 1.1.0+dfsg
- (arch=amd64)_ZN5boost11filesystem36existsERKNS0_4pathE@Base 1.1.0+dfsg
- (arch=amd64)_ZN5boost11filesystem38basenameERKNS0_4pathE@Base 1.1.0+dfsg
- (arch=amd64)_ZN5boost11filesystem39extensionERKNS0_4pathE@Base 1.1.0+dfsg
+ (arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost11filesystem315directory_entryD1Ev@Base 1.1.0+dfsg
+ (arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost11filesystem315directory_entryD2Ev@Base 1.1.0+dfsg
+ (arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost11filesystem318directory_iteratorC1ERKNS0_4pathE@Base 1.1.0+dfsg
+ (arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost11filesystem318directory_iteratorC2ERKNS0_4pathE@Base 1.1.0+dfsg
+ (arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost11filesystem318directory_iteratorD1Ev@Base 1.1.0+dfsg
+ (arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost11filesystem318directory_iteratorD2Ev@Base 1.1.0+dfsg
+ (arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost11filesystem34pathD1Ev@Base 1.1.0+dfsg
+ (arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost11filesystem34pathD2Ev@Base 1.1.0+dfsg
+ (arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost11filesystem36detail11dir_itr_impD1Ev@Base 1.1.0+dfsg
+ (arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost11filesystem36detail11dir_itr_impD2Ev@Base 1.1.0+dfsg
+ (arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost11filesystem36existsERKNS0_4pathE@Base 1.1.0+dfsg
+ (arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost11filesystem38basenameERKNS0_4pathE@Base 1.1.0+dfsg
+ (arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost11filesystem39extensionERKNS0_4pathE@Base 1.1.0+dfsg
  _ZN5boost12bad_any_castD0Ev@Base 1.1.0
  _ZN5boost12bad_any_castD1Ev@Base 1.1.0
  _ZN5boost12bad_any_castD2Ev@Base 1.1.0
@@ -338,9 +317,9 @@ libCnoidBase.so.1.1 libcnoid1 #MINVER#
  (optional=templinst)_ZN5boost14checked_deleteIN5cnoid15ItemManagerImpl5SaverEEEvPT_@Base 1.1.0
  (optional=templinst)_ZN5boost14checked_deleteIN5cnoid15ItemManagerImpl9ClassInfoEEEvPT_@Base 1.1.0
  (optional=templinst)_ZN5boost14checked_deleteIN5cnoid17PluginManagerImpl10PluginInfoEEEvPT_@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost14checked_deleteINS_11filesystem222basic_filesystem_errorINS1_10basic_pathISsNS1_11path_traitsEEEE5m_impEEEvPT_@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost14checked_deleteINS_11filesystem26detail11dir_itr_impINS1_10basic_pathISsNS1_11path_traitsEEEEEEEvPT_@Base 1.1.0
- (optional=templinst|arch=amd64)_ZN5boost14checked_deleteINS_11filesystem36detail11dir_itr_impEEEvPT_@Base 1.1.0+dfsg
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost14checked_deleteINS_11filesystem222basic_filesystem_errorINS1_10basic_pathISsNS1_11path_traitsEEEE5m_impEEEvPT_@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost14checked_deleteINS_11filesystem26detail11dir_itr_impINS1_10basic_pathISsNS1_11path_traitsEEEEEEEvPT_@Base 1.1.0
+ (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost14checked_deleteINS_11filesystem36detail11dir_itr_impEEEvPT_@Base 1.1.0+dfsg
  (optional=templinst)_ZN5boost14checked_deleteINS_7signals6detail9slot_base6data_tEEEvPT_@Base 1.1.0
  (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386|subst)_ZN5boost14dynamic_bitsetImSaImEE6resizeE{size_t}b@Base 1.1.0+dfsg
  (optional=templinst|arch=!i386 !kfreebsd-i386 !mipsel !powerpc)_ZN5boost14dynamic_bitsetImSaImEED1Ev@Base 1.1.0
@@ -387,7 +366,7 @@ libCnoidBase.so.1.1 libcnoid1 #MINVER#
  (arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost15program_options6detail7cmdlineD1Ev@Base 1.1.0+dfsg
  (arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost15program_options6detail7cmdlineD2Ev@Base 1.1.0+dfsg
  (optional=templinst)_ZN5boost15program_options8validateISscEEvRNS_3anyERKSt6vectorISbIT0_St11char_traitsIS5_ESaIS5_EESaIS9_EEPS4_IT_SaISE_EEi@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost15throw_exceptionINS_11filesystem222basic_filesystem_errorINS1_10basic_pathISsNS1_11path_traitsEEEEEEEvRKT_@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost15throw_exceptionINS_11filesystem222basic_filesystem_errorINS1_10basic_pathISsNS1_11path_traitsEEEEEEEvRKT_@Base 1.1.0
  (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost15throw_exceptionINS_12bad_any_castEEEvRKT_@Base 1.1.0+dfsg
  (optional=templinst)_ZN5boost15throw_exceptionINS_15program_options20invalid_option_valueEEEvRKT_@Base 1.1.0
  (optional=templinst)_ZN5boost15throw_exceptionINS_17bad_function_callEEEvRKT_@Base 1.1.0
@@ -400,9 +379,9 @@ libCnoidBase.so.1.1 libcnoid1 #MINVER#
  _ZN5boost16exception_detail10clone_baseD0Ev@Base 1.1.0
  _ZN5boost16exception_detail10clone_baseD1Ev@Base 1.1.0
  _ZN5boost16exception_detail10clone_baseD2Ev@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_11filesystem222basic_filesystem_errorINS3_10basic_pathISsNS3_11path_traitsEEEEEEEED0Ev@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_11filesystem222basic_filesystem_errorINS3_10basic_pathISsNS3_11path_traitsEEEEEEEED1Ev@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_11filesystem222basic_filesystem_errorINS3_10basic_pathISsNS3_11path_traitsEEEEEEEED2Ev@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_11filesystem222basic_filesystem_errorINS3_10basic_pathISsNS3_11path_traitsEEEEEEEED0Ev@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_11filesystem222basic_filesystem_errorINS3_10basic_pathISsNS3_11path_traitsEEEEEEEED1Ev@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_11filesystem222basic_filesystem_errorINS3_10basic_pathISsNS3_11path_traitsEEEEEEEED2Ev@Base 1.1.0
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_12bad_any_castEEEEC1ERKS4_@Base 1.1.0
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_12bad_any_castEEEEC2ERKS4_@Base 1.1.0
  (optional=templinst)_ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_12bad_any_castEEEED0Ev@Base 1.1.0
@@ -430,11 +409,11 @@ libCnoidBase.so.1.1 libcnoid1 #MINVER#
  (optional=templinst|arch=mipsel powerpc s390 sparc)_ZN5boost16exception_detail12refcount_ptrINS0_20error_info_containerEED1Ev@Base 1.1.0+dfsg
  (optional=templinst|arch=mipsel powerpc s390 sparc)_ZN5boost16exception_detail12refcount_ptrINS0_20error_info_containerEED2Ev@Base 1.1.0+dfsg
  (optional=templinst|arch=mipsel powerpc s390 sparc)_ZN5boost16exception_detail12refcount_ptrINS0_20error_info_containerEEaSERKS3_@Base 1.1.0+dfsg
- (optional=templinst|arch=!amd64)_ZN5boost16exception_detail19error_info_injectorINS_11filesystem222basic_filesystem_errorINS2_10basic_pathISsNS2_11path_traitsEEEEEEC1ERKS8_@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost16exception_detail19error_info_injectorINS_11filesystem222basic_filesystem_errorINS2_10basic_pathISsNS2_11path_traitsEEEEEEC2ERKS8_@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost16exception_detail19error_info_injectorINS_11filesystem222basic_filesystem_errorINS2_10basic_pathISsNS2_11path_traitsEEEEEED0Ev@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost16exception_detail19error_info_injectorINS_11filesystem222basic_filesystem_errorINS2_10basic_pathISsNS2_11path_traitsEEEEEED1Ev@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost16exception_detail19error_info_injectorINS_11filesystem222basic_filesystem_errorINS2_10basic_pathISsNS2_11path_traitsEEEEEED2Ev@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost16exception_detail19error_info_injectorINS_11filesystem222basic_filesystem_errorINS2_10basic_pathISsNS2_11path_traitsEEEEEEC1ERKS8_@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost16exception_detail19error_info_injectorINS_11filesystem222basic_filesystem_errorINS2_10basic_pathISsNS2_11path_traitsEEEEEEC2ERKS8_@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost16exception_detail19error_info_injectorINS_11filesystem222basic_filesystem_errorINS2_10basic_pathISsNS2_11path_traitsEEEEEED0Ev@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost16exception_detail19error_info_injectorINS_11filesystem222basic_filesystem_errorINS2_10basic_pathISsNS2_11path_traitsEEEEEED1Ev@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost16exception_detail19error_info_injectorINS_11filesystem222basic_filesystem_errorINS2_10basic_pathISsNS2_11path_traitsEEEEEED2Ev@Base 1.1.0
  (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost16exception_detail19error_info_injectorINS_12bad_any_castEEC1ERKS3_@Base 1.1.0+dfsg
  (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost16exception_detail19error_info_injectorINS_12bad_any_castEEC2ERKS3_@Base 1.1.0+dfsg
  (optional=templinst)_ZN5boost16exception_detail19error_info_injectorINS_12bad_any_castEED0Ev@Base 1.1.0
@@ -676,9 +655,7 @@ libCnoidBase.so.1.1 libcnoid1 #MINVER#
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost6detail12shared_countC1IN5cnoid15ItemManagerImpl6LoaderEEEPT_@Base 1.1.0
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost6detail12shared_countC1IN5cnoid15ItemManagerImpl9ClassInfoEEEPT_@Base 1.1.0
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost6detail12shared_countC1IN5cnoid17PluginManagerImpl10PluginInfoEEEPT_@Base 1.1.0
- (optional=templinst|arch=i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost6detail12shared_countC1INS_11filesystem222basic_filesystem_errorINS3_10basic_pathISsNS3_11path_traitsEEEE5m_impEEEPT_@Base 1.1.0
- (optional=templinst|arch=i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost6detail12shared_countC1INS_11filesystem26detail11dir_itr_impINS3_10basic_pathISsNS3_11path_traitsEEEEEEEPT_@Base 1.1.0
- (optional=templinst|arch=amd64)_ZN5boost6detail12shared_countC1INS_11filesystem36detail11dir_itr_impEEEPT_@Base 1.1.0+dfsg
+ (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost6detail12shared_countC1INS_11filesystem36detail11dir_itr_impEEEPT_@Base 1.1.0+dfsg
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost6detail12shared_countC1INS_7signals6detail9slot_base6data_tEEEPT_@Base 1.1.0
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost6detail12shared_countC1IPNS_2io18basic_altstringbufIcSt11char_traitsIcESaIcEEENS3_22basic_oaltstringstreamIcS6_S7_E5No_OpEEET_T0_@Base 1.1.0
  (arch=armhf sparc)_ZN5boost6detail12shared_countC2ERKS1_@Base 1.1.0+dfsg
@@ -686,9 +663,7 @@ libCnoidBase.so.1.1 libcnoid1 #MINVER#
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost6detail12shared_countC2IN5cnoid15ItemManagerImpl6LoaderEEEPT_@Base 1.1.0
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost6detail12shared_countC2IN5cnoid15ItemManagerImpl9ClassInfoEEEPT_@Base 1.1.0
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost6detail12shared_countC2IN5cnoid17PluginManagerImpl10PluginInfoEEEPT_@Base 1.1.0
- (optional=templinst|arch=i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost6detail12shared_countC2INS_11filesystem222basic_filesystem_errorINS3_10basic_pathISsNS3_11path_traitsEEEE5m_impEEEPT_@Base 1.1.0
- (optional=templinst|arch=i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost6detail12shared_countC2INS_11filesystem26detail11dir_itr_impINS3_10basic_pathISsNS3_11path_traitsEEEEEEEPT_@Base 1.1.0
- (optional=templinst|arch=amd64)_ZN5boost6detail12shared_countC2INS_11filesystem36detail11dir_itr_impEEEPT_@Base 1.1.0+dfsg
+ (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost6detail12shared_countC2INS_11filesystem36detail11dir_itr_impEEEPT_@Base 1.1.0+dfsg
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost6detail12shared_countC2INS_7signals6detail9slot_base6data_tEEEPT_@Base 1.1.0
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost6detail12shared_countC2IPNS_2io18basic_altstringbufIcSt11char_traitsIcESaIcEEENS3_22basic_oaltstringstreamIcS6_S7_E5No_OpEEET_T0_@Base 1.1.0
  _ZN5boost6detail12shared_countD1Ev@Base 1.1.0
@@ -749,21 +724,21 @@ libCnoidBase.so.1.1 libcnoid1 #MINVER#
  (optional=templinst)_ZN5boost6detail17sp_counted_impl_pIN5cnoid17PluginManagerImpl10PluginInfoEED0Ev@Base 1.1.0
  (optional=templinst)_ZN5boost6detail17sp_counted_impl_pIN5cnoid17PluginManagerImpl10PluginInfoEED1Ev@Base 1.1.0
  (optional=templinst)_ZN5boost6detail17sp_counted_impl_pIN5cnoid17PluginManagerImpl10PluginInfoEED2Ev@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost6detail17sp_counted_impl_pINS_11filesystem222basic_filesystem_errorINS2_10basic_pathISsNS2_11path_traitsEEEE5m_impEE11get_deleterERKSt9type_info@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost6detail17sp_counted_impl_pINS_11filesystem222basic_filesystem_errorINS2_10basic_pathISsNS2_11path_traitsEEEE5m_impEE7disposeEv@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost6detail17sp_counted_impl_pINS_11filesystem222basic_filesystem_errorINS2_10basic_pathISsNS2_11path_traitsEEEE5m_impEED0Ev@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost6detail17sp_counted_impl_pINS_11filesystem222basic_filesystem_errorINS2_10basic_pathISsNS2_11path_traitsEEEE5m_impEED1Ev@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost6detail17sp_counted_impl_pINS_11filesystem222basic_filesystem_errorINS2_10basic_pathISsNS2_11path_traitsEEEE5m_impEED2Ev@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost6detail17sp_counted_impl_pINS_11filesystem26detail11dir_itr_impINS2_10basic_pathISsNS2_11path_traitsEEEEEE11get_deleterERKSt9type_info@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost6detail17sp_counted_impl_pINS_11filesystem26detail11dir_itr_impINS2_10basic_pathISsNS2_11path_traitsEEEEEE7disposeEv@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost6detail17sp_counted_impl_pINS_11filesystem26detail11dir_itr_impINS2_10basic_pathISsNS2_11path_traitsEEEEEED0Ev@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost6detail17sp_counted_impl_pINS_11filesystem26detail11dir_itr_impINS2_10basic_pathISsNS2_11path_traitsEEEEEED1Ev@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost6detail17sp_counted_impl_pINS_11filesystem26detail11dir_itr_impINS2_10basic_pathISsNS2_11path_traitsEEEEEED2Ev@Base 1.1.0
- (optional=templinst|arch=amd64)_ZN5boost6detail17sp_counted_impl_pINS_11filesystem36detail11dir_itr_impEE11get_deleterERKSt9type_info@Base 1.1.0+dfsg
- (optional=templinst|arch=amd64)_ZN5boost6detail17sp_counted_impl_pINS_11filesystem36detail11dir_itr_impEE7disposeEv@Base 1.1.0+dfsg
- (optional=templinst|arch=amd64)_ZN5boost6detail17sp_counted_impl_pINS_11filesystem36detail11dir_itr_impEED0Ev@Base 1.1.0+dfsg
- (optional=templinst|arch=amd64)_ZN5boost6detail17sp_counted_impl_pINS_11filesystem36detail11dir_itr_impEED1Ev@Base 1.1.0+dfsg
- (optional=templinst|arch=amd64)_ZN5boost6detail17sp_counted_impl_pINS_11filesystem36detail11dir_itr_impEED2Ev@Base 1.1.0+dfsg
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost6detail17sp_counted_impl_pINS_11filesystem222basic_filesystem_errorINS2_10basic_pathISsNS2_11path_traitsEEEE5m_impEE11get_deleterERKSt9type_info@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost6detail17sp_counted_impl_pINS_11filesystem222basic_filesystem_errorINS2_10basic_pathISsNS2_11path_traitsEEEE5m_impEE7disposeEv@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost6detail17sp_counted_impl_pINS_11filesystem222basic_filesystem_errorINS2_10basic_pathISsNS2_11path_traitsEEEE5m_impEED0Ev@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost6detail17sp_counted_impl_pINS_11filesystem222basic_filesystem_errorINS2_10basic_pathISsNS2_11path_traitsEEEE5m_impEED1Ev@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost6detail17sp_counted_impl_pINS_11filesystem222basic_filesystem_errorINS2_10basic_pathISsNS2_11path_traitsEEEE5m_impEED2Ev@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost6detail17sp_counted_impl_pINS_11filesystem26detail11dir_itr_impINS2_10basic_pathISsNS2_11path_traitsEEEEEE11get_deleterERKSt9type_info@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost6detail17sp_counted_impl_pINS_11filesystem26detail11dir_itr_impINS2_10basic_pathISsNS2_11path_traitsEEEEEE7disposeEv@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost6detail17sp_counted_impl_pINS_11filesystem26detail11dir_itr_impINS2_10basic_pathISsNS2_11path_traitsEEEEEED0Ev@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost6detail17sp_counted_impl_pINS_11filesystem26detail11dir_itr_impINS2_10basic_pathISsNS2_11path_traitsEEEEEED1Ev@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost6detail17sp_counted_impl_pINS_11filesystem26detail11dir_itr_impINS2_10basic_pathISsNS2_11path_traitsEEEEEED2Ev@Base 1.1.0
+ (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost6detail17sp_counted_impl_pINS_11filesystem36detail11dir_itr_impEE11get_deleterERKSt9type_info@Base 1.1.0+dfsg
+ (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost6detail17sp_counted_impl_pINS_11filesystem36detail11dir_itr_impEE7disposeEv@Base 1.1.0+dfsg
+ (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost6detail17sp_counted_impl_pINS_11filesystem36detail11dir_itr_impEED0Ev@Base 1.1.0+dfsg
+ (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost6detail17sp_counted_impl_pINS_11filesystem36detail11dir_itr_impEED1Ev@Base 1.1.0+dfsg
+ (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost6detail17sp_counted_impl_pINS_11filesystem36detail11dir_itr_impEED2Ev@Base 1.1.0+dfsg
  (optional=templinst)_ZN5boost6detail17sp_counted_impl_pINS_7signals6detail9slot_base6data_tEE11get_deleterERKSt9type_info@Base 1.1.0
  (optional=templinst)_ZN5boost6detail17sp_counted_impl_pINS_7signals6detail9slot_base6data_tEE7disposeEv@Base 1.1.0
  (optional=templinst)_ZN5boost6detail17sp_counted_impl_pINS_7signals6detail9slot_base6data_tEED0Ev@Base 1.1.0
@@ -937,7 +912,7 @@ libCnoidBase.so.1.1 libcnoid1 #MINVER#
  (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost6signalIFviiENS_10last_valueIvEEiSt4lessIiENS_8functionIS1_EEED2Ev@Base 1.1.0+dfsg
  (optional=templinst)_ZN5boost6signalIFvvENS_10last_valueIvEEiSt4lessIiENS_8functionIS1_EEED1Ev@Base 1.1.0
  (optional=templinst)_ZN5boost6signalIFvvENS_10last_valueIvEEiSt4lessIiENS_8functionIS1_EEED2Ev@Base 1.1.0
- (arch=!amd64)_ZN5boost6system10error_code21unspecified_bool_trueEv@Base 1.1.0+dfsg
+ (arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost6system10error_code21unspecified_bool_trueEv@Base 1.1.0+dfsg
  _ZN5boost6system12system_errorD0Ev@Base 1.1.0
  _ZN5boost6system12system_errorD1Ev@Base 1.1.0
  _ZN5boost6system12system_errorD2Ev@Base 1.1.0
@@ -2192,8 +2167,8 @@ libCnoidBase.so.1.1 libcnoid1 #MINVER#
  _ZN5cnoid25TimeSyncItemEngineManagerC2ERKSs@Base 1.1.0
  _ZN5cnoid25TimeSyncItemEngineManagerD1Ev@Base 1.1.0
  _ZN5cnoid25TimeSyncItemEngineManagerD2Ev@Base 1.1.0
- (arch=!amd64)_ZN5cnoid35findSubDirectoryOfDirectoryVariableEPNS_17ArchiveSharedDataERKN5boost11filesystem210basic_pathISsNS3_11path_traitsEEERSsRS6_@Base 1.1.0+dfsg
- (arch=amd64)_ZN5cnoid35findSubDirectoryOfDirectoryVariableEPNS_17ArchiveSharedDataERKN5boost11filesystem34pathERSsRS4_@Base 1.1.0+dfsg
+ (arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5cnoid35findSubDirectoryOfDirectoryVariableEPNS_17ArchiveSharedDataERKN5boost11filesystem210basic_pathISsNS3_11path_traitsEEERSsRS6_@Base 1.1.0+dfsg
+ (arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5cnoid35findSubDirectoryOfDirectoryVariableEPNS_17ArchiveSharedDataERKN5boost11filesystem34pathERSsRS4_@Base 1.1.0+dfsg
  _ZN5cnoid3App10initializeEPKcS2_RK5QIconS2_@Base 1.1.0
  _ZN5cnoid3App12topDirectoryEv@Base 1.1.0
  _ZN5cnoid3App14shareDirectoryEv@Base 1.1.0
@@ -2851,14 +2826,12 @@ libCnoidBase.so.1.1 libcnoid1 #MINVER#
  (optional=templinst|arch=s390 sparc)_ZNK5boost10last_valueIvEclINS_7signals6detail18slot_call_iteratorINS4_11call_bound2IvE6callerIRK14QItemSelectionSB_NS_8functionIFvSB_SB_EEEEENS4_23named_slot_map_iteratorEEEEEvT_SI_@Base 1.1.0+dfsg
  (optional=templinst|arch=sparc)_ZNK5boost10last_valueIvEclINS_7signals6detail18slot_call_iteratorINS4_11call_bound2IvE6callerIdbNS_8functionIFvdbEEEEENS4_23named_slot_map_iteratorEEEEEvT_SF_@Base 1.1.0+dfsg
  (optional=templinst|arch=s390 sparc)_ZNK5boost10last_valueIvEclINS_7signals6detail18slot_call_iteratorINS4_11call_bound2IvE6callerIiiNS_8functionIFviiEEEEENS4_23named_slot_map_iteratorEEEEEvT_SF_@Base 1.1.0+dfsg
- (optional=templinst|arch=armhf i386)_ZNK5boost11filesystem210basic_pathISsNS0_11path_traitsEE11file_stringEv@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZNK5boost11filesystem210basic_pathISsNS0_11path_traitsEE11parent_pathEv@Base 1.1.0
- (optional=templinst|arch=i386 kfreebsd-amd64 kfreebsd-i386)_ZNK5boost11filesystem210basic_pathISsNS0_11path_traitsEE20external_file_stringEv@Base 1.1.0
- (optional=templinst|arch=i386 kfreebsd-amd64 kfreebsd-i386)_ZNK5boost11filesystem210basic_pathISsNS0_11path_traitsEE25external_directory_stringEv@Base 1.1.0
- (optional=templinst|arch=!amd64 !mipsel !powerpc)_ZNK5boost11filesystem210basic_pathISsNS0_11path_traitsEE5beginEv@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZNK5boost11filesystem210basic_pathISsNS0_11path_traitsEE8filenameEv@Base 1.1.0
+ (optional=templinst|arch=armhf)_ZNK5boost11filesystem210basic_pathISsNS0_11path_traitsEE11file_stringEv@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZNK5boost11filesystem210basic_pathISsNS0_11path_traitsEE11parent_pathEv@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mipsel !powerpc)_ZNK5boost11filesystem210basic_pathISsNS0_11path_traitsEE5beginEv@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZNK5boost11filesystem210basic_pathISsNS0_11path_traitsEE8filenameEv@Base 1.1.0
  (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mipsel !powerpc)_ZNK5boost11filesystem210basic_pathISsNS0_11path_traitsEE9root_nameEv@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZNK5boost11filesystem222basic_filesystem_errorINS0_10basic_pathISsNS0_11path_traitsEEEE4whatEv@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZNK5boost11filesystem222basic_filesystem_errorINS0_10basic_pathISsNS0_11path_traitsEEEE4whatEv@Base 1.1.0
  _ZNK5boost12bad_any_cast4whatEv@Base 1.1.0
  (optional=templinst)_ZNK5boost12basic_formatIcSt11char_traitsIcESaIcEE3strEv@Base 1.1.0
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZNK5boost12basic_formatIcSt11char_traitsIcESaIcEE4sizeEv@Base 1.1.0
@@ -2875,8 +2848,8 @@ libCnoidBase.so.1.1 libcnoid1 #MINVER#
  (optional=templinst)_ZNK5boost15program_options11typed_valueISt6vectorISsSaISsEEcE4nameEv@Base 1.1.0
  (optional=templinst)_ZNK5boost15program_options11typed_valueISt6vectorISsSaISsEEcE6notifyERKNS_3anyE@Base 1.1.0
  (optional=templinst)_ZNK5boost15program_options11typed_valueISt6vectorISsSaISsEEcE6xparseERNS_3anyERKS4_@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZNK5boost16exception_detail10clone_implINS0_19error_info_injectorINS_11filesystem222basic_filesystem_errorINS3_10basic_pathISsNS3_11path_traitsEEEEEEEE5cloneEv@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZNK5boost16exception_detail10clone_implINS0_19error_info_injectorINS_11filesystem222basic_filesystem_errorINS3_10basic_pathISsNS3_11path_traitsEEEEEEEE7rethrowEv@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZNK5boost16exception_detail10clone_implINS0_19error_info_injectorINS_11filesystem222basic_filesystem_errorINS3_10basic_pathISsNS3_11path_traitsEEEEEEEE5cloneEv@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZNK5boost16exception_detail10clone_implINS0_19error_info_injectorINS_11filesystem222basic_filesystem_errorINS3_10basic_pathISsNS3_11path_traitsEEEEEEEE7rethrowEv@Base 1.1.0
  (optional=templinst)_ZNK5boost16exception_detail10clone_implINS0_19error_info_injectorINS_12bad_any_castEEEE5cloneEv@Base 1.1.0
  (optional=templinst)_ZNK5boost16exception_detail10clone_implINS0_19error_info_injectorINS_12bad_any_castEEEE7rethrowEv@Base 1.1.0
  (optional=templinst)_ZNK5boost16exception_detail10clone_implINS0_19error_info_injectorINS_15program_options20invalid_option_valueEEEE5cloneEv@Base 1.1.0
@@ -3126,16 +3099,16 @@ libCnoidBase.so.1.1 libcnoid1 #MINVER#
  (optional=templinst|arch=!armhf)_ZNSt3mapISsN5boost10shared_ptrIN5cnoid17PluginManagerImpl10PluginInfoEEESt4lessISsESaISt4pairIKSsS5_EEED1Ev@Base 1.1.0
  (optional=templinst|arch=!armhf)_ZNSt3mapISsN5boost10shared_ptrIN5cnoid17PluginManagerImpl10PluginInfoEEESt4lessISsESaISt4pairIKSsS5_EEED2Ev@Base 1.1.0
  (optional=templinst)_ZNSt3mapISsN5boost10shared_ptrIN5cnoid17PluginManagerImpl10PluginInfoEEESt4lessISsESaISt4pairIKSsS5_EEEixERS9_@Base 1.1.0
- (optional=templinst|arch=i386 kfreebsd-amd64 kfreebsd-i386)_ZNSt3mapISsN5cnoid18ProjectManagerImpl12ArchiverInfoESt4lessISsESaISt4pairIKSsS2_EEED1Ev@Base 1.1.0
- (optional=templinst|arch=i386 kfreebsd-amd64 kfreebsd-i386)_ZNSt3mapISsN5cnoid18ProjectManagerImpl12ArchiverInfoESt4lessISsESaISt4pairIKSsS2_EEED2Ev@Base 1.1.0
+ (optional=templinst|arch=i386 kfreebsd-i386)_ZNSt3mapISsN5cnoid18ProjectManagerImpl12ArchiverInfoESt4lessISsESaISt4pairIKSsS2_EEED1Ev@Base 1.1.0
+ (optional=templinst|arch=i386 kfreebsd-i386)_ZNSt3mapISsN5cnoid18ProjectManagerImpl12ArchiverInfoESt4lessISsESaISt4pairIKSsS2_EEED2Ev@Base 1.1.0
  (optional=templinst)_ZNSt3mapISsN5cnoid18ProjectManagerImpl12ArchiverInfoESt4lessISsESaISt4pairIKSsS2_EEEixERS6_@Base 1.1.0
  (optional=templinst)_ZNSt3mapISsPN5cnoid15ItemManagerImpl17CreationPanelBaseESt4lessISsESaISt4pairIKSsS3_EEED1Ev@Base 1.1.0
  (optional=templinst)_ZNSt3mapISsPN5cnoid15ItemManagerImpl17CreationPanelBaseESt4lessISsESaISt4pairIKSsS3_EEED2Ev@Base 1.1.0
  (optional=templinst)_ZNSt3mapISsS_ISsN5boost10shared_ptrIN5cnoid15ItemManagerImpl9ClassInfoEEESt4lessISsESaISt4pairIKSsS5_EEES7_SaIS8_IS9_SC_EEED1Ev@Base 1.1.0
  (optional=templinst)_ZNSt3mapISsS_ISsN5boost10shared_ptrIN5cnoid15ItemManagerImpl9ClassInfoEEESt4lessISsESaISt4pairIKSsS5_EEES7_SaIS8_IS9_SC_EEED2Ev@Base 1.1.0
  (optional=templinst|arch=amd64 armhf i386 kfreebsd-amd64 kfreebsd-i386)_ZNSt3mapISsS_ISsN5boost10shared_ptrIN5cnoid15ItemManagerImpl9ClassInfoEEESt4lessISsESaISt4pairIKSsS5_EEES7_SaIS8_IS9_SC_EEEixERS9_@Base 1.1.0
- (optional=templinst|arch=i386 kfreebsd-amd64 kfreebsd-i386)_ZNSt3mapISsS_ISsN5cnoid18ProjectManagerImpl12ArchiverInfoESt4lessISsESaISt4pairIKSsS2_EEES4_SaIS5_IS6_S9_EEED1Ev@Base 1.1.0
- (optional=templinst|arch=i386 kfreebsd-amd64 kfreebsd-i386)_ZNSt3mapISsS_ISsN5cnoid18ProjectManagerImpl12ArchiverInfoESt4lessISsESaISt4pairIKSsS2_EEES4_SaIS5_IS6_S9_EEED2Ev@Base 1.1.0
+ (optional=templinst|arch=i386 kfreebsd-i386)_ZNSt3mapISsS_ISsN5cnoid18ProjectManagerImpl12ArchiverInfoESt4lessISsESaISt4pairIKSsS2_EEES4_SaIS5_IS6_S9_EEED1Ev@Base 1.1.0
+ (optional=templinst|arch=i386 kfreebsd-i386)_ZNSt3mapISsS_ISsN5cnoid18ProjectManagerImpl12ArchiverInfoESt4lessISsESaISt4pairIKSsS2_EEES4_SaIS5_IS6_S9_EEED2Ev@Base 1.1.0
  (optional=templinst)_ZNSt3mapISsS_ISsN5cnoid18ProjectManagerImpl12ArchiverInfoESt4lessISsESaISt4pairIKSsS2_EEES4_SaIS5_IS6_S9_EEEixERS6_@Base 1.1.0
  (optional=templinst)_ZNSt3mapISsSt4listIN5boost10shared_ptrIN5cnoid15ItemManagerImpl5SaverEEESaIS6_EESt4lessISsESaISt4pairIKSsS8_EEED1Ev@Base 1.1.0
  (optional=templinst)_ZNSt3mapISsSt4listIN5boost10shared_ptrIN5cnoid15ItemManagerImpl5SaverEEESaIS6_EESt4lessISsESaISt4pairIKSsS8_EEED2Ev@Base 1.1.0
@@ -3150,7 +3123,6 @@ libCnoidBase.so.1.1 libcnoid1 #MINVER#
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZNSt3setIN5boost10shared_ptrIN5cnoid15ItemManagerImpl6LoaderEEESt4lessIS5_ESaIS5_EED1Ev@Base 1.1.0
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZNSt3setIN5boost10shared_ptrIN5cnoid15ItemManagerImpl6LoaderEEESt4lessIS5_ESaIS5_EED2Ev@Base 1.1.0
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZNSt3setIN5boost13intrusive_ptrIN5cnoid9SceneItemEEESt4lessIS4_ESaIS4_EE5eraseESt23_Rb_tree_const_iteratorIS4_E@Base 1.1.0
- (optional=templinst|arch=kfreebsd-amd64)_ZNSt3setIN5boost13intrusive_ptrIN5cnoid9SceneItemEEESt4lessIS4_ESaIS4_EE6insertERKS4_@Base 1.1.0
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZNSt3setIPN5cnoid17ItemCreationPanelESt4lessIS2_ESaIS2_EED1Ev@Base 1.1.0
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZNSt3setIPN5cnoid17ItemCreationPanelESt4lessIS2_ESaIS2_EED2Ev@Base 1.1.0
  (optional=templinst)_ZNSt3setIPN5cnoid20ExtensionManagerImplESt4lessIS2_ESaIS2_EED1Ev@Base 1.1.0
@@ -3174,8 +3146,6 @@ libCnoidBase.so.1.1 libcnoid1 #MINVER#
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZNSt4pairIKSsN5boost10shared_ptrIN5cnoid15ItemManagerImpl9ClassInfoEEEEC2ERS0_RKS6_@Base 1.1.0
  (optional=templinst)_ZNSt4pairIKSsN5boost10shared_ptrIN5cnoid15ItemManagerImpl9ClassInfoEEEED1Ev@Base 1.1.0
  (optional=templinst)_ZNSt4pairIKSsN5boost10shared_ptrIN5cnoid15ItemManagerImpl9ClassInfoEEEED2Ev@Base 1.1.0
- (optional=templinst|arch=i386 kfreebsd-amd64 kfreebsd-i386)_ZNSt4pairIKSsN5boost10shared_ptrIN5cnoid17PluginManagerImpl10PluginInfoEEEEC1ERS0_RKS6_@Base 1.1.0+dfsg
- (optional=templinst|arch=i386 kfreebsd-amd64 kfreebsd-i386)_ZNSt4pairIKSsN5boost10shared_ptrIN5cnoid17PluginManagerImpl10PluginInfoEEEEC2ERS0_RKS6_@Base 1.1.0+dfsg
  (optional=templinst)_ZNSt4pairIKSsN5boost10shared_ptrIN5cnoid17PluginManagerImpl10PluginInfoEEEED1Ev@Base 1.1.0
  (optional=templinst)_ZNSt4pairIKSsN5boost10shared_ptrIN5cnoid17PluginManagerImpl10PluginInfoEEEED2Ev@Base 1.1.0
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZNSt4pairIKSsN5cnoid18ProjectManagerImpl12ArchiverInfoEEC1ERS0_RKS3_@Base 1.1.0
@@ -3325,7 +3295,6 @@ libCnoidBase.so.1.1 libcnoid1 #MINVER#
  (optional=templinst)_ZNSt8_Rb_treeIN5boost13intrusive_ptrIN5cnoid4ItemEEESt4pairIKS4_iESt10_Select1stIS7_ESt4lessIS4_ESaIS7_EE8_M_eraseEPSt13_Rb_tree_nodeIS7_E@Base 1.1.0
  (optional=templinst)_ZNSt8_Rb_treeIN5boost13intrusive_ptrIN5cnoid9SceneItemEEES4_St9_IdentityIS4_ESt4lessIS4_ESaIS4_EE10_M_insert_EPKSt18_Rb_tree_node_baseSD_RKS4_@Base 1.1.0
  (optional=templinst)_ZNSt8_Rb_treeIN5boost13intrusive_ptrIN5cnoid9SceneItemEEES4_St9_IdentityIS4_ESt4lessIS4_ESaIS4_EE16_M_insert_uniqueERKS4_@Base 1.1.0
- (optional=templinst|arch=kfreebsd-amd64)_ZNSt8_Rb_treeIN5boost13intrusive_ptrIN5cnoid9SceneItemEEES4_St9_IdentityIS4_ESt4lessIS4_ESaIS4_EE4findERKS4_@Base 1.1.0
  (optional=templinst)_ZNSt8_Rb_treeIN5boost13intrusive_ptrIN5cnoid9SceneItemEEES4_St9_IdentityIS4_ESt4lessIS4_ESaIS4_EE8_M_eraseEPSt13_Rb_tree_nodeIS4_E@Base 1.1.0
  (optional=templinst)_ZNSt8_Rb_treeIN7osgUtil22LineSegmentIntersector12IntersectionES2_St9_IdentityIS2_ESt4lessIS2_ESaIS2_EE8_M_eraseEPSt13_Rb_tree_nodeIS2_E@Base 1.1.0
  (optional=templinst)_ZNSt8_Rb_treeIP7QActionS1_St9_IdentityIS1_ESt4lessIS1_ESaIS1_EE10_M_insert_EPKSt18_Rb_tree_node_baseSA_RKS1_@Base 1.1.0
@@ -3494,7 +3463,7 @@ libCnoidBase.so.1.1 libcnoid1 #MINVER#
  _ZTIN3osg18TemplateIndexArrayIjLNS_5Array4TypeE6ELi1ELi5125EEE@Base 1.1.0
  _ZTIN3osg8Drawable13EventCallbackE@Base 1.1.0
  _ZTIN5boost10last_valueIvEE@Base 1.1.0
- (arch=!amd64)_ZTIN5boost11filesystem222basic_filesystem_errorINS0_10basic_pathISsNS0_11path_traitsEEEEE@Base 1.1.0+dfsg
+ (arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZTIN5boost11filesystem222basic_filesystem_errorINS0_10basic_pathISsNS0_11path_traitsEEEEE@Base 1.1.0+dfsg
  _ZTIN5boost12bad_any_castE@Base 1.1.0
  (arch=!armhf)_ZTIN5boost12noncopyable_11noncopyableE@Base 1.1.0+dfsg
  _ZTIN5boost13function_baseE@Base 1.1.0
@@ -3507,7 +3476,7 @@ libCnoidBase.so.1.1 libcnoid1 #MINVER#
  _ZTIN5boost16bad_lexical_castE@Base 1.1.0
  _ZTIN5boost16base_from_memberINS_10shared_ptrINS_2io18basic_altstringbufIcSt11char_traitsIcESaIcEEEEELi0EEE@Base 1.1.0
  _ZTIN5boost16exception_detail10clone_baseE@Base 1.1.0
- (arch=!amd64)_ZTIN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_11filesystem222basic_filesystem_errorINS3_10basic_pathISsNS3_11path_traitsEEEEEEEEE@Base 1.1.0+dfsg
+ (arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZTIN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_11filesystem222basic_filesystem_errorINS3_10basic_pathISsNS3_11path_traitsEEEEEEEEE@Base 1.1.0+dfsg
  _ZTIN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_12bad_any_castEEEEE@Base 1.1.0
  _ZTIN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_15program_options20invalid_option_valueEEEEE@Base 1.1.0
  _ZTIN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_17bad_function_callEEEEE@Base 1.1.0
@@ -3515,7 +3484,7 @@ libCnoidBase.so.1.1 libcnoid1 #MINVER#
  _ZTIN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_2io13too_many_argsEEEEE@Base 1.1.0
  _ZTIN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_2io17bad_format_stringEEEEE@Base 1.1.0
  _ZTIN5boost16exception_detail10clone_implINS0_19error_info_injectorINSt8ios_base7failureEEEEE@Base 1.1.0
- (arch=!amd64)_ZTIN5boost16exception_detail19error_info_injectorINS_11filesystem222basic_filesystem_errorINS2_10basic_pathISsNS2_11path_traitsEEEEEEE@Base 1.1.0+dfsg
+ (arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZTIN5boost16exception_detail19error_info_injectorINS_11filesystem222basic_filesystem_errorINS2_10basic_pathISsNS2_11path_traitsEEEEEEE@Base 1.1.0+dfsg
  _ZTIN5boost16exception_detail19error_info_injectorINS_12bad_any_castEEE@Base 1.1.0
  _ZTIN5boost16exception_detail19error_info_injectorINS_15program_options20invalid_option_valueEEE@Base 1.1.0
  _ZTIN5boost16exception_detail19error_info_injectorINS_17bad_function_callEEE@Base 1.1.0
@@ -3601,9 +3570,9 @@ libCnoidBase.so.1.1 libcnoid1 #MINVER#
  _ZTIN5boost6detail17sp_counted_impl_pIN5cnoid15ItemManagerImpl9ClassInfoEEE@Base 1.1.0
  _ZTIN5boost6detail17sp_counted_impl_pIN5cnoid15MultiAffine3SeqEEE@Base 1.1.0
  _ZTIN5boost6detail17sp_counted_impl_pIN5cnoid17PluginManagerImpl10PluginInfoEEE@Base 1.1.0
- (arch=!amd64)_ZTIN5boost6detail17sp_counted_impl_pINS_11filesystem222basic_filesystem_errorINS2_10basic_pathISsNS2_11path_traitsEEEE5m_impEEE@Base 1.1.0+dfsg
- (arch=!amd64)_ZTIN5boost6detail17sp_counted_impl_pINS_11filesystem26detail11dir_itr_impINS2_10basic_pathISsNS2_11path_traitsEEEEEEE@Base 1.1.0+dfsg
- (arch=amd64)_ZTIN5boost6detail17sp_counted_impl_pINS_11filesystem36detail11dir_itr_impEEE@Base 1.1.0+dfsg
+ (arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZTIN5boost6detail17sp_counted_impl_pINS_11filesystem222basic_filesystem_errorINS2_10basic_pathISsNS2_11path_traitsEEEE5m_impEEE@Base 1.1.0+dfsg
+ (arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZTIN5boost6detail17sp_counted_impl_pINS_11filesystem26detail11dir_itr_impINS2_10basic_pathISsNS2_11path_traitsEEEEEEE@Base 1.1.0+dfsg
+ (arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZTIN5boost6detail17sp_counted_impl_pINS_11filesystem36detail11dir_itr_impEEE@Base 1.1.0+dfsg
  _ZTIN5boost6detail17sp_counted_impl_pINS_7signals6detail9slot_base6data_tEEE@Base 1.1.0
  _ZTIN5boost6detail18sp_counted_impl_pdIPNS_2io18basic_altstringbufIcSt11char_traitsIcESaIcEEENS2_22basic_oaltstringstreamIcS5_S6_E5No_OpEEE@Base 1.1.0
  _ZTIN5boost6system12system_errorE@Base 1.1.0
@@ -3773,7 +3742,7 @@ libCnoidBase.so.1.1 libcnoid1 #MINVER#
  _ZTSN3osg18TemplateIndexArrayIjLNS_5Array4TypeE6ELi1ELi5125EEE@Base 1.1.0
  _ZTSN3osg8Drawable13EventCallbackE@Base 1.1.0
  _ZTSN5boost10last_valueIvEE@Base 1.1.0
- (arch=!amd64)_ZTSN5boost11filesystem222basic_filesystem_errorINS0_10basic_pathISsNS0_11path_traitsEEEEE@Base 1.1.0+dfsg
+ (arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZTSN5boost11filesystem222basic_filesystem_errorINS0_10basic_pathISsNS0_11path_traitsEEEEE@Base 1.1.0+dfsg
  _ZTSN5boost12bad_any_castE@Base 1.1.0
  (arch=!armhf)_ZTSN5boost12noncopyable_11noncopyableE@Base 1.1.0+dfsg
  _ZTSN5boost13function_baseE@Base 1.1.0
@@ -3786,7 +3755,7 @@ libCnoidBase.so.1.1 libcnoid1 #MINVER#
  _ZTSN5boost16bad_lexical_castE@Base 1.1.0
  _ZTSN5boost16base_from_memberINS_10shared_ptrINS_2io18basic_altstringbufIcSt11char_traitsIcESaIcEEEEELi0EEE@Base 1.1.0
  _ZTSN5boost16exception_detail10clone_baseE@Base 1.1.0
- (arch=!amd64)_ZTSN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_11filesystem222basic_filesystem_errorINS3_10basic_pathISsNS3_11path_traitsEEEEEEEEE@Base 1.1.0+dfsg
+ (arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZTSN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_11filesystem222basic_filesystem_errorINS3_10basic_pathISsNS3_11path_traitsEEEEEEEEE@Base 1.1.0+dfsg
  _ZTSN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_12bad_any_castEEEEE@Base 1.1.0
  _ZTSN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_15program_options20invalid_option_valueEEEEE@Base 1.1.0
  _ZTSN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_17bad_function_callEEEEE@Base 1.1.0
@@ -3794,7 +3763,7 @@ libCnoidBase.so.1.1 libcnoid1 #MINVER#
  _ZTSN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_2io13too_many_argsEEEEE@Base 1.1.0
  _ZTSN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_2io17bad_format_stringEEEEE@Base 1.1.0
  _ZTSN5boost16exception_detail10clone_implINS0_19error_info_injectorINSt8ios_base7failureEEEEE@Base 1.1.0
- (arch=!amd64)_ZTSN5boost16exception_detail19error_info_injectorINS_11filesystem222basic_filesystem_errorINS2_10basic_pathISsNS2_11path_traitsEEEEEEE@Base 1.1.0+dfsg
+ (arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZTSN5boost16exception_detail19error_info_injectorINS_11filesystem222basic_filesystem_errorINS2_10basic_pathISsNS2_11path_traitsEEEEEEE@Base 1.1.0+dfsg
  _ZTSN5boost16exception_detail19error_info_injectorINS_12bad_any_castEEE@Base 1.1.0
  _ZTSN5boost16exception_detail19error_info_injectorINS_15program_options20invalid_option_valueEEE@Base 1.1.0
  _ZTSN5boost16exception_detail19error_info_injectorINS_17bad_function_callEEE@Base 1.1.0
@@ -3880,9 +3849,9 @@ libCnoidBase.so.1.1 libcnoid1 #MINVER#
  _ZTSN5boost6detail17sp_counted_impl_pIN5cnoid15ItemManagerImpl9ClassInfoEEE@Base 1.1.0
  _ZTSN5boost6detail17sp_counted_impl_pIN5cnoid15MultiAffine3SeqEEE@Base 1.1.0
  _ZTSN5boost6detail17sp_counted_impl_pIN5cnoid17PluginManagerImpl10PluginInfoEEE@Base 1.1.0
- (arch=!amd64)_ZTSN5boost6detail17sp_counted_impl_pINS_11filesystem222basic_filesystem_errorINS2_10basic_pathISsNS2_11path_traitsEEEE5m_impEEE@Base 1.1.0+dfsg
- (arch=!amd64)_ZTSN5boost6detail17sp_counted_impl_pINS_11filesystem26detail11dir_itr_impINS2_10basic_pathISsNS2_11path_traitsEEEEEEE@Base 1.1.0+dfsg
- (arch=amd64)_ZTSN5boost6detail17sp_counted_impl_pINS_11filesystem36detail11dir_itr_impEEE@Base 1.1.0+dfsg
+ (arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZTSN5boost6detail17sp_counted_impl_pINS_11filesystem222basic_filesystem_errorINS2_10basic_pathISsNS2_11path_traitsEEEE5m_impEEE@Base 1.1.0+dfsg
+ (arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZTSN5boost6detail17sp_counted_impl_pINS_11filesystem26detail11dir_itr_impINS2_10basic_pathISsNS2_11path_traitsEEEEEEE@Base 1.1.0+dfsg
+ (arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZTSN5boost6detail17sp_counted_impl_pINS_11filesystem36detail11dir_itr_impEEE@Base 1.1.0+dfsg
  _ZTSN5boost6detail17sp_counted_impl_pINS_7signals6detail9slot_base6data_tEEE@Base 1.1.0
  _ZTSN5boost6detail18sp_counted_impl_pdIPNS_2io18basic_altstringbufIcSt11char_traitsIcESaIcEEENS2_22basic_oaltstringstreamIcS5_S6_E5No_OpEEE@Base 1.1.0
  _ZTSN5boost6system12system_errorE@Base 1.1.0
@@ -4052,7 +4021,7 @@ libCnoidBase.so.1.1 libcnoid1 #MINVER#
  _ZTVN3osg18TemplateIndexArrayIiLNS_5Array4TypeE3ELi1ELi5124EEE@Base 1.1.0
  _ZTVN3osg18TemplateIndexArrayIjLNS_5Array4TypeE6ELi1ELi5125EEE@Base 1.1.0
  _ZTVN3osg8Drawable13EventCallbackE@Base 1.1.0
- (arch=!amd64)_ZTVN5boost11filesystem222basic_filesystem_errorINS0_10basic_pathISsNS0_11path_traitsEEEEE@Base 1.1.0+dfsg
+ (arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZTVN5boost11filesystem222basic_filesystem_errorINS0_10basic_pathISsNS0_11path_traitsEEEEE@Base 1.1.0+dfsg
  _ZTVN5boost12bad_any_castE@Base 1.1.0
  _ZTVN5boost15program_options11typed_valueISt6vectorISsSaISsEEcEE@Base 1.1.0
  _ZTVN5boost15program_options14value_semanticE@Base 1.1.0
@@ -4061,7 +4030,7 @@ libCnoidBase.so.1.1 libcnoid1 #MINVER#
  _ZTVN5boost15program_options22abstract_variables_mapE@Base 1.1.0
  _ZTVN5boost15program_options5errorE@Base 1.1.0
  _ZTVN5boost16exception_detail10clone_baseE@Base 1.1.0
- (arch=!amd64)_ZTVN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_11filesystem222basic_filesystem_errorINS3_10basic_pathISsNS3_11path_traitsEEEEEEEEE@Base 1.1.0+dfsg
+ (arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZTVN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_11filesystem222basic_filesystem_errorINS3_10basic_pathISsNS3_11path_traitsEEEEEEEEE@Base 1.1.0+dfsg
  _ZTVN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_12bad_any_castEEEEE@Base 1.1.0
  _ZTVN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_15program_options20invalid_option_valueEEEEE@Base 1.1.0
  _ZTVN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_17bad_function_callEEEEE@Base 1.1.0
@@ -4069,7 +4038,7 @@ libCnoidBase.so.1.1 libcnoid1 #MINVER#
  _ZTVN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_2io13too_many_argsEEEEE@Base 1.1.0
  _ZTVN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_2io17bad_format_stringEEEEE@Base 1.1.0
  _ZTVN5boost16exception_detail10clone_implINS0_19error_info_injectorINSt8ios_base7failureEEEEE@Base 1.1.0
- (arch=!amd64)_ZTVN5boost16exception_detail19error_info_injectorINS_11filesystem222basic_filesystem_errorINS2_10basic_pathISsNS2_11path_traitsEEEEEEE@Base 1.1.0+dfsg
+ (arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZTVN5boost16exception_detail19error_info_injectorINS_11filesystem222basic_filesystem_errorINS2_10basic_pathISsNS2_11path_traitsEEEEEEE@Base 1.1.0+dfsg
  _ZTVN5boost16exception_detail19error_info_injectorINS_12bad_any_castEEE@Base 1.1.0
  _ZTVN5boost16exception_detail19error_info_injectorINS_15program_options20invalid_option_valueEEE@Base 1.1.0
  _ZTVN5boost16exception_detail19error_info_injectorINS_17bad_function_callEEE@Base 1.1.0
@@ -4111,9 +4080,9 @@ libCnoidBase.so.1.1 libcnoid1 #MINVER#
  _ZTVN5boost6detail17sp_counted_impl_pIN5cnoid15ItemManagerImpl9ClassInfoEEE@Base 1.1.0
  _ZTVN5boost6detail17sp_counted_impl_pIN5cnoid15MultiAffine3SeqEEE@Base 1.1.0
  _ZTVN5boost6detail17sp_counted_impl_pIN5cnoid17PluginManagerImpl10PluginInfoEEE@Base 1.1.0
- (arch=!amd64)_ZTVN5boost6detail17sp_counted_impl_pINS_11filesystem222basic_filesystem_errorINS2_10basic_pathISsNS2_11path_traitsEEEE5m_impEEE@Base 1.1.0+dfsg
- (arch=!amd64)_ZTVN5boost6detail17sp_counted_impl_pINS_11filesystem26detail11dir_itr_impINS2_10basic_pathISsNS2_11path_traitsEEEEEEE@Base 1.1.0+dfsg
- (arch=amd64)_ZTVN5boost6detail17sp_counted_impl_pINS_11filesystem36detail11dir_itr_impEEE@Base 1.1.0+dfsg
+ (arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZTVN5boost6detail17sp_counted_impl_pINS_11filesystem222basic_filesystem_errorINS2_10basic_pathISsNS2_11path_traitsEEEE5m_impEEE@Base 1.1.0+dfsg
+ (arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZTVN5boost6detail17sp_counted_impl_pINS_11filesystem26detail11dir_itr_impINS2_10basic_pathISsNS2_11path_traitsEEEEEEE@Base 1.1.0+dfsg
+ (arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZTVN5boost6detail17sp_counted_impl_pINS_11filesystem36detail11dir_itr_impEEE@Base 1.1.0+dfsg
  _ZTVN5boost6detail17sp_counted_impl_pINS_7signals6detail9slot_base6data_tEEE@Base 1.1.0
  _ZTVN5boost6detail18sp_counted_impl_pdIPNS_2io18basic_altstringbufIcSt11char_traitsIcESaIcEEENS2_22basic_oaltstringstreamIcS5_S6_E5No_OpEEE@Base 1.1.0
  _ZTVN5boost6system12system_errorE@Base 1.1.0
@@ -4218,7 +4187,7 @@ libCnoidBase.so.1.1 libcnoid1 #MINVER#
  _ZTVN5cnoid9ScrollBarE@Base 1.1.0
  _ZTVN5osgGA16GUIActionAdapterE@Base 1.1.0
  _ZTVN9osgViewer22GraphicsWindowEmbeddedE@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZZN5boost11filesystem212initial_pathINS0_10basic_pathISsNS0_11path_traitsEEEEERKT_vE9init_path@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZZN5boost11filesystem212initial_pathINS0_10basic_pathISsNS0_11path_traitsEEEEERKT_vE9init_path@Base 1.1.0
  (optional=templinst)_ZZN5boost9function0IvE9assign_toINS_3_bi6bind_tIbNS_4_mfi3mf0Ib7QWidgetEENS3_5list1INS3_5valueIPN5cnoid10MainWindowEEEEEEEEEvT_E13stored_vtable@Base 1.1.0
  (optional=templinst)_ZZN5boost9function0IvE9assign_toINS_3_bi6bind_tIbNS_4_mfi3mf0IbN5cnoid14LazySignalBaseEEENS3_5list1INS3_5valueIPS8_EEEEEEEEvT_E13stored_vtable@Base 1.1.0
  (optional=templinst)_ZZN5boost9function0IvE9assign_toINS_3_bi6bind_tIvNS_4_mfi3mf0IvN5cnoid10LazyCallerEEENS3_5list1INS3_5valueIPS8_EEEEEEEEvT_E13stored_vtable@Base 1.1.0
@@ -4289,9 +4258,9 @@ libCnoidBase.so.1.1 libcnoid1 #MINVER#
  (c++)"non-virtual thunk to boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::bad_function_call> >::clone() const@Base" 1.1.0
  (c++)"non-virtual thunk to boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::bad_function_call> >::rethrow() const@Base" 1.1.0
  (c++)"non-virtual thunk to boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::bad_function_call> >::~clone_impl()@Base" 1.1.0
- (c++|arch=!amd64)"non-virtual thunk to boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::filesystem2::basic_filesystem_error<boost::filesystem2::basic_path<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, boost::filesystem2::path_traits> > > >::clone() const@Base" 1.1.0+dfsg
- (c++|arch=!amd64)"non-virtual thunk to boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::filesystem2::basic_filesystem_error<boost::filesystem2::basic_path<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, boost::filesystem2::path_traits> > > >::rethrow() const@Base" 1.1.0+dfsg
- (c++|arch=!amd64)"non-virtual thunk to boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::filesystem2::basic_filesystem_error<boost::filesystem2::basic_path<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, boost::filesystem2::path_traits> > > >::~clone_impl()@Base" 1.1.0+dfsg
+ (c++|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)"non-virtual thunk to boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::filesystem2::basic_filesystem_error<boost::filesystem2::basic_path<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, boost::filesystem2::path_traits> > > >::clone() const@Base" 1.1.0+dfsg
+ (c++|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)"non-virtual thunk to boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::filesystem2::basic_filesystem_error<boost::filesystem2::basic_path<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, boost::filesystem2::path_traits> > > >::rethrow() const@Base" 1.1.0+dfsg
+ (c++|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)"non-virtual thunk to boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::filesystem2::basic_filesystem_error<boost::filesystem2::basic_path<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, boost::filesystem2::path_traits> > > >::~clone_impl()@Base" 1.1.0+dfsg
  (c++)"non-virtual thunk to boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::io::bad_format_string> >::clone() const@Base" 1.1.0
  (c++)"non-virtual thunk to boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::io::bad_format_string> >::rethrow() const@Base" 1.1.0
  (c++)"non-virtual thunk to boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::io::bad_format_string> >::~clone_impl()@Base" 1.1.0
@@ -4309,7 +4278,7 @@ libCnoidBase.so.1.1 libcnoid1 #MINVER#
  (c++)"non-virtual thunk to boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<std::ios_base::failure> >::~clone_impl()@Base" 1.1.0
  (c++)"non-virtual thunk to boost::exception_detail::error_info_injector<boost::bad_any_cast>::~error_info_injector()@Base" 1.1.0
  (c++)"non-virtual thunk to boost::exception_detail::error_info_injector<boost::bad_function_call>::~error_info_injector()@Base" 1.1.0
- (c++|arch=!amd64)"non-virtual thunk to boost::exception_detail::error_info_injector<boost::filesystem2::basic_filesystem_error<boost::filesystem2::basic_path<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, boost::filesystem2::path_traits> > >::~error_info_injector()@Base" 1.1.0+dfsg
+ (c++|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)"non-virtual thunk to boost::exception_detail::error_info_injector<boost::filesystem2::basic_filesystem_error<boost::filesystem2::basic_path<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, boost::filesystem2::path_traits> > >::~error_info_injector()@Base" 1.1.0+dfsg
  (c++)"non-virtual thunk to boost::exception_detail::error_info_injector<boost::io::bad_format_string>::~error_info_injector()@Base" 1.1.0
  (c++)"non-virtual thunk to boost::exception_detail::error_info_injector<boost::io::too_few_args>::~error_info_injector()@Base" 1.1.0
  (c++)"non-virtual thunk to boost::exception_detail::error_info_injector<boost::io::too_many_args>::~error_info_injector()@Base" 1.1.0
@@ -4583,13 +4552,14 @@ libCnoidBody.so.1.1 libcnoid1 #MINVER#
  (optional=templinst|arch=!kfreebsd-amd64 !kfreebsd-i386)_ZN5Eigen8internal13trmv_selectorILi0EE3runILi2EKNS_5BlockIKNS_6MatrixIdLin1ELin1ELi0ELin1ELin1EEELin1ELin1ELb0ELb1EEENS4_INS5_IdLi6ELi1ELi0ELi6ELi1EEELin1ELi1ELb0ELb1EEENS5_IdLin1ELi1ELi0ELin1ELi1EEEEEvRKNS_17TriangularProductIXT_ELb1ET0_Lb0ET1_Lb1EEERT2_NSG_6ScalarE@Base 1.1.0
  (optional=templinst|arch=!kfreebsd-amd64 !kfreebsd-i386)_ZN5Eigen8internal13trmv_selectorILi0EE3runILi2EKNS_5BlockIKNS_6MatrixIdLin1ELin1ELi0ELin1ELin1EEELin1ELin1ELb0ELb1EEENS4_INS5_IdLin1ELi1ELi0ELin1ELi1EEELin1ELi1ELb0ELb1EEESA_EEvRKNS_17TriangularProductIXT_ELb1ET0_Lb0ET1_Lb1EEERT2_NSF_6ScalarE@Base 1.1.0
  (arch=!amd64 !kfreebsd-amd64|subst)_ZN5Eigen8internal14aligned_mallocE{size_t}@Base 1.1.0+dfsg
- (optional=templinst|arch=amd64)_ZN5Eigen8internal15assign_selectorINS_5BlockINS_6MatrixIdLi4ELi4ELi0ELi4ELi4EEELi3ELi3ELb0ELb1EEENS_17CoeffBasedProductIKNS2_IKS4_Li3ELi3ELb0ELb1EEES9_Li6EEELb1ELb0EE3runERS5_RKSA_@Base 1.1.0+dfsg
+ (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5Eigen8internal15assign_selectorINS_5BlockINS_6MatrixIdLi4ELi4ELi0ELi4ELi4EEELi3ELi3ELb0ELb1EEENS_17CoeffBasedProductIKNS2_IKS4_Li3ELi3ELb0ELb1EEES9_Li6EEELb1ELb0EE3runERS5_RKSA_@Base 1.1.0+dfsg
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5Eigen8internal15assign_selectorINS_5BlockINS_6MatrixIdLi6ELi1ELi0ELi6ELi1EEELin1ELi1ELb0ELb1EEENS_17TriangularProductILi2ELb1EKNS2_IKNS3_IdLi6ELi6ELi0ELi6ELi6EEELin1ELin1ELb0ELb1EEELb0ES5_Lb1EEELb1ELb0EE3runERS5_RKSB_@Base 1.1.0
  (optional=templinst|arch=armhf mipsel powerpc s390)_ZN5Eigen8internal15assign_selectorINS_6MatrixIdLi3ELi1ELi0ELi3ELi1EEENS_17CoeffBasedProductIRKNS2_IdLi3ELi3ELi0ELi3ELi3EEERKS3_Li6EEELb0ELb0EE3runERS3_RKSA_@Base 1.1.0+dfsg
- (optional=templinst|arch=kfreebsd-i386)_ZN5Eigen8internal15assign_selectorINS_6MatrixIdLi4ELi4ELi0ELi4ELi4EEES3_Lb0ELb0EE3runERS3_RKS3_@Base 1.1.0+dfsg
  (arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5Eigen8internal15queryCacheSizesERiS1_S1_@Base 1.1.0+dfsg
  (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5Eigen8internal16parallelize_gemmILb1ENS0_12gemm_functorIdiNS0_29general_matrix_matrix_productIidLi0ELb0EdLi1ELb0ELi0EEENS_6MatrixIdLin1ELin1ELi0ELin1ELin1EEENS_9TransposeIKS6_EES6_NS0_19gemm_blocking_spaceILi0EddLin1ELin1ELin1ELi1ELb0EEEEEiEEvRKT0_T1_SG_b@Base 1.1.0+dfsg
  (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5Eigen8internal16parallelize_gemmILb1ENS0_12gemm_functorIdiNS0_29general_matrix_matrix_productIidLi1ELb0EdLi0ELb0ELi0EEENS_9TransposeIKNS_6MatrixIdLin1ELin1ELi0ELin1ELin1EEEEES7_S7_NS0_19gemm_blocking_spaceILi0EddLin1ELin1ELin1ELi1ELb0EEEEEiEEvRKT0_T1_SG_b@Base 1.1.0+dfsg
+ (optional=templinst|arch=i386)_ZN5Eigen8internal18product_coeff_implILi0ELi1ENS_5BlockIKNS_6MatrixIdLi4ELi4ELi0ELi4ELi4EEELi3ELi3ELb0ELb1EEENS2_IS5_Li3ELi1ELb0ELb1EEEdE3runEiiRKS6_RKS7_Rd@Base 1.1.0+dfsg
+ (optional=templinst|arch=kfreebsd-i386)_ZN5Eigen8internal18product_coeff_implILi0ELi1ENS_5BlockIKNS_6MatrixIdLi4ELi4ELi0ELi4ELi4EEELi3ELi3ELb0ELb1EEES6_dE3runEiiRKS6_S9_Rd@Base 1.1.0+dfsg
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386|subst)_ZN5Eigen8internal18product_coeff_implILi0ELi2ENS_5BlockIKNS_6MatrixIdLi4ELi4ELi0ELi4ELi4EEELi3ELi3ELb0ELb1EEENS2_IS5_Li3ELi1ELb0ELb1EEEdE3runE{ssize_t}{ssize_t}RKS6_RKS7_Rd@Base 1.1.0
  (optional=templinst|arch=i386 kfreebsd-i386)_ZN5Eigen8internal18product_coeff_implILi0ELi2ENS_5BlockIKNS_6MatrixIdLi4ELi4ELi0ELi4ELi4EEELi3ELi3ELb0ELb1EEENS3_IdLi3ELi3ELi0ELi3ELi3EEEdE3runEiiRKS6_RKS7_Rd@Base 1.1.0+dfsg
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386|subst)_ZN5Eigen8internal18product_coeff_implILi0ELi2ENS_5BlockIKNS_6MatrixIdLi4ELi4ELi0ELi4ELi4EEELi3ELi3ELb0ELb1EEES6_dE3runE{ssize_t}{ssize_t}RKS6_S9_Rd@Base 1.1.0
@@ -4646,11 +4616,10 @@ libCnoidBody.so.1.1 libcnoid1 #MINVER#
  (optional=templinst|arch=i386 kfreebsd-i386)_ZN5Eigen8internal40assign_LinearTraversal_CompleteUnrollingINS_17SelfCwiseBinaryOpINS0_17scalar_product_opIddEENS_6MatrixIdLi6ELi1ELi0ELi6ELi1EEENS_14CwiseNullaryOpINS0_18scalar_constant_opIdEES6_EEEESA_Li0ELi6EE3runERSB_RKSA_@Base 1.1.0+dfsg
  (optional=templinst|arch=i386 kfreebsd-i386)_ZN5Eigen8internal40assign_LinearTraversal_CompleteUnrollingINS_17SelfCwiseBinaryOpINS0_20scalar_difference_opIdEENS_6MatrixIdLi3ELi1ELi0ELi3ELi1EEES6_EES6_Li0ELi3EE3runERS7_RKS6_@Base 1.1.0+dfsg
  (optional=templinst|arch=i386)_ZN5Eigen8internal40assign_LinearTraversal_CompleteUnrollingINS_6MatrixIdLi3ELi1ELi0ELi3ELi1EEENS_13CwiseBinaryOpINS0_20scalar_difference_opIdEEKS3_KNS_12CwiseUnaryOpINS0_18scalar_multiple_opIdEES7_EEEELi0ELi3EE3runERS3_RKSD_@Base 1.1.0+dfsg
- (optional=templinst|arch=i386)_ZN5Eigen8internal40assign_LinearTraversal_CompleteUnrollingINS_6MatrixIdLi4ELi4ELi0ELi4ELi4EEES3_Li1ELi16EE3runERS3_RKS3_@Base 1.1.0+dfsg
+ (optional=templinst|arch=i386 kfreebsd-i386)_ZN5Eigen8internal40assign_LinearTraversal_CompleteUnrollingINS_6MatrixIdLi4ELi4ELi0ELi4ELi4EEES3_Li2ELi16EE3runERS3_RKS3_@Base 1.1.0+dfsg
  (optional=templinst|arch=i386)_ZN5Eigen8internal40assign_LinearTraversal_CompleteUnrollingINS_6MatrixIdLi6ELi6ELi0ELi6ELi6EEES3_Li12ELi36EE3runERS3_RKS3_@Base 1.1.0+dfsg
  (optional=templinst|arch=i386 kfreebsd-i386)_ZN5Eigen8internal40assign_LinearTraversal_CompleteUnrollingINS_6MatrixIdLi6ELi6ELi0ELi6ELi6EEES3_Li13ELi36EE3runERS3_RKS3_@Base 1.1.0+dfsg
- (optional=templinst|arch=i386 kfreebsd-amd64)_ZN5Eigen8internal41assign_DefaultTraversal_CompleteUnrollingINS_5BlockINS_6MatrixIdLi4ELi4ELi0ELi4ELi4EEELi3ELi3ELb0ELb1EEENS3_IdLi3ELi3ELi0ELi3ELi3EEELi0ELi9EE3runERS5_RKS6_@Base 1.1.0+dfsg
- (optional=templinst|arch=kfreebsd-i386)_ZN5Eigen8internal41assign_DefaultTraversal_CompleteUnrollingINS_5BlockINS_6MatrixIdLi4ELi4ELi0ELi4ELi4EEELi3ELi3ELb0ELb1EEENS3_IdLi3ELi3ELi0ELi3ELi3EEELi4ELi9EE3runERS5_RKS6_@Base 1.1.0
+ (optional=templinst|arch=i386 kfreebsd-i386)_ZN5Eigen8internal41assign_DefaultTraversal_CompleteUnrollingINS_5BlockINS_6MatrixIdLi4ELi4ELi0ELi4ELi4EEELi3ELi3ELb0ELb1EEENS3_IdLi3ELi3ELi0ELi3ELi3EEELi4ELi9EE3runERS5_RKS6_@Base 1.1.0
  (optional=templinst|arch=kfreebsd-i386)_ZN5Eigen8internal41assign_DefaultTraversal_CompleteUnrollingINS_5BlockINS_6MatrixIdLi6ELi6ELi0ELi6ELi6EEELi3ELi3ELb0ELb1EEENS3_IdLi3ELi3ELi0ELi3ELi3EEELi0ELi9EE3runERS5_RKS6_@Base 1.1.0+dfsg
  (optional=templinst|arch=i386)_ZN5Eigen8internal41assign_DefaultTraversal_CompleteUnrollingINS_5BlockINS_6MatrixIdLi6ELi6ELi0ELi6ELi6EEELi3ELi3ELb0ELb1EEENS3_IdLi3ELi3ELi0ELi3ELi3EEELi1ELi9EE3runERS5_RKS6_@Base 1.1.0+dfsg
  (optional=templinst|arch=kfreebsd-i386)_ZN5Eigen8internal41assign_DefaultTraversal_CompleteUnrollingINS_5BlockINS_6MatrixIdLi6ELi6ELi0ELi6ELi6EEELi3ELi3ELb0ELb1EEENS_9TransposeINS3_IdLi3ELi3ELi0ELi3ELi3EEEEELi0ELi9EE3runERS5_RKS8_@Base 1.1.0+dfsg
@@ -4663,20 +4632,18 @@ libCnoidBody.so.1.1 libcnoid1 #MINVER#
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5Eigen8internal41assign_DefaultTraversal_CompleteUnrollingINS_6MatrixIdLi3ELi1ELi0ELi3ELi1EEENS_17CoeffBasedProductIKNS_9TransposeINS_5BlockINS2_IdLi4ELi4ELi0ELi4ELi4EEELi3ELi3ELb0ELb1EEEEERKS3_Li6EEELi1ELi3EE3runERS3_RKSD_@Base 1.1.0
  (optional=templinst|arch=i386 kfreebsd-i386)_ZN5Eigen8internal41assign_DefaultTraversal_CompleteUnrollingINS_6MatrixIdLi3ELi1ELi0ELi3ELi1EEENS_17CoeffBasedProductIRKNS2_IdLi3ELi3ELi0ELi3ELi3EEERKS3_Li6EEELi0ELi3EE3runERS3_RKSA_@Base 1.1.0+dfsg
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5Eigen8internal41assign_DefaultTraversal_CompleteUnrollingINS_6MatrixIdLi3ELi1ELi0ELi3ELi1EEENS_17CoeffBasedProductIRKNS2_IdLi3ELi3ELi0ELi3ELi3EEERKS3_Li6EEELi1ELi3EE3runERS3_RKSA_@Base 1.1.0
- (optional=templinst|arch=i386)_ZN5Eigen8internal41assign_DefaultTraversal_CompleteUnrollingINS_6MatrixIdLi3ELi3ELi0ELi3ELi3EEENS_17CoeffBasedProductIKNS_5BlockIKNS2_IdLi4ELi4ELi0ELi4ELi4EEELi3ELi3ELb0ELb1EEERKS3_Li6EEELi3ELi9EE3runERS3_RKSC_@Base 1.1.0+dfsg
- (optional=templinst|arch=i386 kfreebsd-i386)_ZN5Eigen8internal41assign_DefaultTraversal_CompleteUnrollingINS_6MatrixIdLi3ELi3ELi0ELi3ELi3EEENS_17CoeffBasedProductIKNS_5BlockIKNS2_IdLi4ELi4ELi0ELi4ELi4EEELi3ELi3ELb0ELb1EEERKS3_Li6EEELi5ELi9EE3runERS3_RKSC_@Base 1.1.0+dfsg
  (optional=templinst|arch=i386 kfreebsd-i386)_ZN5Eigen8internal41assign_DefaultTraversal_CompleteUnrollingINS_6MatrixIdLi3ELi3ELi0ELi3ELi3EEENS_17CoeffBasedProductIKNS_5BlockIKNS2_IdLi4ELi4ELi0ELi4ELi4EEELi3ELi3ELb0ELb1EEERKS3_Li6EEELi7ELi9EE3runERS3_RKSC_@Base 1.1.0+dfsg
- (optional=templinst|arch=amd64 i386)_ZN5Eigen8internal41assign_DefaultTraversal_CompleteUnrollingINS_6MatrixIdLi3ELi3ELi0ELi3ELi3EEENS_17CoeffBasedProductIKNS_5BlockIKNS2_IdLi4ELi4ELi0ELi4ELi4EEELi3ELi3ELb0ELb1EEES9_Li6EEELi1ELi9EE3runERS3_RKSA_@Base 1.1.0+dfsg
- (optional=templinst|arch=kfreebsd-i386)_ZN5Eigen8internal41assign_DefaultTraversal_CompleteUnrollingINS_6MatrixIdLi3ELi3ELi0ELi3ELi3EEENS_17CoeffBasedProductIKNS_5BlockIKNS2_IdLi4ELi4ELi0ELi4ELi4EEELi3ELi3ELb0ELb1EEES9_Li6EEELi2ELi9EE3runERS3_RKSA_@Base 1.1.0
- (optional=templinst|arch=armhf i386 kfreebsd-amd64 mipsel powerpc)_ZN5Eigen8internal41assign_DefaultTraversal_CompleteUnrollingINS_6MatrixIdLi3ELi3ELi0ELi3ELi3EEENS_17CoeffBasedProductIKNS_5BlockIKNS2_IdLi4ELi4ELi0ELi4ELi4EEELi3ELi3ELb0ELb1EEES9_Li6EEELi3ELi9EE3runERS3_RKSA_@Base 1.1.0+dfsg
- (optional=templinst|arch=amd64 kfreebsd-i386)_ZN5Eigen8internal41assign_DefaultTraversal_CompleteUnrollingINS_6MatrixIdLi3ELi3ELi0ELi3ELi3EEENS_17CoeffBasedProductIKNS_5BlockIKNS2_IdLi4ELi4ELi0ELi4ELi4EEELi3ELi3ELb0ELb1EEES9_Li6EEELi4ELi9EE3runERS3_RKSA_@Base 1.1.0+dfsg
- (optional=templinst|arch=i386 kfreebsd-amd64)_ZN5Eigen8internal41assign_DefaultTraversal_CompleteUnrollingINS_6MatrixIdLi3ELi3ELi0ELi3ELi3EEENS_17CoeffBasedProductIKNS_5BlockIKNS2_IdLi4ELi4ELi0ELi4ELi4EEELi3ELi3ELb0ELb1EEES9_Li6EEELi5ELi9EE3runERS3_RKSA_@Base 1.1.0
+ (optional=templinst|arch=i386)_ZN5Eigen8internal41assign_DefaultTraversal_CompleteUnrollingINS_6MatrixIdLi3ELi3ELi0ELi3ELi3EEENS_17CoeffBasedProductIKNS_5BlockIKNS2_IdLi4ELi4ELi0ELi4ELi4EEELi3ELi3ELb0ELb1EEES9_Li6EEELi0ELi9EE3runERS3_RKSA_@Base 1.1.0+dfsg
+ (optional=templinst|arch=amd64 kfreebsd-amd64 kfreebsd-i386)_ZN5Eigen8internal41assign_DefaultTraversal_CompleteUnrollingINS_6MatrixIdLi3ELi3ELi0ELi3ELi3EEENS_17CoeffBasedProductIKNS_5BlockIKNS2_IdLi4ELi4ELi0ELi4ELi4EEELi3ELi3ELb0ELb1EEES9_Li6EEELi1ELi9EE3runERS3_RKSA_@Base 1.1.0+dfsg
+ (optional=templinst|arch=armhf i386 mipsel powerpc)_ZN5Eigen8internal41assign_DefaultTraversal_CompleteUnrollingINS_6MatrixIdLi3ELi3ELi0ELi3ELi3EEENS_17CoeffBasedProductIKNS_5BlockIKNS2_IdLi4ELi4ELi0ELi4ELi4EEELi3ELi3ELb0ELb1EEES9_Li6EEELi3ELi9EE3runERS3_RKSA_@Base 1.1.0+dfsg
+ (optional=templinst|arch=amd64 kfreebsd-amd64 kfreebsd-i386)_ZN5Eigen8internal41assign_DefaultTraversal_CompleteUnrollingINS_6MatrixIdLi3ELi3ELi0ELi3ELi3EEENS_17CoeffBasedProductIKNS_5BlockIKNS2_IdLi4ELi4ELi0ELi4ELi4EEELi3ELi3ELb0ELb1EEES9_Li6EEELi4ELi9EE3runERS3_RKSA_@Base 1.1.0+dfsg
+ (optional=templinst|arch=i386)_ZN5Eigen8internal41assign_DefaultTraversal_CompleteUnrollingINS_6MatrixIdLi3ELi3ELi0ELi3ELi3EEENS_17CoeffBasedProductIKNS_5BlockIKNS2_IdLi4ELi4ELi0ELi4ELi4EEELi3ELi3ELb0ELb1EEES9_Li6EEELi5ELi9EE3runERS3_RKSA_@Base 1.1.0
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5Eigen8internal41assign_DefaultTraversal_CompleteUnrollingINS_6MatrixIdLi3ELi3ELi0ELi3ELi3EEENS_17CoeffBasedProductIKNS_5BlockIKNS2_IdLi4ELi4ELi0ELi4ELi4EEELi3ELi3ELb0ELb1EEES9_Li6EEELi7ELi9EE3runERS3_RKSA_@Base 1.1.0
  (optional=templinst|arch=i386 kfreebsd-i386)_ZN5Eigen8internal41assign_DefaultTraversal_CompleteUnrollingINS_6MatrixIdLi3ELi3ELi0ELi3ELi3EEENS_17CoeffBasedProductIRKS3_KNS_9TransposeIS3_EELi6EEELi0ELi9EE3runERS3_RKSA_@Base 1.1.0+dfsg
  (optional=templinst|arch=i386 kfreebsd-i386)_ZN5Eigen8internal41assign_DefaultTraversal_CompleteUnrollingINS_6MatrixIdLi3ELi3ELi0ELi3ELi3EEENS_17CoeffBasedProductIRKS3_KNS_9TransposeIS3_EELi6EEELi1ELi9EE3runERS3_RKSA_@Base 1.1.0
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5Eigen8internal41assign_DefaultTraversal_CompleteUnrollingINS_6MatrixIdLi3ELi3ELi0ELi3ELi3EEENS_17CoeffBasedProductIRKS3_KNS_9TransposeIS3_EELi6EEELi2ELi9EE3runERS3_RKSA_@Base 1.1.0+dfsg
  (optional=templinst|arch=i386 kfreebsd-i386 sparc)_ZN5Eigen8internal41assign_DefaultTraversal_CompleteUnrollingINS_6MatrixIdLi3ELi3ELi0ELi3ELi3EEENS_17CoeffBasedProductIRKS3_KNS_9TransposeIS3_EELi6EEELi3ELi9EE3runERS3_RKSA_@Base 1.1.0+dfsg
- (optional=templinst|arch=amd64 i386 kfreebsd-i386)_ZN5Eigen8internal41assign_DefaultTraversal_CompleteUnrollingINS_6MatrixIdLi3ELi3ELi0ELi3ELi3EEENS_17CoeffBasedProductIRKS3_KNS_9TransposeIS3_EELi6EEELi4ELi9EE3runERS3_RKSA_@Base 1.1.0+dfsg
+ (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5Eigen8internal41assign_DefaultTraversal_CompleteUnrollingINS_6MatrixIdLi3ELi3ELi0ELi3ELi3EEENS_17CoeffBasedProductIRKS3_KNS_9TransposeIS3_EELi6EEELi4ELi9EE3runERS3_RKSA_@Base 1.1.0+dfsg
  (optional=templinst|arch=i386 kfreebsd-i386)_ZN5Eigen8internal41assign_DefaultTraversal_CompleteUnrollingINS_6MatrixIdLi3ELi3ELi0ELi3ELi3EEENS_17CoeffBasedProductIRKS3_KNS_9TransposeIS3_EELi6EEELi5ELi9EE3runERS3_RKSA_@Base 1.1.0
  (optional=templinst|arch=i386 kfreebsd-i386)_ZN5Eigen8internal41assign_DefaultTraversal_CompleteUnrollingINS_6MatrixIdLi3ELi3ELi0ELi3ELi3EEENS_17CoeffBasedProductIRKS3_KNS_9TransposeIS3_EELi6EEELi6ELi9EE3runERS3_RKSA_@Base 1.1.0+dfsg
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5Eigen8internal41assign_DefaultTraversal_CompleteUnrollingINS_6MatrixIdLi3ELi3ELi0ELi3ELi3EEENS_17CoeffBasedProductIRKS3_KNS_9TransposeIS3_EELi6EEELi7ELi9EE3runERS3_RKSA_@Base 1.1.0
@@ -4684,9 +4651,9 @@ libCnoidBody.so.1.1 libcnoid1 #MINVER#
  (optional=templinst|arch=i386 kfreebsd-amd64 kfreebsd-i386)_ZN5Eigen8internal41assign_DefaultTraversal_CompleteUnrollingINS_6MatrixIdLi3ELi3ELi0ELi3ELi3EEENS_17CoeffBasedProductIRKS3_S6_Li6EEELi1ELi9EE3runERS3_RKS7_@Base 1.1.0
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5Eigen8internal41assign_DefaultTraversal_CompleteUnrollingINS_6MatrixIdLi3ELi3ELi0ELi3ELi3EEENS_17CoeffBasedProductIRKS3_S6_Li6EEELi2ELi9EE3runERS3_RKS7_@Base 1.1.0+dfsg
  (optional=templinst|arch=!amd64 !kfreebsd-amd64)_ZN5Eigen8internal41assign_DefaultTraversal_CompleteUnrollingINS_6MatrixIdLi3ELi3ELi0ELi3ELi3EEENS_17CoeffBasedProductIRKS3_S6_Li6EEELi3ELi9EE3runERS3_RKS7_@Base 1.1.0+dfsg
- (optional=templinst|arch=i386 kfreebsd-amd64 kfreebsd-i386)_ZN5Eigen8internal41assign_DefaultTraversal_CompleteUnrollingINS_6MatrixIdLi3ELi3ELi0ELi3ELi3EEENS_17CoeffBasedProductIRKS3_S6_Li6EEELi4ELi9EE3runERS3_RKS7_@Base 1.1.0
- (optional=templinst|arch=amd64 i386 kfreebsd-i386)_ZN5Eigen8internal41assign_DefaultTraversal_CompleteUnrollingINS_6MatrixIdLi3ELi3ELi0ELi3ELi3EEENS_17CoeffBasedProductIRKS3_S6_Li6EEELi5ELi9EE3runERS3_RKS7_@Base 1.1.0+dfsg
- (optional=templinst|arch=i386)_ZN5Eigen8internal41assign_DefaultTraversal_CompleteUnrollingINS_6MatrixIdLi3ELi3ELi0ELi3ELi3EEENS_17CoeffBasedProductIRKS3_S6_Li6EEELi6ELi9EE3runERS3_RKS7_@Base 1.1.0+dfsg
+ (optional=templinst|arch=i386 kfreebsd-i386)_ZN5Eigen8internal41assign_DefaultTraversal_CompleteUnrollingINS_6MatrixIdLi3ELi3ELi0ELi3ELi3EEENS_17CoeffBasedProductIRKS3_S6_Li6EEELi4ELi9EE3runERS3_RKS7_@Base 1.1.0
+ (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5Eigen8internal41assign_DefaultTraversal_CompleteUnrollingINS_6MatrixIdLi3ELi3ELi0ELi3ELi3EEENS_17CoeffBasedProductIRKS3_S6_Li6EEELi5ELi9EE3runERS3_RKS7_@Base 1.1.0+dfsg
+ (optional=templinst|arch=i386 kfreebsd-i386)_ZN5Eigen8internal41assign_DefaultTraversal_CompleteUnrollingINS_6MatrixIdLi3ELi3ELi0ELi3ELi3EEENS_17CoeffBasedProductIRKS3_S6_Li6EEELi6ELi9EE3runERS3_RKS7_@Base 1.1.0+dfsg
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5Eigen8internal41assign_DefaultTraversal_CompleteUnrollingINS_6MatrixIdLi3ELi3ELi0ELi3ELi3EEENS_17CoeffBasedProductIRKS3_S6_Li6EEELi7ELi9EE3runERS3_RKS7_@Base 1.1.0
  (optional=templinst|arch=armhf i386 kfreebsd-i386 mipsel powerpc s390)_ZN5Eigen9AngleAxisIdEC1ERKS1_@Base 1.1.0+dfsg
  (optional=templinst|arch=armhf i386 kfreebsd-i386 mipsel powerpc s390)_ZN5Eigen9AngleAxisIdEC2ERKS1_@Base 1.1.0+dfsg
@@ -4726,59 +4693,36 @@ libCnoidBody.so.1.1 libcnoid1 #MINVER#
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost10shared_ptrIN5cnoid17InverseKinematicsEED2Ev@Base 1.1.0
  (optional=templinst)_ZN5boost10shared_ptrIN5cnoid9JointPathEED1Ev@Base 1.1.0
  (optional=templinst)_ZN5boost10shared_ptrIN5cnoid9JointPathEED2Ev@Base 1.1.0
- (optional=templinst|arch=i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost10shared_ptrINS_11filesystem222basic_filesystem_errorINS1_10basic_pathISsNS1_11path_traitsEEEE5m_impEE5resetEv@Base 1.1.0
- (optional=templinst|arch=i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost10shared_ptrINS_11filesystem222basic_filesystem_errorINS1_10basic_pathISsNS1_11path_traitsEEEE5m_impEED1Ev@Base 1.1.0
- (optional=templinst|arch=i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost10shared_ptrINS_11filesystem222basic_filesystem_errorINS1_10basic_pathISsNS1_11path_traitsEEEE5m_impEED2Ev@Base 1.1.0
- (optional=templinst|arch=i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost10shared_ptrINS_11filesystem26detail11dir_itr_impINS1_10basic_pathISsNS1_11path_traitsEEEEEED1Ev@Base 1.1.0
- (optional=templinst|arch=i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost10shared_ptrINS_11filesystem26detail11dir_itr_impINS1_10basic_pathISsNS1_11path_traitsEEEEEED2Ev@Base 1.1.0
- (optional=templinst|arch=amd64)_ZN5boost10shared_ptrINS_11filesystem36detail11dir_itr_impEED1Ev@Base 1.1.0+dfsg
- (optional=templinst|arch=amd64)_ZN5boost10shared_ptrINS_11filesystem36detail11dir_itr_impEED2Ev@Base 1.1.0+dfsg
+ (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost10shared_ptrINS_11filesystem36detail11dir_itr_impEED1Ev@Base 1.1.0+dfsg
+ (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost10shared_ptrINS_11filesystem36detail11dir_itr_impEED2Ev@Base 1.1.0+dfsg
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost10shared_ptrIvED1Ev@Base 1.1.0
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost10shared_ptrIvED2Ev@Base 1.1.0
- (optional=templinst|arch=i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost11filesystem210basic_pathISsNS0_11path_traitsEE28m_append_separator_if_neededEv@Base 1.1.0
- (optional=templinst|arch=i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost11filesystem210basic_pathISsNS0_11path_traitsEE8iteratorD1Ev@Base 1.1.0
- (optional=templinst|arch=i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost11filesystem210basic_pathISsNS0_11path_traitsEE8iteratorD2Ev@Base 1.1.0
- (optional=templinst|arch=i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost11filesystem210basic_pathISsNS0_11path_traitsEEC1ERKSs@Base 1.1.0
- (optional=templinst|arch=i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost11filesystem210basic_pathISsNS0_11path_traitsEEC2ERKSs@Base 1.1.0
- (optional=templinst|arch=i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost11filesystem210basic_pathISsNS0_11path_traitsEED1Ev@Base 1.1.0
- (optional=templinst|arch=i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost11filesystem210basic_pathISsNS0_11path_traitsEED2Ev@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost11filesystem210basic_pathISsNS0_11path_traitsEEdVEPKc@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost11filesystem212is_directoryINS0_10basic_pathISsNS0_11path_traitsEEEEENS_9enable_ifINS0_13is_basic_pathIT_EEbE4typeERKS7_@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost11filesystem216change_extensionINS0_10basic_pathISsNS0_11path_traitsEEEEENS_9enable_ifINS0_13is_basic_pathIT_EES7_E4typeERKS7_RKNS7_11string_typeE@Base 1.1.0
- (optional=templinst|arch=i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost11filesystem221basic_directory_entryINS0_10basic_pathISsNS0_11path_traitsEEEED1Ev@Base 1.1.0
- (optional=templinst|arch=i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost11filesystem221basic_directory_entryINS0_10basic_pathISsNS0_11path_traitsEEEED2Ev@Base 1.1.0
- (optional=templinst|arch=i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost11filesystem222basic_filesystem_errorINS0_10basic_pathISsNS0_11path_traitsEEEE5m_impD1Ev@Base 1.1.0
- (optional=templinst|arch=i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost11filesystem222basic_filesystem_errorINS0_10basic_pathISsNS0_11path_traitsEEEE5m_impD2Ev@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost11filesystem222basic_filesystem_errorINS0_10basic_pathISsNS0_11path_traitsEEEEC1ERKSsRKS4_NS_6system10error_codeE@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost11filesystem222basic_filesystem_errorINS0_10basic_pathISsNS0_11path_traitsEEEEC2ERKSsRKS4_NS_6system10error_codeE@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost11filesystem222basic_filesystem_errorINS0_10basic_pathISsNS0_11path_traitsEEEED0Ev@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost11filesystem222basic_filesystem_errorINS0_10basic_pathISsNS0_11path_traitsEEEED1Ev@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost11filesystem222basic_filesystem_errorINS0_10basic_pathISsNS0_11path_traitsEEEED2Ev@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost11filesystem224basic_directory_iteratorINS0_10basic_pathISsNS0_11path_traitsEEEE6m_initERKS4_@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost11filesystem224basic_directory_iteratorINS0_10basic_pathISsNS0_11path_traitsEEEE9incrementEv@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost11filesystem224basic_directory_iteratorINS0_10basic_pathISsNS0_11path_traitsEEEEC1ERKS4_@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost11filesystem224basic_directory_iteratorINS0_10basic_pathISsNS0_11path_traitsEEEEC2ERKS4_@Base 1.1.0
- (optional=templinst|arch=i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost11filesystem224basic_directory_iteratorINS0_10basic_pathISsNS0_11path_traitsEEEED1Ev@Base 1.1.0
- (optional=templinst|arch=i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost11filesystem224basic_directory_iteratorINS0_10basic_pathISsNS0_11path_traitsEEEED2Ev@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost11filesystem26detail12filename_posISsNS0_11path_traitsEEENT_9size_typeERKS4_S5_@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost11filesystem26detail13first_elementISsNS0_11path_traitsEEEvRKT_RNS4_9size_typeES8_S7_@Base 1.1.0
- (optional=templinst|arch=!amd64 !mipsel !powerpc)_ZN5boost11filesystem26detail17is_non_root_slashISsNS0_11path_traitsEEEbRKT_NS4_9size_typeE@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost11filesystem26detail20root_directory_startISsNS0_11path_traitsEEENT_9size_typeERKS4_S5_@Base 1.1.0
- (arch=i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost11filesystem26detail4whatEPKcRKNS0_10basic_pathISsNS0_11path_traitsEEES8_RSs@Base 1.1.0+dfsg
- (optional=templinst|arch=!amd64)_ZN5boost11filesystem26existsINS0_10basic_pathISsNS0_11path_traitsEEEEENS_9enable_ifINS0_13is_basic_pathIT_EEbE4typeERKS7_@Base 1.1.0
- (optional=templinst|arch=i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost11filesystem28basenameINS0_10basic_pathISsNS0_11path_traitsEEEEENS_9enable_ifINS0_13is_basic_pathIT_EENS7_11string_typeEE4typeERKS7_@Base 1.1.0
- (optional=templinst|arch=i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost11filesystem29extensionINS0_10basic_pathISsNS0_11path_traitsEEEEENS_9enable_ifINS0_13is_basic_pathIT_EENS7_11string_typeEE4typeERKS7_@Base 1.1.0
- (optional=templinst|arch=i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost11filesystem2dvISsNS0_11path_traitsEEENS0_10basic_pathIT_T0_EERKS6_RKS4_@Base 1.1.0
- (optional=templinst|arch=i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost11filesystem2dvISsNS0_11path_traitsEEENS0_10basic_pathIT_T0_EERKS6_S8_@Base 1.1.0
- (arch=amd64)_ZN5boost11filesystem315directory_entryD1Ev@Base 1.1.0+dfsg
- (arch=amd64)_ZN5boost11filesystem315directory_entryD2Ev@Base 1.1.0+dfsg
- (arch=amd64)_ZN5boost11filesystem316change_extensionERKNS0_4pathES3_@Base 1.1.0+dfsg
- (arch=amd64)_ZN5boost11filesystem318directory_iteratorD1Ev@Base 1.1.0+dfsg
- (arch=amd64)_ZN5boost11filesystem318directory_iteratorD2Ev@Base 1.1.0+dfsg
- (arch=amd64)_ZN5boost11filesystem34pathD1Ev@Base 1.1.0+dfsg
- (arch=amd64)_ZN5boost11filesystem34pathD2Ev@Base 1.1.0+dfsg
- (arch=amd64)_ZN5boost11filesystem39extensionERKNS0_4pathE@Base 1.1.0+dfsg
- (arch=amd64)_ZN5boost11filesystem3dvERKNS0_4pathES3_@Base 1.1.0+dfsg
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost11filesystem210basic_pathISsNS0_11path_traitsEEdVEPKc@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost11filesystem212is_directoryINS0_10basic_pathISsNS0_11path_traitsEEEEENS_9enable_ifINS0_13is_basic_pathIT_EEbE4typeERKS7_@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost11filesystem216change_extensionINS0_10basic_pathISsNS0_11path_traitsEEEEENS_9enable_ifINS0_13is_basic_pathIT_EES7_E4typeERKS7_RKNS7_11string_typeE@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost11filesystem222basic_filesystem_errorINS0_10basic_pathISsNS0_11path_traitsEEEEC1ERKSsRKS4_NS_6system10error_codeE@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost11filesystem222basic_filesystem_errorINS0_10basic_pathISsNS0_11path_traitsEEEEC2ERKSsRKS4_NS_6system10error_codeE@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost11filesystem222basic_filesystem_errorINS0_10basic_pathISsNS0_11path_traitsEEEED0Ev@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost11filesystem222basic_filesystem_errorINS0_10basic_pathISsNS0_11path_traitsEEEED1Ev@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost11filesystem222basic_filesystem_errorINS0_10basic_pathISsNS0_11path_traitsEEEED2Ev@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost11filesystem224basic_directory_iteratorINS0_10basic_pathISsNS0_11path_traitsEEEE6m_initERKS4_@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost11filesystem224basic_directory_iteratorINS0_10basic_pathISsNS0_11path_traitsEEEE9incrementEv@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost11filesystem224basic_directory_iteratorINS0_10basic_pathISsNS0_11path_traitsEEEEC1ERKS4_@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost11filesystem224basic_directory_iteratorINS0_10basic_pathISsNS0_11path_traitsEEEEC2ERKS4_@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost11filesystem26detail12filename_posISsNS0_11path_traitsEEENT_9size_typeERKS4_S5_@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost11filesystem26detail13first_elementISsNS0_11path_traitsEEEvRKT_RNS4_9size_typeES8_S7_@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mipsel !powerpc)_ZN5boost11filesystem26detail17is_non_root_slashISsNS0_11path_traitsEEEbRKT_NS4_9size_typeE@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost11filesystem26detail20root_directory_startISsNS0_11path_traitsEEENT_9size_typeERKS4_S5_@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost11filesystem26existsINS0_10basic_pathISsNS0_11path_traitsEEEEENS_9enable_ifINS0_13is_basic_pathIT_EEbE4typeERKS7_@Base 1.1.0
+ (arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost11filesystem315directory_entryD1Ev@Base 1.1.0+dfsg
+ (arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost11filesystem315directory_entryD2Ev@Base 1.1.0+dfsg
+ (arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost11filesystem316change_extensionERKNS0_4pathES3_@Base 1.1.0+dfsg
+ (arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost11filesystem318directory_iteratorD1Ev@Base 1.1.0+dfsg
+ (arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost11filesystem318directory_iteratorD2Ev@Base 1.1.0+dfsg
+ (arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost11filesystem34pathD1Ev@Base 1.1.0+dfsg
+ (arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost11filesystem34pathD2Ev@Base 1.1.0+dfsg
+ (arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost11filesystem39extensionERKNS0_4pathE@Base 1.1.0+dfsg
+ (arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost11filesystem3dvERKNS0_4pathES3_@Base 1.1.0+dfsg
  (optional=templinst|subst)_ZN5boost12basic_formatIcSt11char_traitsIcESaIcEE18make_or_reuse_dataE{size_t}@Base 1.1.0
  (optional=templinst)_ZN5boost12basic_formatIcSt11char_traitsIcESaIcEE5clearEv@Base 1.1.0
  (optional=templinst)_ZN5boost12basic_formatIcSt11char_traitsIcESaIcEE5parseERKSs@Base 1.1.0
@@ -4788,7 +4732,7 @@ libCnoidBody.so.1.1 libcnoid1 #MINVER#
  (optional=templinst)_ZN5boost12basic_formatIcSt11char_traitsIcESaIcEED2Ev@Base 1.1.0
  (optional=templinst)_ZN5boost13intrusive_ptrIN5cnoid11ColdetModelEED1Ev@Base 1.1.0
  (optional=templinst)_ZN5boost13intrusive_ptrIN5cnoid11ColdetModelEED2Ev@Base 1.1.0
- (optional=templinst|arch=amd64 kfreebsd-amd64)_ZN5boost13intrusive_ptrIN5cnoid11ColdetModelEEaSERKS3_@Base 1.1.0
+ (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost13intrusive_ptrIN5cnoid11ColdetModelEEaSERKS3_@Base 1.1.0
  (optional=templinst)_ZN5boost13intrusive_ptrIN5cnoid11YamlMappingEED1Ev@Base 1.1.0
  (optional=templinst)_ZN5boost13intrusive_ptrIN5cnoid11YamlMappingEED2Ev@Base 1.1.0
  (optional=templinst)_ZN5boost13intrusive_ptrIN5cnoid11YamlMappingEEaSEPS2_@Base 1.1.0
@@ -4812,9 +4756,9 @@ libCnoidBody.so.1.1 libcnoid1 #MINVER#
  (optional=templinst)_ZN5boost14char_separatorIcSt11char_traitsIcEED1Ev@Base 1.1.0
  (optional=templinst)_ZN5boost14char_separatorIcSt11char_traitsIcEED2Ev@Base 1.1.0
  (optional=templinst)_ZN5boost14checked_deleteIN5cnoid12JointNodeSetEEEvPT_@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost14checked_deleteINS_11filesystem222basic_filesystem_errorINS1_10basic_pathISsNS1_11path_traitsEEEE5m_impEEEvPT_@Base 1.1.0
- (optional=templinst|arch=!amd64 !sparc)_ZN5boost14checked_deleteINS_11filesystem26detail11dir_itr_impINS1_10basic_pathISsNS1_11path_traitsEEEEEEEvPT_@Base 1.1.0
- (optional=templinst|arch=amd64)_ZN5boost14checked_deleteINS_11filesystem36detail11dir_itr_impEEEvPT_@Base 1.1.0+dfsg
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost14checked_deleteINS_11filesystem222basic_filesystem_errorINS1_10basic_pathISsNS1_11path_traitsEEEE5m_impEEEvPT_@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc)_ZN5boost14checked_deleteINS_11filesystem26detail11dir_itr_impINS1_10basic_pathISsNS1_11path_traitsEEEEEEEvPT_@Base 1.1.0
+ (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost14checked_deleteINS_11filesystem36detail11dir_itr_impEEEvPT_@Base 1.1.0+dfsg
  (optional=templinst)_ZN5boost14checked_deleteINS_7signals6detail9slot_base6data_tEEEvPT_@Base 1.1.0
  (optional=templinst)_ZN5boost14token_iteratorINS_14char_separatorIcSt11char_traitsIcEEEN9__gnu_cxx17__normal_iteratorIPKcSsEESsED1Ev@Base 1.1.0
  (optional=templinst)_ZN5boost14token_iteratorINS_14char_separatorIcSt11char_traitsIcEEEN9__gnu_cxx17__normal_iteratorIPKcSsEESsED2Ev@Base 1.1.0
@@ -4887,6 +4831,7 @@ libCnoidBody.so.1.1 libcnoid1 #MINVER#
  _ZN5boost2io17bad_format_stringD1Ev@Base 1.1.0
  _ZN5boost2io17bad_format_stringD2Ev@Base 1.1.0
  (optional=templinst)_ZN5boost2io18basic_altstringbufIcSt11char_traitsIcESaIcEE12clear_bufferEv@Base 1.1.0
+ (optional=templinst|arch=i386 kfreebsd-i386)_ZN5boost2io18basic_altstringbufIcSt11char_traitsIcESaIcEE7deallocEv@Base 1.1.0+dfsg
  (optional=templinst|subst)_ZN5boost2io18basic_altstringbufIcSt11char_traitsIcESaIcEE7seekoffE{int64_t}St12_Ios_SeekdirSt13_Ios_Openmode@Base 1.1.0
  (optional=templinst)_ZN5boost2io18basic_altstringbufIcSt11char_traitsIcESaIcEE7seekposESt4fposI11__mbstate_tESt13_Ios_Openmode@Base 1.1.0
  (optional=templinst)_ZN5boost2io18basic_altstringbufIcSt11char_traitsIcESaIcEE8overflowEi@Base 1.1.0
@@ -5025,21 +4970,21 @@ libCnoidBody.so.1.1 libcnoid1 #MINVER#
  (optional=templinst)_ZN5boost6detail17sp_counted_impl_pIN5cnoid9JointPathEED0Ev@Base 1.1.0
  (optional=templinst)_ZN5boost6detail17sp_counted_impl_pIN5cnoid9JointPathEED1Ev@Base 1.1.0
  (optional=templinst)_ZN5boost6detail17sp_counted_impl_pIN5cnoid9JointPathEED2Ev@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost6detail17sp_counted_impl_pINS_11filesystem222basic_filesystem_errorINS2_10basic_pathISsNS2_11path_traitsEEEE5m_impEE11get_deleterERKSt9type_info@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost6detail17sp_counted_impl_pINS_11filesystem222basic_filesystem_errorINS2_10basic_pathISsNS2_11path_traitsEEEE5m_impEE7disposeEv@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost6detail17sp_counted_impl_pINS_11filesystem222basic_filesystem_errorINS2_10basic_pathISsNS2_11path_traitsEEEE5m_impEED0Ev@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost6detail17sp_counted_impl_pINS_11filesystem222basic_filesystem_errorINS2_10basic_pathISsNS2_11path_traitsEEEE5m_impEED1Ev@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost6detail17sp_counted_impl_pINS_11filesystem222basic_filesystem_errorINS2_10basic_pathISsNS2_11path_traitsEEEE5m_impEED2Ev@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost6detail17sp_counted_impl_pINS_11filesystem26detail11dir_itr_impINS2_10basic_pathISsNS2_11path_traitsEEEEEE11get_deleterERKSt9type_info@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost6detail17sp_counted_impl_pINS_11filesystem26detail11dir_itr_impINS2_10basic_pathISsNS2_11path_traitsEEEEEE7disposeEv@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost6detail17sp_counted_impl_pINS_11filesystem26detail11dir_itr_impINS2_10basic_pathISsNS2_11path_traitsEEEEEED0Ev@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost6detail17sp_counted_impl_pINS_11filesystem26detail11dir_itr_impINS2_10basic_pathISsNS2_11path_traitsEEEEEED1Ev@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost6detail17sp_counted_impl_pINS_11filesystem26detail11dir_itr_impINS2_10basic_pathISsNS2_11path_traitsEEEEEED2Ev@Base 1.1.0
- (optional=templinst|arch=amd64)_ZN5boost6detail17sp_counted_impl_pINS_11filesystem36detail11dir_itr_impEE11get_deleterERKSt9type_info@Base 1.1.0+dfsg
- (optional=templinst|arch=amd64)_ZN5boost6detail17sp_counted_impl_pINS_11filesystem36detail11dir_itr_impEE7disposeEv@Base 1.1.0+dfsg
- (optional=templinst|arch=amd64)_ZN5boost6detail17sp_counted_impl_pINS_11filesystem36detail11dir_itr_impEED0Ev@Base 1.1.0+dfsg
- (optional=templinst|arch=amd64)_ZN5boost6detail17sp_counted_impl_pINS_11filesystem36detail11dir_itr_impEED1Ev@Base 1.1.0+dfsg
- (optional=templinst|arch=amd64)_ZN5boost6detail17sp_counted_impl_pINS_11filesystem36detail11dir_itr_impEED2Ev@Base 1.1.0+dfsg
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost6detail17sp_counted_impl_pINS_11filesystem222basic_filesystem_errorINS2_10basic_pathISsNS2_11path_traitsEEEE5m_impEE11get_deleterERKSt9type_info@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost6detail17sp_counted_impl_pINS_11filesystem222basic_filesystem_errorINS2_10basic_pathISsNS2_11path_traitsEEEE5m_impEE7disposeEv@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost6detail17sp_counted_impl_pINS_11filesystem222basic_filesystem_errorINS2_10basic_pathISsNS2_11path_traitsEEEE5m_impEED0Ev@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost6detail17sp_counted_impl_pINS_11filesystem222basic_filesystem_errorINS2_10basic_pathISsNS2_11path_traitsEEEE5m_impEED1Ev@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost6detail17sp_counted_impl_pINS_11filesystem222basic_filesystem_errorINS2_10basic_pathISsNS2_11path_traitsEEEE5m_impEED2Ev@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost6detail17sp_counted_impl_pINS_11filesystem26detail11dir_itr_impINS2_10basic_pathISsNS2_11path_traitsEEEEEE11get_deleterERKSt9type_info@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost6detail17sp_counted_impl_pINS_11filesystem26detail11dir_itr_impINS2_10basic_pathISsNS2_11path_traitsEEEEEE7disposeEv@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost6detail17sp_counted_impl_pINS_11filesystem26detail11dir_itr_impINS2_10basic_pathISsNS2_11path_traitsEEEEEED0Ev@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost6detail17sp_counted_impl_pINS_11filesystem26detail11dir_itr_impINS2_10basic_pathISsNS2_11path_traitsEEEEEED1Ev@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost6detail17sp_counted_impl_pINS_11filesystem26detail11dir_itr_impINS2_10basic_pathISsNS2_11path_traitsEEEEEED2Ev@Base 1.1.0
+ (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost6detail17sp_counted_impl_pINS_11filesystem36detail11dir_itr_impEE11get_deleterERKSt9type_info@Base 1.1.0+dfsg
+ (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost6detail17sp_counted_impl_pINS_11filesystem36detail11dir_itr_impEE7disposeEv@Base 1.1.0+dfsg
+ (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost6detail17sp_counted_impl_pINS_11filesystem36detail11dir_itr_impEED0Ev@Base 1.1.0+dfsg
+ (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost6detail17sp_counted_impl_pINS_11filesystem36detail11dir_itr_impEED1Ev@Base 1.1.0+dfsg
+ (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost6detail17sp_counted_impl_pINS_11filesystem36detail11dir_itr_impEED2Ev@Base 1.1.0+dfsg
  (optional=templinst)_ZN5boost6detail17sp_counted_impl_pINS_7signals6detail9slot_base6data_tEE11get_deleterERKSt9type_info@Base 1.1.0
  (optional=templinst)_ZN5boost6detail17sp_counted_impl_pINS_7signals6detail9slot_base6data_tEE7disposeEv@Base 1.1.0
  (optional=templinst)_ZN5boost6detail17sp_counted_impl_pINS_7signals6detail9slot_base6data_tEED0Ev@Base 1.1.0
@@ -5065,7 +5010,7 @@ libCnoidBody.so.1.1 libcnoid1 #MINVER#
  (optional=templinst)_ZN5boost6detail8function26void_function_ref_invoker1IKNS_6signalIFvRKSsENS_10last_valueIvEEiSt4lessIiENS_8functionIS6_EEEEvS5_E6invokeERNS1_15function_bufferES5_@Base 1.1.0
  (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost6signalIFvRKSsENS_10last_valueIvEEiSt4lessIiENS_8functionIS3_EEED1Ev@Base 1.1.0+dfsg
  (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost6signalIFvRKSsENS_10last_valueIvEEiSt4lessIiENS_8functionIS3_EEED2Ev@Base 1.1.0+dfsg
- (arch=!amd64)_ZN5boost6system10error_code21unspecified_bool_trueEv@Base 1.1.0+dfsg
+ (arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost6system10error_code21unspecified_bool_trueEv@Base 1.1.0+dfsg
  _ZN5boost6system12system_errorD0Ev@Base 1.1.0
  _ZN5boost6system12system_errorD1Ev@Base 1.1.0
  _ZN5boost6system12system_errorD2Ev@Base 1.1.0
@@ -5247,8 +5192,8 @@ libCnoidBody.so.1.1 libcnoid1 #MINVER#
  _ZN5cnoid14BodyLoaderImpl20setSegmentPropertiesEPNS_4LinkESt6vectorIN5boost13intrusive_ptrINS_17VrmlProtoInstanceEEESaIS7_EERKS3_IN5Eigen9TransformIdLi3ELi2ELi0EEENSA_17aligned_allocatorISC_EEE@Base 1.1.0
  (optional=templinst)_ZN5cnoid14BodyLoaderImpl24extractShapeNodeTraverseEPNS_8VrmlNodeERKN5Eigen9TransformIdLi3ELi2ELi0EEERKN5boost8functionIFbPNS_9VrmlShapeES7_EEE@Base 1.1.0
  _ZN5cnoid14BodyLoaderImpl26createBodyFromModelNodeSetEv@Base 1.1.0
- (arch=i386)_ZN5cnoid14BodyLoaderImpl8MeshInfoC1ERKS1_@Base 1.1.0+dfsg
- (arch=i386)_ZN5cnoid14BodyLoaderImpl8MeshInfoC2ERKS1_@Base 1.1.0+dfsg
+ (arch=i386 kfreebsd-i386)_ZN5cnoid14BodyLoaderImpl8MeshInfoC1ERKS1_@Base 1.1.0+dfsg
+ (arch=i386 kfreebsd-i386)_ZN5cnoid14BodyLoaderImpl8MeshInfoC2ERKS1_@Base 1.1.0+dfsg
  _ZN5cnoid14BodyLoaderImplC1Ev@Base 1.1.0
  _ZN5cnoid14BodyLoaderImplC2Ev@Base 1.1.0
  _ZN5cnoid14BodyLoaderImplD1Ev@Base 1.1.0
@@ -5651,18 +5596,15 @@ libCnoidBody.so.1.1 libcnoid1 #MINVER#
  (optional=templinst)_ZNK5Eigen8internal12solve_retvalINS_9JacobiSVDINS_6MatrixIdLin1ELin1ELi0ELin1ELin1EEELi2EEENS3_IdLin1ELi1ELi0ELin1ELi1EEEE6evalToIS6_EEvRT_@Base 1.1.0
  (optional=templinst)_ZNK5Eigen9AngleAxisIdE16toRotationMatrixEv@Base 1.1.0
  (optional=templinst|arch=armhf)_ZNK5boost10last_valueIvEclINS_7signals6detail18slot_call_iteratorINS4_11call_bound1IvE6callerIRKSsNS_8functionIFvSA_EEEEENS4_23named_slot_map_iteratorEEEEEvT_SH_@Base 1.1.0+dfsg
- (optional=templinst|arch=armhf i386 kfreebsd-amd64 kfreebsd-i386)_ZNK5boost11filesystem210basic_pathISsNS0_11path_traitsEE11file_stringEv@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZNK5boost11filesystem210basic_pathISsNS0_11path_traitsEE11parent_pathEv@Base 1.1.0
- (optional=templinst|arch=i386 kfreebsd-amd64 kfreebsd-i386)_ZNK5boost11filesystem210basic_pathISsNS0_11path_traitsEE13has_root_pathEv@Base 1.1.0
- (optional=templinst|arch=kfreebsd-amd64)_ZNK5boost11filesystem210basic_pathISsNS0_11path_traitsEE14root_directoryEv@Base 1.1.0
- (optional=templinst|arch=i386 kfreebsd-amd64 kfreebsd-i386)_ZNK5boost11filesystem210basic_pathISsNS0_11path_traitsEE5beginEv@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZNK5boost11filesystem210basic_pathISsNS0_11path_traitsEE8filenameEv@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZNK5boost11filesystem210basic_pathISsNS0_11path_traitsEE9root_nameEv@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZNK5boost11filesystem210basic_pathISsNS0_11path_traitsEE9root_pathEv@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZNK5boost11filesystem222basic_filesystem_errorINS0_10basic_pathISsNS0_11path_traitsEEEE4whatEv@Base 1.1.0
- (arch=amd64)_ZNK5boost11filesystem34path13has_root_nameEv@Base 1.1.0+dfsg
- (arch=amd64)_ZNK5boost11filesystem34path13has_root_pathEv@Base 1.1.0+dfsg
- (arch=amd64)_ZNK5boost11filesystem34path18has_root_directoryEv@Base 1.1.0+dfsg
+ (optional=templinst|arch=armhf)_ZNK5boost11filesystem210basic_pathISsNS0_11path_traitsEE11file_stringEv@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZNK5boost11filesystem210basic_pathISsNS0_11path_traitsEE11parent_pathEv@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZNK5boost11filesystem210basic_pathISsNS0_11path_traitsEE8filenameEv@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZNK5boost11filesystem210basic_pathISsNS0_11path_traitsEE9root_nameEv@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZNK5boost11filesystem210basic_pathISsNS0_11path_traitsEE9root_pathEv@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZNK5boost11filesystem222basic_filesystem_errorINS0_10basic_pathISsNS0_11path_traitsEEEE4whatEv@Base 1.1.0
+ (arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZNK5boost11filesystem34path13has_root_nameEv@Base 1.1.0+dfsg
+ (arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZNK5boost11filesystem34path13has_root_pathEv@Base 1.1.0+dfsg
+ (arch=amd64 kfreebsd-amd64)_ZNK5boost11filesystem34path18has_root_directoryEv@Base 1.1.0+dfsg
  (optional=templinst)_ZNK5boost12basic_formatIcSt11char_traitsIcESaIcEE3strEv@Base 1.1.0
  (optional=templinst)_ZNK5boost12basic_formatIcSt11char_traitsIcESaIcEE6getlocEv@Base 1.1.0
  (optional=templinst)_ZNK5boost15optional_detail13optional_baseIN5Eigen6MatrixIdLi3ELi1ELi0ELi3ELi1EEEE14is_initializedEv@Base 1.1.0
@@ -5734,7 +5676,7 @@ libCnoidBody.so.1.1 libcnoid1 #MINVER#
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386|subst)_ZNKSt6vectorIN5boost10shared_ptrIN5cnoid12JointNodeSetEEESaIS4_EE12_M_check_lenE{size_t}PKc@Base 1.1.0
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386|subst)_ZNKSt6vectorIN5boost13intrusive_ptrIN5cnoid17VrmlProtoInstanceEEESaIS4_EE12_M_check_lenE{size_t}PKc@Base 1.1.0
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386 s390|subst)_ZNKSt6vectorIN5boost13intrusive_ptrIN5cnoid7CFSImpl8LinkPairEEESaIS5_EE12_M_check_lenE{size_t}PKc@Base 1.1.0
- (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386|subst)_ZNKSt6vectorIN5boost2io6detail11format_itemIcSt11char_traitsIcESaIcEEESaIS7_EE12_M_check_lenE{size_t}PKc@Base 1.1.0
+ (optional=templinst|arch=amd64 kfreebsd-amd64|subst)_ZNKSt6vectorIN5boost2io6detail11format_itemIcSt11char_traitsIcESaIcEEESaIS7_EE12_M_check_lenE{size_t}PKc@Base 1.1.0
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386|subst)_ZNKSt6vectorIN5cnoid12RangeLimiter8TSegmentESaIS2_EE12_M_check_lenE{size_t}PKc@Base 1.1.0
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386|subst)_ZNKSt6vectorIN5cnoid14BodyLoaderImpl8MeshInfoEN5Eigen29aligned_allocator_indirectionIS2_EEE12_M_check_lenE{size_t}PKc@Base 1.1.0
  (optional=templinst|arch=i386 kfreebsd-i386)_ZNKSt6vectorIN5cnoid17ForwardDynamicsMM15ForceSensorInfoESaIS2_EE12_M_check_lenEjPKc@Base 1.1.0+dfsg
@@ -5776,25 +5718,25 @@ libCnoidBody.so.1.1 libcnoid1 #MINVER#
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZNSt12_Destroy_auxILb0EE9__destroyIPN5cnoid11CompositeIK8PathInfoEEEvT_S6_@Base 1.1.0
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZNSt12_Destroy_auxILb0EE9__destroyIPN5cnoid7CFSImpl8BodyDataEEEvT_S6_@Base 1.1.0
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZNSt12_Destroy_auxILb0EE9__destroyIPSsEEvT_S3_@Base 1.1.0
- (optional=templinst|arch=amd64 kfreebsd-amd64)_ZNSt12_Vector_baseIN5Eigen5ArrayIfLi3ELi1ELi0ELi3ELi1EEESaIS2_EED1Ev@Base 1.1.0
- (optional=templinst|arch=amd64 kfreebsd-amd64)_ZNSt12_Vector_baseIN5Eigen5ArrayIfLi3ELi1ELi0ELi3ELi1EEESaIS2_EED2Ev@Base 1.1.0
+ (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZNSt12_Vector_baseIN5Eigen5ArrayIfLi3ELi1ELi0ELi3ELi1EEESaIS2_EED1Ev@Base 1.1.0
+ (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZNSt12_Vector_baseIN5Eigen5ArrayIfLi3ELi1ELi0ELi3ELi1EEESaIS2_EED2Ev@Base 1.1.0
  (optional=templinst|arch=amd64 kfreebsd-amd64)_ZNSt12_Vector_baseIN5Eigen6MatrixIdLi2ELi1ELi0ELi2ELi1EEENS0_29aligned_allocator_indirectionIS2_EEE17_M_create_storageEm@Base 1.1.0+dfsg
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZNSt12_Vector_baseIN5Eigen6MatrixIdLi2ELi1ELi0ELi2ELi1EEENS0_29aligned_allocator_indirectionIS2_EEED1Ev@Base 1.1.0
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZNSt12_Vector_baseIN5Eigen6MatrixIdLi2ELi1ELi0ELi2ELi1EEENS0_29aligned_allocator_indirectionIS2_EEED2Ev@Base 1.1.0
- (optional=templinst|arch=amd64 kfreebsd-amd64)_ZNSt12_Vector_baseIN5Eigen6MatrixIdLi3ELi1ELi0ELi3ELi1EEESaIS2_EED1Ev@Base 1.1.0
- (optional=templinst|arch=amd64 kfreebsd-amd64)_ZNSt12_Vector_baseIN5Eigen6MatrixIdLi3ELi1ELi0ELi3ELi1EEESaIS2_EED2Ev@Base 1.1.0
- (optional=templinst|arch=amd64 kfreebsd-amd64)_ZNSt12_Vector_baseIN5Eigen9AngleAxisIdEESaIS2_EED1Ev@Base 1.1.0
- (optional=templinst|arch=amd64 kfreebsd-amd64)_ZNSt12_Vector_baseIN5Eigen9AngleAxisIdEESaIS2_EED2Ev@Base 1.1.0
+ (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZNSt12_Vector_baseIN5Eigen6MatrixIdLi3ELi1ELi0ELi3ELi1EEESaIS2_EED1Ev@Base 1.1.0
+ (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZNSt12_Vector_baseIN5Eigen6MatrixIdLi3ELi1ELi0ELi3ELi1EEESaIS2_EED2Ev@Base 1.1.0
+ (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZNSt12_Vector_baseIN5Eigen9AngleAxisIdEESaIS2_EED1Ev@Base 1.1.0
+ (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZNSt12_Vector_baseIN5Eigen9AngleAxisIdEESaIS2_EED2Ev@Base 1.1.0
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZNSt12_Vector_baseIN5boost13intrusive_ptrIN5cnoid17VrmlProtoInstanceEEESaIS4_EED1Ev@Base 1.1.0
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZNSt12_Vector_baseIN5boost13intrusive_ptrIN5cnoid17VrmlProtoInstanceEEESaIS4_EED2Ev@Base 1.1.0
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZNSt12_Vector_baseIN5boost13intrusive_ptrIN5cnoid7CFSImpl8LinkPairEEESaIS5_EED1Ev@Base 1.1.0
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZNSt12_Vector_baseIN5boost13intrusive_ptrIN5cnoid7CFSImpl8LinkPairEEESaIS5_EED2Ev@Base 1.1.0
- (optional=templinst|arch=amd64 kfreebsd-amd64)_ZNSt12_Vector_baseIN5boost13intrusive_ptrIN5cnoid8VrmlNodeEEESaIS4_EED1Ev@Base 1.1.0
- (optional=templinst|arch=amd64 kfreebsd-amd64)_ZNSt12_Vector_baseIN5boost13intrusive_ptrIN5cnoid8VrmlNodeEEESaIS4_EED2Ev@Base 1.1.0
+ (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZNSt12_Vector_baseIN5boost13intrusive_ptrIN5cnoid8VrmlNodeEEESaIS4_EED1Ev@Base 1.1.0
+ (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZNSt12_Vector_baseIN5boost13intrusive_ptrIN5cnoid8VrmlNodeEEESaIS4_EED2Ev@Base 1.1.0
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZNSt12_Vector_baseIN5cnoid7CFSImpl8LinkDataESaIS2_EED1Ev@Base 1.1.0
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZNSt12_Vector_baseIN5cnoid7CFSImpl8LinkDataESaIS2_EED2Ev@Base 1.1.0
- (optional=templinst|arch=amd64 kfreebsd-amd64)_ZNSt12_Vector_baseISsSaISsEED1Ev@Base 1.1.0
- (optional=templinst|arch=amd64 kfreebsd-amd64)_ZNSt12_Vector_baseISsSaISsEED2Ev@Base 1.1.0
+ (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZNSt12_Vector_baseISsSaISsEED1Ev@Base 1.1.0
+ (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZNSt12_Vector_baseISsSaISsEED2Ev@Base 1.1.0
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZNSt12_Vector_baseISt6vectorIPN5cnoid6SensorESaIS3_EESaIS5_EED1Ev@Base 1.1.0
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZNSt12_Vector_baseISt6vectorIPN5cnoid6SensorESaIS3_EESaIS5_EED2Ev@Base 1.1.0
  (optional=templinst|arch=i386 kfreebsd-i386)_ZNSt20__copy_move_backwardILb0ELb0ESt26random_access_iterator_tagE13__copy_move_bIPN5Eigen9TransformIdLi3ELi2ELi0EEES6_EET0_T_S8_S7_@Base 1.1.0+dfsg
@@ -5807,9 +5749,9 @@ libCnoidBody.so.1.1 libcnoid1 #MINVER#
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZNSt20__copy_move_backwardILb0ELb0ESt26random_access_iterator_tagE13__copy_move_bIPN5cnoid7CFSImpl8BodyDataES6_EET0_T_S8_S7_@Base 1.1.0
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZNSt20__copy_move_backwardILb0ELb0ESt26random_access_iterator_tagE13__copy_move_bIPN5cnoid7CFSImpl8LinkDataES6_EET0_T_S8_S7_@Base 1.1.0
  (optional=templinst|arch=i386 kfreebsd-i386)_ZNSt20__copy_move_backwardILb0ELb0ESt26random_access_iterator_tagE13__copy_move_bISt13_Bit_iteratorS3_EET0_T_S5_S4_@Base 1.1.0+dfsg
- (optional=templinst|arch=amd64 kfreebsd-amd64)_ZNSt20__uninitialized_copyILb0EE13__uninit_copyIN9__gnu_cxx17__normal_iteratorIPKN5Eigen5ArrayIfLi3ELi1ELi0ELi3ELi1EEESt6vectorIS6_SaIS6_EEEEPS6_EET0_T_SF_SE_@Base 1.1.0
+ (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZNSt20__uninitialized_copyILb0EE13__uninit_copyIN9__gnu_cxx17__normal_iteratorIPKN5Eigen5ArrayIfLi3ELi1ELi0ELi3ELi1EEESt6vectorIS6_SaIS6_EEEEPS6_EET0_T_SF_SE_@Base 1.1.0
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZNSt20__uninitialized_copyILb0EE13__uninit_copyIN9__gnu_cxx17__normal_iteratorIPKN5Eigen6MatrixIdLi3ELi1ELi0ELi3ELi1EEESt6vectorIS6_SaIS6_EEEEPS6_EET0_T_SF_SE_@Base 1.1.0
- (optional=templinst|arch=amd64 kfreebsd-amd64)_ZNSt20__uninitialized_copyILb0EE13__uninit_copyIN9__gnu_cxx17__normal_iteratorIPKN5Eigen9AngleAxisIdEESt6vectorIS6_SaIS6_EEEEPS6_EET0_T_SF_SE_@Base 1.1.0
+ (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZNSt20__uninitialized_copyILb0EE13__uninit_copyIN9__gnu_cxx17__normal_iteratorIPKN5Eigen9AngleAxisIdEESt6vectorIS6_SaIS6_EEEEPS6_EET0_T_SF_SE_@Base 1.1.0
  (optional=templinst|arch=i386 kfreebsd-i386)_ZNSt20__uninitialized_copyILb0EE13__uninit_copyIN9__gnu_cxx17__normal_iteratorIPKN5cnoid7CFSImpl8LinkDataESt6vectorIS6_SaIS6_EEEEPS6_EET0_T_SF_SE_@Base 1.1.0+dfsg
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZNSt20__uninitialized_copyILb0EE13__uninit_copyIN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEEPSsEET0_T_SC_SB_@Base 1.1.0
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZNSt20__uninitialized_copyILb0EE13__uninit_copyIPN5Eigen5ArrayIfLi3ELi1ELi0ELi3ELi1EEES5_EET0_T_S7_S6_@Base 1.1.0
@@ -5919,7 +5861,7 @@ libCnoidBody.so.1.1 libcnoid1 #MINVER#
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZNSt6vectorIN5cnoid14BodyLoaderImpl8MeshInfoEN5Eigen17aligned_allocatorIS2_EEED1Ev@Base 1.1.0
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZNSt6vectorIN5cnoid14BodyLoaderImpl8MeshInfoEN5Eigen17aligned_allocatorIS2_EEED2Ev@Base 1.1.0
  (optional=templinst)_ZNSt6vectorIN5cnoid14BodyLoaderImpl8MeshInfoEN5Eigen29aligned_allocator_indirectionIS2_EEE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS2_S6_EERKS2_@Base 1.1.0
- (optional=templinst|arch=amd64 kfreebsd-amd64 kfreebsd-i386)_ZNSt6vectorIN5cnoid14BodyLoaderImpl8MeshInfoEN5Eigen29aligned_allocator_indirectionIS2_EEE9push_backERKS2_@Base 1.1.0
+ (optional=templinst|arch=amd64 kfreebsd-amd64)_ZNSt6vectorIN5cnoid14BodyLoaderImpl8MeshInfoEN5Eigen29aligned_allocator_indirectionIS2_EEE9push_backERKS2_@Base 1.1.0
  (optional=templinst|subst)_ZNSt6vectorIN5cnoid17ForwardDynamicsMM15ForceSensorInfoESaIS2_EE14_M_fill_insertEN9__gnu_cxx17__normal_iteratorIPS2_S4_EE{size_t}RKS2_@Base 1.1.0
  (optional=templinst)_ZNSt6vectorIN5cnoid22PenetrationBlockerImpl8LinkInfoESaIS2_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS2_S4_EERKS2_@Base 1.1.0
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZNSt6vectorIN5cnoid22PenetrationBlockerImpl8LinkInfoESaIS2_EED1Ev@Base 1.1.0
@@ -6087,7 +6029,7 @@ libCnoidBody.so.1.1 libcnoid1 #MINVER#
  _ZTIN5Eigen9EigenBaseINS_6MatrixIdLi2ELi1ELi0ELi2ELi1EEEEE@Base 1.1.0
  _ZTIN5Eigen9EigenBaseINS_6MatrixIdLi3ELi1ELi0ELi3ELi1EEEEE@Base 1.1.0
  _ZTIN5boost10last_valueIvEE@Base 1.1.0
- (arch=!amd64)_ZTIN5boost11filesystem222basic_filesystem_errorINS0_10basic_pathISsNS0_11path_traitsEEEEE@Base 1.1.0+dfsg
+ (arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZTIN5boost11filesystem222basic_filesystem_errorINS0_10basic_pathISsNS0_11path_traitsEEEEE@Base 1.1.0+dfsg
  _ZTIN5boost12noncopyable_11noncopyableE@Base 1.1.0
  _ZTIN5boost13function_baseE@Base 1.1.0
  _ZTIN5boost13intrusive_ptrIN5cnoid8VrmlNodeEEE@Base 1.1.0
@@ -6126,9 +6068,9 @@ libCnoidBody.so.1.1 libcnoid1 #MINVER#
  _ZTIN5boost6detail17sp_counted_impl_pIN5cnoid19CustomizedJointPathEEE@Base 1.1.0
  _ZTIN5boost6detail17sp_counted_impl_pIN5cnoid8LinkPathEEE@Base 1.1.0
  _ZTIN5boost6detail17sp_counted_impl_pIN5cnoid9JointPathEEE@Base 1.1.0
- (arch=!amd64)_ZTIN5boost6detail17sp_counted_impl_pINS_11filesystem222basic_filesystem_errorINS2_10basic_pathISsNS2_11path_traitsEEEE5m_impEEE@Base 1.1.0+dfsg
- (arch=!amd64)_ZTIN5boost6detail17sp_counted_impl_pINS_11filesystem26detail11dir_itr_impINS2_10basic_pathISsNS2_11path_traitsEEEEEEE@Base 1.1.0+dfsg
- (arch=amd64)_ZTIN5boost6detail17sp_counted_impl_pINS_11filesystem36detail11dir_itr_impEEE@Base 1.1.0+dfsg
+ (arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZTIN5boost6detail17sp_counted_impl_pINS_11filesystem222basic_filesystem_errorINS2_10basic_pathISsNS2_11path_traitsEEEE5m_impEEE@Base 1.1.0+dfsg
+ (arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZTIN5boost6detail17sp_counted_impl_pINS_11filesystem26detail11dir_itr_impINS2_10basic_pathISsNS2_11path_traitsEEEEEEE@Base 1.1.0+dfsg
+ (arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZTIN5boost6detail17sp_counted_impl_pINS_11filesystem36detail11dir_itr_impEEE@Base 1.1.0+dfsg
  _ZTIN5boost6detail17sp_counted_impl_pINS_7signals6detail9slot_base6data_tEEE@Base 1.1.0
  _ZTIN5boost6detail18sp_counted_impl_pdIPNS_2io18basic_altstringbufIcSt11char_traitsIcESaIcEEENS2_22basic_oaltstringstreamIcS5_S6_E5No_OpEEE@Base 1.1.0
  _ZTIN5boost6signalIFvRKSsENS_10last_valueIvEEiSt4lessIiENS_8functionIS3_EEEE@Base 1.1.0
@@ -6228,7 +6170,7 @@ libCnoidBody.so.1.1 libcnoid1 #MINVER#
  _ZTSN5Eigen9EigenBaseINS_6MatrixIdLi2ELi1ELi0ELi2ELi1EEEEE@Base 1.1.0
  _ZTSN5Eigen9EigenBaseINS_6MatrixIdLi3ELi1ELi0ELi3ELi1EEEEE@Base 1.1.0
  _ZTSN5boost10last_valueIvEE@Base 1.1.0
- (arch=!amd64)_ZTSN5boost11filesystem222basic_filesystem_errorINS0_10basic_pathISsNS0_11path_traitsEEEEE@Base 1.1.0+dfsg
+ (arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZTSN5boost11filesystem222basic_filesystem_errorINS0_10basic_pathISsNS0_11path_traitsEEEEE@Base 1.1.0+dfsg
  _ZTSN5boost12noncopyable_11noncopyableE@Base 1.1.0
  _ZTSN5boost13function_baseE@Base 1.1.0
  _ZTSN5boost13intrusive_ptrIN5cnoid8VrmlNodeEEE@Base 1.1.0
@@ -6267,9 +6209,9 @@ libCnoidBody.so.1.1 libcnoid1 #MINVER#
  _ZTSN5boost6detail17sp_counted_impl_pIN5cnoid19CustomizedJointPathEEE@Base 1.1.0
  _ZTSN5boost6detail17sp_counted_impl_pIN5cnoid8LinkPathEEE@Base 1.1.0
  _ZTSN5boost6detail17sp_counted_impl_pIN5cnoid9JointPathEEE@Base 1.1.0
- (arch=!amd64)_ZTSN5boost6detail17sp_counted_impl_pINS_11filesystem222basic_filesystem_errorINS2_10basic_pathISsNS2_11path_traitsEEEE5m_impEEE@Base 1.1.0+dfsg
- (arch=!amd64)_ZTSN5boost6detail17sp_counted_impl_pINS_11filesystem26detail11dir_itr_impINS2_10basic_pathISsNS2_11path_traitsEEEEEEE@Base 1.1.0+dfsg
- (arch=amd64)_ZTSN5boost6detail17sp_counted_impl_pINS_11filesystem36detail11dir_itr_impEEE@Base 1.1.0+dfsg
+ (arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZTSN5boost6detail17sp_counted_impl_pINS_11filesystem222basic_filesystem_errorINS2_10basic_pathISsNS2_11path_traitsEEEE5m_impEEE@Base 1.1.0+dfsg
+ (arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZTSN5boost6detail17sp_counted_impl_pINS_11filesystem26detail11dir_itr_impINS2_10basic_pathISsNS2_11path_traitsEEEEEEE@Base 1.1.0+dfsg
+ (arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZTSN5boost6detail17sp_counted_impl_pINS_11filesystem36detail11dir_itr_impEEE@Base 1.1.0+dfsg
  _ZTSN5boost6detail17sp_counted_impl_pINS_7signals6detail9slot_base6data_tEEE@Base 1.1.0
  _ZTSN5boost6detail18sp_counted_impl_pdIPNS_2io18basic_altstringbufIcSt11char_traitsIcESaIcEEENS2_22basic_oaltstringstreamIcS5_S6_E5No_OpEEE@Base 1.1.0
  _ZTSN5boost6signalIFvRKSsENS_10last_valueIvEEiSt4lessIiENS_8functionIS3_EEEE@Base 1.1.0
@@ -6340,7 +6282,7 @@ libCnoidBody.so.1.1 libcnoid1 #MINVER#
  _ZTSSt6vectorIdSaIdEE@Base 1.1.0
  _ZTSSt6vectorIiSaIiEE@Base 1.1.0
  _ZTTN5boost2io22basic_oaltstringstreamIcSt11char_traitsIcESaIcEEE@Base 1.1.0
- (arch=!amd64)_ZTVN5boost11filesystem222basic_filesystem_errorINS0_10basic_pathISsNS0_11path_traitsEEEEE@Base 1.1.0+dfsg
+ (arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZTVN5boost11filesystem222basic_filesystem_errorINS0_10basic_pathISsNS0_11path_traitsEEEEE@Base 1.1.0+dfsg
  _ZTVN5boost16exception_detail10clone_baseE@Base 1.1.0
  _ZTVN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_17bad_function_callEEEEE@Base 1.1.0
  _ZTVN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_2io12too_few_argsEEEEE@Base 1.1.0
@@ -6373,9 +6315,9 @@ libCnoidBody.so.1.1 libcnoid1 #MINVER#
  _ZTVN5boost6detail17sp_counted_impl_pIN5cnoid19CustomizedJointPathEEE@Base 1.1.0
  _ZTVN5boost6detail17sp_counted_impl_pIN5cnoid8LinkPathEEE@Base 1.1.0
  _ZTVN5boost6detail17sp_counted_impl_pIN5cnoid9JointPathEEE@Base 1.1.0
- (arch=!amd64)_ZTVN5boost6detail17sp_counted_impl_pINS_11filesystem222basic_filesystem_errorINS2_10basic_pathISsNS2_11path_traitsEEEE5m_impEEE@Base 1.1.0+dfsg
- (arch=!amd64)_ZTVN5boost6detail17sp_counted_impl_pINS_11filesystem26detail11dir_itr_impINS2_10basic_pathISsNS2_11path_traitsEEEEEEE@Base 1.1.0+dfsg
- (arch=amd64)_ZTVN5boost6detail17sp_counted_impl_pINS_11filesystem36detail11dir_itr_impEEE@Base 1.1.0+dfsg
+ (arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZTVN5boost6detail17sp_counted_impl_pINS_11filesystem222basic_filesystem_errorINS2_10basic_pathISsNS2_11path_traitsEEEE5m_impEEE@Base 1.1.0+dfsg
+ (arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZTVN5boost6detail17sp_counted_impl_pINS_11filesystem26detail11dir_itr_impINS2_10basic_pathISsNS2_11path_traitsEEEEEEE@Base 1.1.0+dfsg
+ (arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZTVN5boost6detail17sp_counted_impl_pINS_11filesystem36detail11dir_itr_impEEE@Base 1.1.0+dfsg
  _ZTVN5boost6detail17sp_counted_impl_pINS_7signals6detail9slot_base6data_tEEE@Base 1.1.0
  _ZTVN5boost6detail18sp_counted_impl_pdIPNS_2io18basic_altstringbufIcSt11char_traitsIcESaIcEEENS2_22basic_oaltstringstreamIcS5_S6_E5No_OpEEE@Base 1.1.0
  _ZTVN5boost6system12system_errorE@Base 1.1.0
@@ -6908,7 +6850,7 @@ libCnoidCollision.so.1.1 libcnoid1 #MINVER#
  _ZTVN6Opcode9BaseModelE@Base 1.1.0
  _ZlsRSoRKN8IceMaths5PointE@Base 1.1.0
 libCnoidUtil.so.1.1 libcnoid1 #MINVER#
- (arch=!amd64)_ZGVZN5boost11filesystem212initial_pathINS0_10basic_pathISsNS0_11path_traitsEEEEERKT_vE9init_path@Base 1.1.0+dfsg
+ (arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZGVZN5boost11filesystem212initial_pathINS0_10basic_pathISsNS0_11path_traitsEEEEERKT_vE9init_path@Base 1.1.0+dfsg
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5Eigen6MatrixIdLi3ELi1ELi0ELi3ELi1EEC1INS_13CwiseBinaryOpINS_8internal20scalar_difference_opIdEEKS1_S7_EEEERKNS_10MatrixBaseIT_EE@Base 1.1.0
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5Eigen6MatrixIdLi3ELi1ELi0ELi3ELi1EEC2INS_13CwiseBinaryOpINS_8internal20scalar_difference_opIdEEKS1_S7_EEEERKNS_10MatrixBaseIT_EE@Base 1.1.0
  _ZN5Eigen8internal19throw_std_bad_allocEv@Base 1.1.0
@@ -6917,47 +6859,36 @@ libCnoidUtil.so.1.1 libcnoid1 #MINVER#
  (optional=templinst|arch=i386 kfreebsd-i386)_ZN5Eigen9AngleAxisIdEaSERKS1_@Base 1.1.0+dfsg
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost10shared_ptrIN5cnoid11EasyScannerEED1Ev@Base 1.1.0
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost10shared_ptrIN5cnoid11EasyScannerEED2Ev@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost10shared_ptrINS_11filesystem222basic_filesystem_errorINS1_10basic_pathISsNS1_11path_traitsEEEE5m_impEE5resetEv@Base 1.1.0
- (optional=templinst|arch=i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost10shared_ptrINS_11filesystem222basic_filesystem_errorINS1_10basic_pathISsNS1_11path_traitsEEEE5m_impEED1Ev@Base 1.1.0
- (optional=templinst|arch=i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost10shared_ptrINS_11filesystem222basic_filesystem_errorINS1_10basic_pathISsNS1_11path_traitsEEEE5m_impEED2Ev@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost10shared_ptrINS_11filesystem222basic_filesystem_errorINS1_10basic_pathISsNS1_11path_traitsEEEE5m_impEE5resetEv@Base 1.1.0
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost10shared_ptrISt3mapISsiSt4lessISsESaISt4pairIKSsiEEEED1Ev@Base 1.1.0
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost10shared_ptrISt3mapISsiSt4lessISsESaISt4pairIKSsiEEEED2Ev@Base 1.1.0
- (optional=templinst|arch=i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost11filesystem210basic_pathISsNS0_11path_traitsEE28m_append_separator_if_neededEv@Base 1.1.0
- (optional=templinst|arch=i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost11filesystem210basic_pathISsNS0_11path_traitsEE8iteratorD1Ev@Base 1.1.0
- (optional=templinst|arch=i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost11filesystem210basic_pathISsNS0_11path_traitsEE8iteratorD2Ev@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost11filesystem210basic_pathISsNS0_11path_traitsEE9normalizeEv@Base 1.1.0
- (optional=templinst|arch=i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost11filesystem210basic_pathISsNS0_11path_traitsEEC1ERKSs@Base 1.1.0+dfsg
- (optional=templinst|arch=i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost11filesystem210basic_pathISsNS0_11path_traitsEEC2ERKSs@Base 1.1.0+dfsg
- (optional=templinst|arch=!amd64)_ZN5boost11filesystem210basic_pathISsNS0_11path_traitsEED1Ev@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost11filesystem210basic_pathISsNS0_11path_traitsEED2Ev@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost11filesystem210basic_pathISsNS0_11path_traitsEEdVEPKc@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost11filesystem212current_pathINS0_10basic_pathISsNS0_11path_traitsEEEEET_v@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost11filesystem212initial_pathINS0_10basic_pathISsNS0_11path_traitsEEEEERKT_v@Base 1.1.0
- (optional=templinst|arch=i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost11filesystem222basic_filesystem_errorINS0_10basic_pathISsNS0_11path_traitsEEEE5m_impD1Ev@Base 1.1.0+dfsg
- (optional=templinst|arch=i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost11filesystem222basic_filesystem_errorINS0_10basic_pathISsNS0_11path_traitsEEEE5m_impD2Ev@Base 1.1.0+dfsg
- (optional=templinst|arch=!amd64)_ZN5boost11filesystem222basic_filesystem_errorINS0_10basic_pathISsNS0_11path_traitsEEEEC1ERKSsNS_6system10error_codeE@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost11filesystem222basic_filesystem_errorINS0_10basic_pathISsNS0_11path_traitsEEEEC1ERKSsRKS4_NS_6system10error_codeE@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost11filesystem222basic_filesystem_errorINS0_10basic_pathISsNS0_11path_traitsEEEEC2ERKSsNS_6system10error_codeE@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost11filesystem222basic_filesystem_errorINS0_10basic_pathISsNS0_11path_traitsEEEEC2ERKSsRKS4_NS_6system10error_codeE@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost11filesystem222basic_filesystem_errorINS0_10basic_pathISsNS0_11path_traitsEEEED0Ev@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost11filesystem222basic_filesystem_errorINS0_10basic_pathISsNS0_11path_traitsEEEED1Ev@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost11filesystem222basic_filesystem_errorINS0_10basic_pathISsNS0_11path_traitsEEEED2Ev@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost11filesystem26detail12filename_posISsNS0_11path_traitsEEENT_9size_typeERKS4_S5_@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost11filesystem26detail13first_elementISsNS0_11path_traitsEEEvRKT_RNS4_9size_typeES8_S7_@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost11filesystem26detail15iterator_helperINS0_10basic_pathISsNS0_11path_traitsEEEE12do_decrementERNS5_8iteratorE@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost11filesystem26detail15iterator_helperINS0_10basic_pathISsNS0_11path_traitsEEEE12do_incrementERNS5_8iteratorE@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost11filesystem26detail17is_non_root_slashISsNS0_11path_traitsEEEbRKT_NS4_9size_typeE@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost11filesystem26detail20root_directory_startISsNS0_11path_traitsEEENT_9size_typeERKS4_S5_@Base 1.1.0
- (arch=i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost11filesystem26detail4whatEPKcRKNS0_10basic_pathISsNS0_11path_traitsEEES8_RSs@Base 1.1.0+dfsg
- (optional=templinst|arch=!amd64)_ZN5boost11filesystem26existsINS0_10basic_pathISsNS0_11path_traitsEEEEENS_9enable_ifINS0_13is_basic_pathIT_EEbE4typeERKS7_@Base 1.1.0
- (optional=templinst|arch=!amd64 !mipsel !powerpc)_ZN5boost11filesystem28completeINS0_10basic_pathISsNS0_11path_traitsEEEEENS_9enable_ifINS0_13is_basic_pathIT_EES7_E4typeERKS7_SC_@Base 1.1.0
- (optional=templinst|arch=i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost11filesystem2dvISsNS0_11path_traitsEEENS0_10basic_pathIT_T0_EERKS6_S8_@Base 1.1.0
- (arch=amd64)_ZN5boost11filesystem34path8iteratorD1Ev@Base 1.1.0+dfsg
- (arch=amd64)_ZN5boost11filesystem34path8iteratorD2Ev@Base 1.1.0+dfsg
- (arch=amd64)_ZN5boost11filesystem34pathD1Ev@Base 1.1.0+dfsg
- (arch=amd64)_ZN5boost11filesystem34pathD2Ev@Base 1.1.0+dfsg
- (arch=amd64)_ZN5boost11filesystem38completeERKNS0_4pathE@Base 1.1.0+dfsg
- (arch=amd64)_ZN5boost11filesystem3dvERKNS0_4pathES3_@Base 1.1.0+dfsg
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost11filesystem210basic_pathISsNS0_11path_traitsEE9normalizeEv@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost11filesystem210basic_pathISsNS0_11path_traitsEED1Ev@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost11filesystem210basic_pathISsNS0_11path_traitsEED2Ev@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost11filesystem210basic_pathISsNS0_11path_traitsEEdVEPKc@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost11filesystem212current_pathINS0_10basic_pathISsNS0_11path_traitsEEEEET_v@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost11filesystem212initial_pathINS0_10basic_pathISsNS0_11path_traitsEEEEERKT_v@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost11filesystem222basic_filesystem_errorINS0_10basic_pathISsNS0_11path_traitsEEEEC1ERKSsNS_6system10error_codeE@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost11filesystem222basic_filesystem_errorINS0_10basic_pathISsNS0_11path_traitsEEEEC1ERKSsRKS4_NS_6system10error_codeE@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost11filesystem222basic_filesystem_errorINS0_10basic_pathISsNS0_11path_traitsEEEEC2ERKSsNS_6system10error_codeE@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost11filesystem222basic_filesystem_errorINS0_10basic_pathISsNS0_11path_traitsEEEEC2ERKSsRKS4_NS_6system10error_codeE@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost11filesystem222basic_filesystem_errorINS0_10basic_pathISsNS0_11path_traitsEEEED0Ev@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost11filesystem222basic_filesystem_errorINS0_10basic_pathISsNS0_11path_traitsEEEED1Ev@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost11filesystem222basic_filesystem_errorINS0_10basic_pathISsNS0_11path_traitsEEEED2Ev@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost11filesystem26detail12filename_posISsNS0_11path_traitsEEENT_9size_typeERKS4_S5_@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost11filesystem26detail13first_elementISsNS0_11path_traitsEEEvRKT_RNS4_9size_typeES8_S7_@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost11filesystem26detail15iterator_helperINS0_10basic_pathISsNS0_11path_traitsEEEE12do_decrementERNS5_8iteratorE@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost11filesystem26detail15iterator_helperINS0_10basic_pathISsNS0_11path_traitsEEEE12do_incrementERNS5_8iteratorE@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost11filesystem26detail17is_non_root_slashISsNS0_11path_traitsEEEbRKT_NS4_9size_typeE@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost11filesystem26detail20root_directory_startISsNS0_11path_traitsEEENT_9size_typeERKS4_S5_@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost11filesystem26existsINS0_10basic_pathISsNS0_11path_traitsEEEEENS_9enable_ifINS0_13is_basic_pathIT_EEbE4typeERKS7_@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mipsel !powerpc)_ZN5boost11filesystem28completeINS0_10basic_pathISsNS0_11path_traitsEEEEENS_9enable_ifINS0_13is_basic_pathIT_EES7_E4typeERKS7_SC_@Base 1.1.0
+ (arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost11filesystem34path8iteratorD1Ev@Base 1.1.0+dfsg
+ (arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost11filesystem34path8iteratorD2Ev@Base 1.1.0+dfsg
+ (arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost11filesystem34pathD1Ev@Base 1.1.0+dfsg
+ (arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost11filesystem34pathD2Ev@Base 1.1.0+dfsg
+ (arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost11filesystem38completeERKNS0_4pathE@Base 1.1.0+dfsg
+ (arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost11filesystem3dvERKNS0_4pathES3_@Base 1.1.0+dfsg
  (optional=templinst|subst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost11mem_fun_refIiNS_6detail11multi_array12extent_rangeIi{size_t}EEEENS_19const_mem_fun_ref_tIT_T0_EEMS7_KFS6_vE@Base 1.1.0+dfsg
  (optional=templinst|subst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost11mem_fun_refI{size_t}NS_6detail11multi_array12extent_rangeIi{size_t}EEEENS_19const_mem_fun_ref_tIT_T0_EEMS7_KFS6_vE@Base 1.1.0+dfsg
  (optional=templinst|subst)_ZN5boost11multi_arrayIN5Eigen9TransformIdLi3ELi2ELi0EEEL{size_t}2ENS1_17aligned_allocatorIS3_EEE6resizeERKNS_6detail11multi_array10extent_genIL{size_t}2EEE@Base 1.1.0
@@ -6983,7 +6914,6 @@ libCnoidUtil.so.1.1 libcnoid1 #MINVER#
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost13intrusive_ptrIN5cnoid11VrmlTextureEED2Ev@Base 1.1.0
  (optional=templinst)_ZN5boost13intrusive_ptrIN5cnoid11YamlMappingEED1Ev@Base 1.1.0
  (optional=templinst)_ZN5boost13intrusive_ptrIN5cnoid11YamlMappingEED2Ev@Base 1.1.0
- (optional=templinst|arch=i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost13intrusive_ptrIN5cnoid11YamlMappingEEaSEPS2_@Base 1.1.0
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost13intrusive_ptrIN5cnoid12VrmlCylinderEED1Ev@Base 1.1.0
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost13intrusive_ptrIN5cnoid12VrmlCylinderEED2Ev@Base 1.1.0
  (optional=templinst|arch=!armhf)_ZN5boost13intrusive_ptrIN5cnoid12VrmlMaterialEED1Ev@Base 1.1.0
@@ -6992,7 +6922,6 @@ libCnoidUtil.so.1.1 libcnoid1 #MINVER#
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost13intrusive_ptrIN5cnoid12VrmlPointSetEED2Ev@Base 1.1.0
  (optional=templinst)_ZN5boost13intrusive_ptrIN5cnoid12YamlSequenceEED1Ev@Base 1.1.0
  (optional=templinst)_ZN5boost13intrusive_ptrIN5cnoid12YamlSequenceEED2Ev@Base 1.1.0
- (optional=templinst|arch=i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost13intrusive_ptrIN5cnoid12YamlSequenceEEaSEPS2_@Base 1.1.0
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost13intrusive_ptrIN5cnoid13VrmlBillboardEED1Ev@Base 1.1.0
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost13intrusive_ptrIN5cnoid13VrmlBillboardEED2Ev@Base 1.1.0
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost13intrusive_ptrIN5cnoid13VrmlCollisionEED1Ev@Base 1.1.0
@@ -7102,7 +7031,6 @@ libCnoidUtil.so.1.1 libcnoid1 #MINVER#
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost13intrusive_ptrIN5cnoid8VrmlTextEED2Ev@Base 1.1.0
  (optional=templinst)_ZN5boost13intrusive_ptrIN5cnoid8YamlNodeEED1Ev@Base 1.1.0
  (optional=templinst)_ZN5boost13intrusive_ptrIN5cnoid8YamlNodeEED2Ev@Base 1.1.0
- (optional=templinst|arch=i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost13intrusive_ptrIN5cnoid8YamlNodeEEaSEPS2_@Base 1.1.0
  (optional=templinst)_ZN5boost13intrusive_ptrIN5cnoid9VrmlColorEED1Ev@Base 1.1.0
  (optional=templinst)_ZN5boost13intrusive_ptrIN5cnoid9VrmlColorEED2Ev@Base 1.1.0
  (optional=templinst|arch=!armhf)_ZN5boost13intrusive_ptrIN5cnoid9VrmlGroupEED1Ev@Base 1.1.0
@@ -7113,7 +7041,7 @@ libCnoidUtil.so.1.1 libcnoid1 #MINVER#
  (optional=templinst)_ZN5boost13intrusive_ptrIN5cnoid9VrmlShapeEED2Ev@Base 1.1.0
  (optional=templinst)_ZN5boost14char_separatorIcSt11char_traitsIcEED1Ev@Base 1.1.0
  (optional=templinst)_ZN5boost14char_separatorIcSt11char_traitsIcEED2Ev@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost14checked_deleteINS_11filesystem222basic_filesystem_errorINS1_10basic_pathISsNS1_11path_traitsEEEE5m_impEEEvPT_@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost14checked_deleteINS_11filesystem222basic_filesystem_errorINS1_10basic_pathISsNS1_11path_traitsEEEE5m_impEEEvPT_@Base 1.1.0
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost14checked_deleteISt3mapISsiSt4lessISsESaISt4pairIKSsiEEEEEvPT_@Base 1.1.0
  (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386|subst)_ZN5boost14dynamic_bitsetImSaImEE6resizeE{size_t}b@Base 1.1.0+dfsg
  (optional=templinst)_ZN5boost14token_iteratorINS_14char_separatorIcSt11char_traitsIcEEEN9__gnu_cxx17__normal_iteratorIPKcSsEESsED1Ev@Base 1.1.0
@@ -7231,7 +7159,7 @@ libCnoidUtil.so.1.1 libcnoid1 #MINVER#
  (optional=templinst)_ZN5boost2io6detail11format_itemIcSt11char_traitsIcESaIcEED1Ev@Base 1.1.0
  (optional=templinst)_ZN5boost2io6detail11format_itemIcSt11char_traitsIcESaIcEED2Ev@Base 1.1.0
  (optional=templinst)_ZN5boost2io6detail13skip_asteriskIN9__gnu_cxx17__normal_iteratorIPKcSsEESt5ctypeIcEEET_SA_SA_RKT0_@Base 1.1.0
- (subst|arch=!amd64)_ZN5boost2io6detail21maybe_throw_exceptionEh{size_t}{size_t}@Base 1.1.0+dfsg
+ (subst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost2io6detail21maybe_throw_exceptionEh{size_t}{size_t}@Base 1.1.0+dfsg
  (optional=templinst|subst)_ZN5boost2io6detail22parse_printf_directiveIcSt11char_traitsIcESaIcEN9__gnu_cxx17__normal_iteratorIPKcSsEESt5ctypeIcEEEbRT2_RKSD_PNS1_11format_itemIT_T0_T1_EERKT3_{size_t}h@Base 1.1.0
  (optional=templinst)_ZN5boost2io6detail24upper_bound_from_fstringISsSt5ctypeIcEEEiRKT_NS5_10value_typeERKT0_h@Base 1.1.0
  (optional=templinst)_ZN5boost2io6detail3putIcSt11char_traitsIcESaIcERKSsEEvT2_RKNS1_11format_itemIT_T0_T1_EERNS_12basic_formatISA_SB_SC_E11string_typeERNSH_20internal_streambuf_tEPSt6locale@Base 1.1.0
@@ -7284,11 +7212,11 @@ libCnoidUtil.so.1.1 libcnoid1 #MINVER#
  (optional=templinst)_ZN5boost6detail17sp_counted_impl_pIN5cnoid11EasyScannerEED0Ev@Base 1.1.0
  (optional=templinst)_ZN5boost6detail17sp_counted_impl_pIN5cnoid11EasyScannerEED1Ev@Base 1.1.0
  (optional=templinst)_ZN5boost6detail17sp_counted_impl_pIN5cnoid11EasyScannerEED2Ev@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost6detail17sp_counted_impl_pINS_11filesystem222basic_filesystem_errorINS2_10basic_pathISsNS2_11path_traitsEEEE5m_impEE11get_deleterERKSt9type_info@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost6detail17sp_counted_impl_pINS_11filesystem222basic_filesystem_errorINS2_10basic_pathISsNS2_11path_traitsEEEE5m_impEE7disposeEv@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost6detail17sp_counted_impl_pINS_11filesystem222basic_filesystem_errorINS2_10basic_pathISsNS2_11path_traitsEEEE5m_impEED0Ev@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost6detail17sp_counted_impl_pINS_11filesystem222basic_filesystem_errorINS2_10basic_pathISsNS2_11path_traitsEEEE5m_impEED1Ev@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZN5boost6detail17sp_counted_impl_pINS_11filesystem222basic_filesystem_errorINS2_10basic_pathISsNS2_11path_traitsEEEE5m_impEED2Ev@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost6detail17sp_counted_impl_pINS_11filesystem222basic_filesystem_errorINS2_10basic_pathISsNS2_11path_traitsEEEE5m_impEE11get_deleterERKSt9type_info@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost6detail17sp_counted_impl_pINS_11filesystem222basic_filesystem_errorINS2_10basic_pathISsNS2_11path_traitsEEEE5m_impEE7disposeEv@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost6detail17sp_counted_impl_pINS_11filesystem222basic_filesystem_errorINS2_10basic_pathISsNS2_11path_traitsEEEE5m_impEED0Ev@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost6detail17sp_counted_impl_pINS_11filesystem222basic_filesystem_errorINS2_10basic_pathISsNS2_11path_traitsEEEE5m_impEED1Ev@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost6detail17sp_counted_impl_pINS_11filesystem222basic_filesystem_errorINS2_10basic_pathISsNS2_11path_traitsEEEE5m_impEED2Ev@Base 1.1.0
  (optional=templinst)_ZN5boost6detail17sp_counted_impl_pISt3mapISsiSt4lessISsESaISt4pairIKSsiEEEE11get_deleterERKSt9type_info@Base 1.1.0
  (optional=templinst)_ZN5boost6detail17sp_counted_impl_pISt3mapISsiSt4lessISsESaISt4pairIKSsiEEEE7disposeEv@Base 1.1.0
  (optional=templinst)_ZN5boost6detail17sp_counted_impl_pISt3mapISsiSt4lessISsESaISt4pairIKSsiEEEED0Ev@Base 1.1.0
@@ -7310,7 +7238,7 @@ libCnoidUtil.so.1.1 libcnoid1 #MINVER#
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost6detail8function22functor_manager_commonINS_7signals6detail20group_bridge_compareISt4lessIiEiEEE12manage_smallERKNS1_15function_bufferERSA_NS1_30functor_manager_operation_typeE@Base 1.1.0
  (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost6signalIFvRKSsENS_10last_valueIvEEiSt4lessIiENS_8functionIS3_EEED1Ev@Base 1.1.0+dfsg
  (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost6signalIFvRKSsENS_10last_valueIvEEiSt4lessIiENS_8functionIS3_EEED2Ev@Base 1.1.0+dfsg
- (arch=!amd64)_ZN5boost6system10error_code21unspecified_bool_trueEv@Base 1.1.0+dfsg
+ (arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5boost6system10error_code21unspecified_bool_trueEv@Base 1.1.0+dfsg
  _ZN5boost6system12system_errorD0Ev@Base 1.1.0
  _ZN5boost6system12system_errorD1Ev@Base 1.1.0
  _ZN5boost6system12system_errorD2Ev@Base 1.1.0
@@ -7344,8 +7272,7 @@ libCnoidUtil.so.1.1 libcnoid1 #MINVER#
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost7variantIbidN5Eigen6MatrixIdLi2ELi1ELi0ELi2ELi1EEENS2_IdLi3ELi1ELi0ELi3ELi1EEENS1_9AngleAxisIdEENS1_5ArrayIfLi3ELi1ELi0ELi3ELi1EEEN5cnoid6SFTimeESsNS_13intrusive_ptrINS9_8VrmlNodeEEENS9_7SFImageESt6vectorIiSaIiEESF_IdSaIdEESF_IS3_NS1_17aligned_allocatorIS3_EEESF_IS4_SaIS4_EESF_IS6_SaIS6_EESF_IS8_SaIS8_EESF_ISA_SaISA_EESF_ISsSaISsEESF_ISD_SaISD_EEE6assignISW_EEvRKT_@Base 1.1.0
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost7variantIbidN5Eigen6MatrixIdLi2ELi1ELi0ELi2ELi1EEENS2_IdLi3ELi1ELi0ELi3ELi1EEENS1_9AngleAxisIdEENS1_5ArrayIfLi3ELi1ELi0ELi3ELi1EEEN5cnoid6SFTimeESsNS_13intrusive_ptrINS9_8VrmlNodeEEENS9_7SFImageESt6vectorIiSaIiEESF_IdSaIdEESF_IS3_NS1_17aligned_allocatorIS3_EEESF_IS4_SaIS4_EESF_IS6_SaIS6_EESF_IS8_SaIS8_EESF_ISA_SaISA_EESF_ISsSaISsEESF_ISD_SaISD_EEE6assignISY_EEvRKT_@Base 1.1.0
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost7variantIbidN5Eigen6MatrixIdLi2ELi1ELi0ELi2ELi1EEENS2_IdLi3ELi1ELi0ELi3ELi1EEENS1_9AngleAxisIdEENS1_5ArrayIfLi3ELi1ELi0ELi3ELi1EEEN5cnoid6SFTimeESsNS_13intrusive_ptrINS9_8VrmlNodeEEENS9_7SFImageESt6vectorIiSaIiEESF_IdSaIdEESF_IS3_NS1_17aligned_allocatorIS3_EEESF_IS4_SaIS4_EESF_IS6_SaIS6_EESF_IS8_SaIS8_EESF_ISA_SaISA_EESF_ISsSaISsEESF_ISD_SaISD_EEE6assignISsEEvRKT_@Base 1.1.0
- (optional=templinst|arch=i386 kfreebsd-amd64 kfreebsd-i386)_ZN5boost7variantIbidN5Eigen6MatrixIdLi2ELi1ELi0ELi2ELi1EEENS2_IdLi3ELi1ELi0ELi3ELi1EEENS1_9AngleAxisIdEENS1_5ArrayIfLi3ELi1ELi0ELi3ELi1EEEN5cnoid6SFTimeESsNS_13intrusive_ptrINS9_8VrmlNodeEEENS9_7SFImageESt6vectorIiSaIiEESF_IdSaIdEESF_IS3_NS1_17aligned_allocatorIS3_EEESF_IS4_SaIS4_EESF_IS6_SaIS6_EESF_IS8_SaIS8_EESF_ISA_SaISA_EESF_ISsSaISsEESF_ISD_SaISD_EEE6assignIdEEvRKT_@Base 1.1.0
- (optional=templinst|arch=kfreebsd-amd64)_ZN5boost7variantIbidN5Eigen6MatrixIdLi2ELi1ELi0ELi2ELi1EEENS2_IdLi3ELi1ELi0ELi3ELi1EEENS1_9AngleAxisIdEENS1_5ArrayIfLi3ELi1ELi0ELi3ELi1EEEN5cnoid6SFTimeESsNS_13intrusive_ptrINS9_8VrmlNodeEEENS9_7SFImageESt6vectorIiSaIiEESF_IdSaIdEESF_IS3_NS1_17aligned_allocatorIS3_EEESF_IS4_SaIS4_EESF_IS6_SaIS6_EESF_IS8_SaIS8_EESF_ISA_SaISA_EESF_ISsSaISsEESF_ISD_SaISD_EEE6assignIiEEvRKT_@Base 1.1.0
+ (optional=templinst|arch=i386 kfreebsd-i386)_ZN5boost7variantIbidN5Eigen6MatrixIdLi2ELi1ELi0ELi2ELi1EEENS2_IdLi3ELi1ELi0ELi3ELi1EEENS1_9AngleAxisIdEENS1_5ArrayIfLi3ELi1ELi0ELi3ELi1EEEN5cnoid6SFTimeESsNS_13intrusive_ptrINS9_8VrmlNodeEEENS9_7SFImageESt6vectorIiSaIiEESF_IdSaIdEESF_IS3_NS1_17aligned_allocatorIS3_EEESF_IS4_SaIS4_EESF_IS6_SaIS6_EESF_IS8_SaIS8_EESF_ISA_SaISA_EESF_ISsSaISsEESF_ISD_SaISD_EEE6assignIdEEvRKT_@Base 1.1.0
  _ZN5boost9exceptionD0Ev@Base 1.1.0
  _ZN5boost9exceptionD1Ev@Base 1.1.0
  _ZN5boost9exceptionD2Ev@Base 1.1.0
@@ -7826,8 +7753,8 @@ libCnoidUtil.so.1.1 libcnoid1 #MINVER#
  _ZN5cnoid15MultiAffine3SeqD0Ev@Base 1.1.0
  _ZN5cnoid15MultiAffine3SeqD1Ev@Base 1.1.0
  _ZN5cnoid15MultiAffine3SeqD2Ev@Base 1.1.0
- (arch=!amd64)_ZN5cnoid15makePathCompactERKN5boost11filesystem210basic_pathISsNS1_11path_traitsEEERS4_@Base 1.1.0+dfsg
- (arch=amd64)_ZN5cnoid15makePathCompactERKN5boost11filesystem34pathERS2_@Base 1.1.0+dfsg
+ (arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5cnoid15makePathCompactERKN5boost11filesystem210basic_pathISsNS1_11path_traitsEEERS4_@Base 1.1.0+dfsg
+ (arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5cnoid15makePathCompactERKN5boost11filesystem34pathERS2_@Base 1.1.0+dfsg
  _ZN5cnoid16VrmlImageTextureC1Ev@Base 1.1.0
  _ZN5cnoid16VrmlImageTextureC2Ev@Base 1.1.0
  _ZN5cnoid16VrmlImageTextureD0Ev@Base 1.1.0
@@ -7843,10 +7770,10 @@ libCnoidUtil.so.1.1 libcnoid1 #MINVER#
  _ZN5cnoid16VrmlPixelTextureD0Ev@Base 1.1.0
  _ZN5cnoid16VrmlPixelTextureD1Ev@Base 1.1.0
  _ZN5cnoid16VrmlPixelTextureD2Ev@Base 1.1.0
- (arch=!amd64)_ZN5cnoid16findRelativePathERKN5boost11filesystem210basic_pathISsNS1_11path_traitsEEES6_RS4_@Base 1.1.0+dfsg
- (arch=amd64)_ZN5cnoid16findRelativePathERKN5boost11filesystem34pathES4_RS2_@Base 1.1.0+dfsg
- (arch=!amd64)_ZN5cnoid16findSubDirectoryERKN5boost11filesystem210basic_pathISsNS1_11path_traitsEEES6_RS4_@Base 1.1.0+dfsg
- (arch=amd64)_ZN5cnoid16findSubDirectoryERKN5boost11filesystem34pathES4_RS2_@Base 1.1.0+dfsg
+ (arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5cnoid16findRelativePathERKN5boost11filesystem210basic_pathISsNS1_11path_traitsEEES6_RS4_@Base 1.1.0+dfsg
+ (arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5cnoid16findRelativePathERKN5boost11filesystem34pathES4_RS2_@Base 1.1.0+dfsg
+ (arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN5cnoid16findSubDirectoryERKN5boost11filesystem210basic_pathISsNS1_11path_traitsEEES6_RS4_@Base 1.1.0+dfsg
+ (arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN5cnoid16findSubDirectoryERKN5boost11filesystem34pathES4_RS2_@Base 1.1.0+dfsg
  _ZN5cnoid17AbstractVrmlGroup11removeChildEi@Base 1.1.0
  _ZN5cnoid17AbstractVrmlGroupC1Ev@Base 1.1.0
  _ZN5cnoid17AbstractVrmlGroupC2Ev@Base 1.1.0
@@ -8091,13 +8018,11 @@ libCnoidUtil.so.1.1 libcnoid1 #MINVER#
  _ZN5cnoid9VrmlShapeD2Ev@Base 1.1.0
  (optional=templinst)_ZNK5Eigen9AngleAxisIdE16toRotationMatrixEv@Base 1.1.0
  (optional=templinst|arch=armhf sparc)_ZNK5boost10shared_ptrIN5cnoid11EasyScannerEEptEv@Base 1.1.0+dfsg
- (optional=templinst|arch=!amd64)_ZNK5boost11filesystem210basic_pathISsNS0_11path_traitsEE11parent_pathEv@Base 1.1.0
- (optional=templinst|arch=i386 kfreebsd-amd64 kfreebsd-i386)_ZNK5boost11filesystem210basic_pathISsNS0_11path_traitsEE14root_directoryEv@Base 1.1.0
- (optional=templinst|arch=i386 kfreebsd-amd64 kfreebsd-i386)_ZNK5boost11filesystem210basic_pathISsNS0_11path_traitsEE18has_root_directoryEv@Base 1.1.0+dfsg
- (optional=templinst|arch=!amd64)_ZNK5boost11filesystem210basic_pathISsNS0_11path_traitsEE5beginEv@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZNK5boost11filesystem210basic_pathISsNS0_11path_traitsEE8filenameEv@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZNK5boost11filesystem210basic_pathISsNS0_11path_traitsEE11parent_pathEv@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZNK5boost11filesystem210basic_pathISsNS0_11path_traitsEE5beginEv@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZNK5boost11filesystem210basic_pathISsNS0_11path_traitsEE8filenameEv@Base 1.1.0
  (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mipsel !powerpc)_ZNK5boost11filesystem210basic_pathISsNS0_11path_traitsEE9root_nameEv@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZNK5boost11filesystem222basic_filesystem_errorINS0_10basic_pathISsNS0_11path_traitsEEEE4whatEv@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZNK5boost11filesystem222basic_filesystem_errorINS0_10basic_pathISsNS0_11path_traitsEEEE4whatEv@Base 1.1.0
  (optional=templinst)_ZNK5boost12basic_formatIcSt11char_traitsIcESaIcEE3strEv@Base 1.1.0
  (optional=templinst)_ZNK5boost12basic_formatIcSt11char_traitsIcESaIcEE6getlocEv@Base 1.1.0
  (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mipsel !powerpc)_ZNK5boost14dynamic_bitsetImSaImEE18m_check_invariantsEv@Base 1.1.0
@@ -8173,8 +8098,6 @@ libCnoidUtil.so.1.1 libcnoid1 #MINVER#
  (optional=templinst|arch=i386 kfreebsd-i386)_ZNKSt6vectorIN5Eigen9AngleAxisIdEESaIS2_EE12_M_check_lenEjPKc@Base 1.1.0+dfsg
  (optional=templinst|arch=amd64 kfreebsd-amd64)_ZNKSt6vectorIN5Eigen9AngleAxisIdEESaIS2_EE12_M_check_lenEmPKc@Base 1.1.0+dfsg
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386|subst)_ZNKSt6vectorIN5boost13intrusive_ptrIN5cnoid8VrmlNodeEEESaIS4_EE12_M_check_lenE{size_t}PKc@Base 1.1.0
- (optional=templinst|arch=i386 kfreebsd-amd64 kfreebsd-i386|subst)_ZNKSt6vectorIN5boost13intrusive_ptrIN5cnoid8YamlNodeEEESaIS4_EE12_M_check_lenE{size_t}PKc@Base 1.1.0
- (optional=templinst|arch=kfreebsd-amd64)_ZNKSt6vectorIN5boost2io6detail11format_itemIcSt11char_traitsIcESaIcEEESaIS7_EE12_M_check_lenEmPKc@Base 1.1.0+dfsg
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386|subst)_ZNKSt6vectorIN5cnoid6SFTimeESaIS1_EE12_M_check_lenE{size_t}PKc@Base 1.1.0
  (optional=templinst|arch=kfreebsd-i386|subst)_ZNKSt6vectorIS_IiSaIiEESaIS1_EE12_M_check_lenE{size_t}PKc@Base 1.1.0
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386|subst)_ZNKSt6vectorISsSaISsEE12_M_check_lenE{size_t}PKc@Base 1.1.0
@@ -8201,7 +8124,6 @@ libCnoidUtil.so.1.1 libcnoid1 #MINVER#
  (optional=templinst|arch=i386 kfreebsd-i386)_ZNSt11__copy_moveILb0ELb0ESt26random_access_iterator_tagE8__copy_mIPN5Eigen9AngleAxisIdEES6_EET0_T_S8_S7_@Base 1.1.0+dfsg
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZNSt11__copy_moveILb0ELb0ESt26random_access_iterator_tagE8__copy_mIPN5boost13intrusive_ptrIN5cnoid8VrmlNodeEEES8_EET0_T_SA_S9_@Base 1.1.0
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZNSt11__copy_moveILb0ELb0ESt26random_access_iterator_tagE8__copy_mIPSsS3_EET0_T_S5_S4_@Base 1.1.0
- (optional=templinst|arch=i386 kfreebsd-i386)_ZNSt11__copy_moveILb0ELb0ESt26random_access_iterator_tagE8__copy_mISt19_Bit_const_iteratorSt13_Bit_iteratorEET0_T_S6_S5_@Base 1.1.0+dfsg
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZNSt11__copy_moveILb0ELb1ESt26random_access_iterator_tagE8__copy_mIdEEPT_PKS3_S6_S4_@Base 1.1.0
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZNSt11__copy_moveILb0ELb1ESt26random_access_iterator_tagE8__copy_mIiEEPT_PKS3_S6_S4_@Base 1.1.0
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZNSt12_Destroy_auxILb0EE9__destroyIN9__gnu_cxx17__normal_iteratorIPN5boost13intrusive_ptrIN5cnoid8VrmlNodeEEESt6vectorIS8_SaIS8_EEEEEEvT_SE_@Base 1.1.0
@@ -8226,7 +8148,6 @@ libCnoidUtil.so.1.1 libcnoid1 #MINVER#
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZNSt20__copy_move_backwardILb0ELb0ESt26random_access_iterator_tagE13__copy_move_bIPN5boost2io6detail11format_itemIcSt11char_traitsIcESaIcEEESB_EET0_T_SD_SC_@Base 1.1.0
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZNSt20__copy_move_backwardILb0ELb0ESt26random_access_iterator_tagE13__copy_move_bIPSsS3_EET0_T_S5_S4_@Base 1.1.0+dfsg
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZNSt20__copy_move_backwardILb0ELb0ESt26random_access_iterator_tagE13__copy_move_bIPSt6vectorIiSaIiEES6_EET0_T_S8_S7_@Base 1.1.0
- (optional=templinst|arch=i386 kfreebsd-i386)_ZNSt20__copy_move_backwardILb0ELb0ESt26random_access_iterator_tagE13__copy_move_bISt13_Bit_iteratorS3_EET0_T_S5_S4_@Base 1.1.0+dfsg
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZNSt20__uninitialized_copyILb0EE13__uninit_copyIPN5Eigen5ArrayIfLi3ELi1ELi0ELi3ELi1EEES5_EET0_T_S7_S6_@Base 1.1.0
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZNSt20__uninitialized_copyILb0EE13__uninit_copyIPN5Eigen6MatrixIdLi3ELi1ELi0ELi3ELi1EEES5_EET0_T_S7_S6_@Base 1.1.0
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZNSt20__uninitialized_copyILb0EE13__uninit_copyIPN5Eigen9AngleAxisIdEES5_EET0_T_S7_S6_@Base 1.1.0
@@ -8342,7 +8263,7 @@ libCnoidUtil.so.1.1 libcnoid1 #MINVER#
  (optional=templinst)_ZNSt6vectorIN5boost13intrusive_ptrIN5cnoid8YamlNodeEEESaIS4_EED2Ev@Base 1.1.0
  (optional=templinst|subst)_ZNSt6vectorIN5boost2io6detail11format_itemIcSt11char_traitsIcESaIcEEESaIS7_EE14_M_fill_assignE{size_t}RKS7_@Base 1.1.0
  (optional=templinst|subst)_ZNSt6vectorIN5boost2io6detail11format_itemIcSt11char_traitsIcESaIcEEESaIS7_EE14_M_fill_insertEN9__gnu_cxx17__normal_iteratorIPS7_S9_EE{size_t}RKS7_@Base 1.1.0
- (optional=templinst|arch=!amd64 !armhf|subst)_ZNSt6vectorIN5boost2io6detail11format_itemIcSt11char_traitsIcESaIcEEESaIS7_EE6resizeE{size_t}S7_@Base 1.1.0
+ (optional=templinst|arch=!amd64 !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386|subst)_ZNSt6vectorIN5boost2io6detail11format_itemIcSt11char_traitsIcESaIcEEESaIS7_EE6resizeE{size_t}S7_@Base 1.1.0
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386|subst)_ZNSt6vectorIN5boost2io6detail11format_itemIcSt11char_traitsIcESaIcEEESaIS7_EEC1E{size_t}RKS7_RKS8_@Base 1.1.0
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386|subst)_ZNSt6vectorIN5boost2io6detail11format_itemIcSt11char_traitsIcESaIcEEESaIS7_EEC2E{size_t}RKS7_RKS8_@Base 1.1.0
  (optional=templinst)_ZNSt6vectorIN5boost2io6detail11format_itemIcSt11char_traitsIcESaIcEEESaIS7_EED1Ev@Base 1.1.0
@@ -8367,8 +8288,8 @@ libCnoidUtil.so.1.1 libcnoid1 #MINVER#
  (optional=templinst|subst)_ZNSt6vectorIbSaIbEE14_M_fill_insertESt13_Bit_iterator{size_t}b@Base 1.1.0
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386|subst)_ZNSt6vectorIbSaIbEEC1E{size_t}RKbRKS0_@Base 1.1.0
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386|subst)_ZNSt6vectorIbSaIbEEC2E{size_t}RKbRKS0_@Base 1.1.0
- (optional=templinst|arch=amd64 i386 kfreebsd-amd64)_ZNSt6vectorIbSaIbEED1Ev@Base 1.1.0+dfsg
- (optional=templinst|arch=amd64 i386 kfreebsd-amd64)_ZNSt6vectorIbSaIbEED2Ev@Base 1.1.0+dfsg
+ (optional=templinst|arch=amd64 kfreebsd-amd64 kfreebsd-i386)_ZNSt6vectorIbSaIbEED1Ev@Base 1.1.0+dfsg
+ (optional=templinst|arch=amd64 kfreebsd-amd64 kfreebsd-i386)_ZNSt6vectorIbSaIbEED2Ev@Base 1.1.0+dfsg
  (optional=templinst)_ZNSt6vectorIdSaIdEE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPdS1_EERKd@Base 1.1.0
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZNSt6vectorIdSaIdEE9push_backERKd@Base 1.1.0+dfsg
  (optional=templinst)_ZNSt6vectorIdSaIdEEC1ERKS1_@Base 1.1.0
@@ -8416,7 +8337,7 @@ libCnoidUtil.so.1.1 libcnoid1 #MINVER#
  (optional=templinst)_ZNSt8_Rb_treeISsSt4pairIKSsN5boost13intrusive_ptrIN5cnoid8YamlNodeEEEESt10_Select1stIS7_ESt4lessISsESaIS7_EE8_M_eraseEPSt13_Rb_tree_nodeIS7_E@Base 1.1.0
  (optional=templinst)_ZNSt8_Rb_treeISsSt4pairIKSsN5boost13intrusive_ptrIN5cnoid9VrmlProtoEEEESt10_Select1stIS7_ESt4lessISsESaIS7_EE10_M_insert_EPKSt18_Rb_tree_node_baseSG_RKS7_@Base 1.1.0
  (optional=templinst)_ZNSt8_Rb_treeISsSt4pairIKSsN5boost13intrusive_ptrIN5cnoid9VrmlProtoEEEESt10_Select1stIS7_ESt4lessISsESaIS7_EE16_M_insert_uniqueERKS7_@Base 1.1.0
- (optional=templinst|arch=amd64 i386 kfreebsd-i386)_ZNSt8_Rb_treeISsSt4pairIKSsN5boost13intrusive_ptrIN5cnoid9VrmlProtoEEEESt10_Select1stIS7_ESt4lessISsESaIS7_EE4findERS1_@Base 1.1.0+dfsg
+ (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZNSt8_Rb_treeISsSt4pairIKSsN5boost13intrusive_ptrIN5cnoid9VrmlProtoEEEESt10_Select1stIS7_ESt4lessISsESaIS7_EE4findERS1_@Base 1.1.0+dfsg
  (optional=templinst)_ZNSt8_Rb_treeISsSt4pairIKSsN5boost13intrusive_ptrIN5cnoid9VrmlProtoEEEESt10_Select1stIS7_ESt4lessISsESaIS7_EE8_M_eraseEPSt13_Rb_tree_nodeIS7_E@Base 1.1.0
  (optional=templinst)_ZNSt8_Rb_treeISsSt4pairIKSsN5boost7variantIbidN5Eigen6MatrixIdLi2ELi1ELi0ELi2ELi1EEENS5_IdLi3ELi1ELi0ELi3ELi1EEENS4_9AngleAxisIdEENS4_5ArrayIfLi3ELi1ELi0ELi3ELi1EEEN5cnoid6SFTimeESsNS2_13intrusive_ptrINSC_8VrmlNodeEEENSC_7SFImageESt6vectorIiSaIiEESI_IdSaIdEESI_IS6_NS4_17aligned_allocatorIS6_EEESI_IS7_SaIS7_EESI_IS9_SaIS9_EESI_ISB_SaISB_EESI_ISD_SaISD_EESI_ISsSaISsEESI_ISG_SaISG_EEEEESt10_Select1stIS13_ESt4lessISsESaIS13_EE10_M_insert_EPKSt18_Rb_tree_node_baseS1C_RKS13_@Base 1.1.0
  (optional=templinst|arch=!i386 !kfreebsd-i386)_ZNSt8_Rb_treeISsSt4pairIKSsN5boost7variantIbidN5Eigen6MatrixIdLi2ELi1ELi0ELi2ELi1EEENS5_IdLi3ELi1ELi0ELi3ELi1EEENS4_9AngleAxisIdEENS4_5ArrayIfLi3ELi1ELi0ELi3ELi1EEEN5cnoid6SFTimeESsNS2_13intrusive_ptrINSC_8VrmlNodeEEENSC_7SFImageESt6vectorIiSaIiEESI_IdSaIdEESI_IS6_NS4_17aligned_allocatorIS6_EEESI_IS7_SaIS7_EESI_IS9_SaIS9_EESI_ISB_SaISB_EESI_ISD_SaISD_EESI_ISsSaISsEESI_ISG_SaISG_EEEEESt10_Select1stIS13_ESt4lessISsESaIS13_EE16_M_insert_uniqueERKS13_@Base 1.1.0
@@ -8460,14 +8381,13 @@ libCnoidUtil.so.1.1 libcnoid1 #MINVER#
  (arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZSt8__fill_aIPN5Eigen5ArrayIfLi3ELi1ELi0ELi3ELi1EEES2_EN9__gnu_cxx11__enable_ifIXntsrSt11__is_scalarIT0_E7__valueEvE6__typeET_SB_RKS7_@Base 1.1.0+dfsg
  (arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZSt8__fill_aIPN5Eigen6MatrixIdLi2ELi1ELi0ELi2ELi1EEES2_EN9__gnu_cxx11__enable_ifIXntsrSt11__is_scalarIT0_E7__valueEvE6__typeET_SB_RKS7_@Base 1.1.0+dfsg
  (arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZSt8__fill_aIPN5Eigen6MatrixIdLi3ELi1ELi0ELi3ELi1EEES2_EN9__gnu_cxx11__enable_ifIXntsrSt11__is_scalarIT0_E7__valueEvE6__typeET_SB_RKS7_@Base 1.1.0+dfsg
- (arch=i386 kfreebsd-amd64 kfreebsd-i386)_ZSt8__fill_aIPN5boost13intrusive_ptrIN5cnoid8YamlNodeEEES4_EN9__gnu_cxx11__enable_ifIXntsrSt11__is_scalarIT0_E7__valueEvE6__typeET_SD_RKS9_@Base 1.1.0+dfsg
  (arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZSt8__fill_aIPN5boost2io6detail11format_itemIcSt11char_traitsIcESaIcEEES7_EN9__gnu_cxx11__enable_ifIXntsrSt11__is_scalarIT0_E7__valueEvE6__typeET_SG_RKSC_@Base 1.1.0+dfsg
  (arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZSt8__fill_aIPSt6vectorIiSaIiEES2_EN9__gnu_cxx11__enable_ifIXntsrSt11__is_scalarIT0_E7__valueEvE6__typeET_SB_RKS7_@Base 1.1.0+dfsg
  (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386|subst)_ZSt9transformIPiP{size_t}PN5boost6detail11multi_array11index_rangeIi{size_t}EENS4_21populate_index_rangesEET1_T_SA_T0_S9_T2_@Base 1.1.0+dfsg
  (optional=templinst)_ZStplIcSt11char_traitsIcESaIcEESbIT_T0_T1_ERKS6_PKS3_@Base 1.1.0
  (optional=templinst)_ZStplIcSt11char_traitsIcESaIcEESbIT_T0_T1_ERKS6_S8_@Base 1.1.0
  _ZTIN5boost10last_valueIvEE@Base 1.1.0
- (arch=!amd64)_ZTIN5boost11filesystem222basic_filesystem_errorINS0_10basic_pathISsNS0_11path_traitsEEEEE@Base 1.1.0+dfsg
+ (arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZTIN5boost11filesystem222basic_filesystem_errorINS0_10basic_pathISsNS0_11path_traitsEEEEE@Base 1.1.0+dfsg
  (arch=!armhf)_ZTIN5boost12noncopyable_11noncopyableE@Base 1.1.0+dfsg
  _ZTIN5boost16bad_lexical_castE@Base 1.1.0
  _ZTIN5boost16base_from_memberINS_10shared_ptrINS_2io18basic_altstringbufIcSt11char_traitsIcESaIcEEEEELi0EEE@Base 1.1.0
@@ -8497,7 +8417,7 @@ libCnoidUtil.so.1.1 libcnoid1 #MINVER#
  _ZTIN5boost6detail15sp_counted_baseE@Base 1.1.0
  (arch=armhf mipsel)_ZTIN5boost6detail16stl_buf_unlockerISt15basic_streambufIcSt11char_traitsIcEEcEE@Base 1.1.0+dfsg
  _ZTIN5boost6detail17sp_counted_impl_pIN5cnoid11EasyScannerEEE@Base 1.1.0
- (arch=!amd64)_ZTIN5boost6detail17sp_counted_impl_pINS_11filesystem222basic_filesystem_errorINS2_10basic_pathISsNS2_11path_traitsEEEE5m_impEEE@Base 1.1.0+dfsg
+ (arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZTIN5boost6detail17sp_counted_impl_pINS_11filesystem222basic_filesystem_errorINS2_10basic_pathISsNS2_11path_traitsEEEE5m_impEEE@Base 1.1.0+dfsg
  _ZTIN5boost6detail17sp_counted_impl_pISt3mapISsiSt4lessISsESaISt4pairIKSsiEEEEE@Base 1.1.0
  _ZTIN5boost6detail18sp_counted_impl_pdIPNS_2io18basic_altstringbufIcSt11char_traitsIcESaIcEEENS2_22basic_oaltstringstreamIcS5_S6_E5No_OpEEE@Base 1.1.0
  _ZTIN5boost6system12system_errorE@Base 1.1.0
@@ -8580,7 +8500,7 @@ libCnoidUtil.so.1.1 libcnoid1 #MINVER#
  _ZTIN5cnoid9VrmlShapeE@Base 1.1.0
  _ZTISs@Base 1.1.0
  _ZTSN5boost10last_valueIvEE@Base 1.1.0
- (arch=!amd64)_ZTSN5boost11filesystem222basic_filesystem_errorINS0_10basic_pathISsNS0_11path_traitsEEEEE@Base 1.1.0+dfsg
+ (arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZTSN5boost11filesystem222basic_filesystem_errorINS0_10basic_pathISsNS0_11path_traitsEEEEE@Base 1.1.0+dfsg
  (arch=!armhf)_ZTSN5boost12noncopyable_11noncopyableE@Base 1.1.0+dfsg
  _ZTSN5boost16bad_lexical_castE@Base 1.1.0
  _ZTSN5boost16base_from_memberINS_10shared_ptrINS_2io18basic_altstringbufIcSt11char_traitsIcESaIcEEEEELi0EEE@Base 1.1.0
@@ -8610,7 +8530,7 @@ libCnoidUtil.so.1.1 libcnoid1 #MINVER#
  _ZTSN5boost6detail15sp_counted_baseE@Base 1.1.0
  (arch=armhf mipsel)_ZTSN5boost6detail16stl_buf_unlockerISt15basic_streambufIcSt11char_traitsIcEEcEE@Base 1.1.0+dfsg
  _ZTSN5boost6detail17sp_counted_impl_pIN5cnoid11EasyScannerEEE@Base 1.1.0
- (arch=!amd64)_ZTSN5boost6detail17sp_counted_impl_pINS_11filesystem222basic_filesystem_errorINS2_10basic_pathISsNS2_11path_traitsEEEE5m_impEEE@Base 1.1.0+dfsg
+ (arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZTSN5boost6detail17sp_counted_impl_pINS_11filesystem222basic_filesystem_errorINS2_10basic_pathISsNS2_11path_traitsEEEE5m_impEEE@Base 1.1.0+dfsg
  _ZTSN5boost6detail17sp_counted_impl_pISt3mapISsiSt4lessISsESaISt4pairIKSsiEEEEE@Base 1.1.0
  _ZTSN5boost6detail18sp_counted_impl_pdIPNS_2io18basic_altstringbufIcSt11char_traitsIcESaIcEEENS2_22basic_oaltstringstreamIcS5_S6_E5No_OpEEE@Base 1.1.0
  _ZTSN5boost6system12system_errorE@Base 1.1.0
@@ -8693,7 +8613,7 @@ libCnoidUtil.so.1.1 libcnoid1 #MINVER#
  _ZTSN5cnoid9VrmlShapeE@Base 1.1.0
  _ZTSSs@Base 1.1.0
  _ZTTN5boost2io22basic_oaltstringstreamIcSt11char_traitsIcESaIcEEE@Base 1.1.0
- (arch=!amd64)_ZTVN5boost11filesystem222basic_filesystem_errorINS0_10basic_pathISsNS0_11path_traitsEEEEE@Base 1.1.0+dfsg
+ (arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZTVN5boost11filesystem222basic_filesystem_errorINS0_10basic_pathISsNS0_11path_traitsEEEEE@Base 1.1.0+dfsg
  _ZTVN5boost16bad_lexical_castE@Base 1.1.0
  _ZTVN5boost16exception_detail10clone_baseE@Base 1.1.0
  _ZTVN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_16bad_lexical_castEEEEE@Base 1.1.0
@@ -8720,7 +8640,7 @@ libCnoidUtil.so.1.1 libcnoid1 #MINVER#
  _ZTVN5boost6detail15sp_counted_baseE@Base 1.1.0
  (arch=armhf mipsel)_ZTVN5boost6detail16stl_buf_unlockerISt15basic_streambufIcSt11char_traitsIcEEcEE@Base 1.1.0+dfsg
  _ZTVN5boost6detail17sp_counted_impl_pIN5cnoid11EasyScannerEEE@Base 1.1.0
- (arch=!amd64)_ZTVN5boost6detail17sp_counted_impl_pINS_11filesystem222basic_filesystem_errorINS2_10basic_pathISsNS2_11path_traitsEEEE5m_impEEE@Base 1.1.0+dfsg
+ (arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZTVN5boost6detail17sp_counted_impl_pINS_11filesystem222basic_filesystem_errorINS2_10basic_pathISsNS2_11path_traitsEEEE5m_impEEE@Base 1.1.0+dfsg
  _ZTVN5boost6detail17sp_counted_impl_pISt3mapISsiSt4lessISsESaISt4pairIKSsiEEEEE@Base 1.1.0
  _ZTVN5boost6detail18sp_counted_impl_pdIPNS_2io18basic_altstringbufIcSt11char_traitsIcESaIcEEENS2_22basic_oaltstringstreamIcS5_S6_E5No_OpEEE@Base 1.1.0
  _ZTVN5boost6system12system_errorE@Base 1.1.0
@@ -8798,8 +8718,8 @@ libCnoidUtil.so.1.1 libcnoid1 #MINVER#
  _ZTVN5cnoid9VrmlGroupE@Base 1.1.0
  _ZTVN5cnoid9VrmlProtoE@Base 1.1.0
  _ZTVN5cnoid9VrmlShapeE@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZZN5boost11filesystem210basic_pathISsNS0_11path_traitsEE9normalizeEvE7dot_str@Base 1.1.0
- (optional=templinst|arch=!amd64)_ZZN5boost11filesystem212initial_pathINS0_10basic_pathISsNS0_11path_traitsEEEEERKT_vE9init_path@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZZN5boost11filesystem210basic_pathISsNS0_11path_traitsEE9normalizeEvE7dot_str@Base 1.1.0
+ (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZZN5boost11filesystem212initial_pathINS0_10basic_pathISsNS0_11path_traitsEEEEERKT_vE9init_path@Base 1.1.0
  (optional=templinst)_ZZN5boost9function2IbNS_7signals6detail12stored_groupES3_E9assign_toINS2_20group_bridge_compareISt4lessIiEiEEEEvT_E13stored_vtable@Base 1.1.0
  _ZrsRN5cnoid11EasyScannerENS0_4EndlE@Base 1.1.0
  _ZrsRN5cnoid11EasyScannerEPKc@Base 1.1.0
