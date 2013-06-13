@@ -7,19 +7,18 @@ Fix cast from pointer to udword losing precision.
 Forwarded: yes
 Author: Thomas Moulard <thomas.moulard@gmail.com>
 ---
- src/Collision/Opcode/OPC_AABBTree.h      |    7 ++-----
- src/Collision/Opcode/OPC_OptimizedTree.h |    7 ++-----
- 2 files changed, 4 insertions(+), 10 deletions(-)
+ src/Collision/Opcode/OPC_AABBTree.h      |    6 +-----
+ src/Collision/Opcode/OPC_OptimizedTree.h |    6 +-----
+ src/Collision/Opcode/Opcode.h            |    1 +
+ 3 files changed, 3 insertions(+), 10 deletions(-)
 
 diff --git a/src/Collision/Opcode/OPC_AABBTree.h b/src/Collision/Opcode/OPC_AABBTree.h
-index b657130..2d0f90f 100644
+index b657130..3988daf 100644
 --- a/src/Collision/Opcode/OPC_AABBTree.h
 +++ b/src/Collision/Opcode/OPC_AABBTree.h
-@@ -19,12 +19,9 @@
- // Include Guard
+@@ -20,11 +20,7 @@
  #ifndef __OPC_AABBTREE_H__
  #define __OPC_AABBTREE_H__
-+#include <stdint.h>
  
 -#ifdef __x86_64
 -#define EXWORD uqword
@@ -31,14 +30,12 @@ index b657130..2d0f90f 100644
  #ifdef OPC_NO_NEG_VANILLA_TREE
  	//! TO BE DOCUMENTED
 diff --git a/src/Collision/Opcode/OPC_OptimizedTree.h b/src/Collision/Opcode/OPC_OptimizedTree.h
-index 11bf0ab..da79e5b 100644
+index 11bf0ab..7350dcc 100644
 --- a/src/Collision/Opcode/OPC_OptimizedTree.h
 +++ b/src/Collision/Opcode/OPC_OptimizedTree.h
-@@ -19,12 +19,9 @@
- // Include Guard
+@@ -20,11 +20,7 @@
  #ifndef __OPC_OPTIMIZEDTREE_H__
  #define __OPC_OPTIMIZEDTREE_H__
-+#include <stdint.h>
  
 -#ifdef __x86_64
 -#define EXWORD uqword
@@ -49,3 +46,15 @@ index 11bf0ab..da79e5b 100644
  
  	//! Common interface for a node of an implicit tree
  	#define IMPLEMENT_IMPLICIT_NODE(base_class, volume)														\
+diff --git a/src/Collision/Opcode/Opcode.h b/src/Collision/Opcode/Opcode.h
+index 6554a42..9017036 100644
+--- a/src/Collision/Opcode/Opcode.h
++++ b/src/Collision/Opcode/Opcode.h
+@@ -73,6 +73,7 @@
+ 
+ 	#include "OPC_IceHook.h"
+ //#include<iostream>
++#include <stdint.h>
+ 
+ namespace cnoid {
+     class CollisionPairInserter;
