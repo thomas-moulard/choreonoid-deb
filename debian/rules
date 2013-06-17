@@ -56,7 +56,5 @@ override_dh_auto_install:
 override_dh_strip:
 	dh_strip -a --dbg-package=choreonoid-dbg
 
-override_dh_auto_test:
-
 %:
 	dh  $@ --parallel --with pkgkde-symbolshelper
