@@ -19,8 +19,8 @@ Build-Depends: debhelper (>= 9), cmake,
 Standards-Version: 3.9.4
 Section: science
 Homepage: http://choreonoid.org/
-Vcs-Browser: http://git.debian.org/?p=debian-science/packages/choreonoid.git
-Vcs-Git: git://git.debian.org/debian-science/packages/choreonoid.git
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=debian-science/packages/choreonoid.git
+Vcs-Git: git://anonscm.debian.org/debian-science/packages/choreonoid.git
 
 Package: choreonoid-data
 Architecture: all
