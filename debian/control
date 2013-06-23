@@ -21,6 +21,7 @@ Section: science
 Homepage: http://choreonoid.org/
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=debian-science/packages/choreonoid.git
 Vcs-Git: git://anonscm.debian.org/debian-science/packages/choreonoid.git
+XS-Testsuite: autopkgtest
 
 Package: choreonoid-data
 Architecture: all

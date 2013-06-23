@@ -2,7 +2,9 @@ choreonoid (1.1.0+dfsg-5) unstable; urgency=low
 
   * Fix patch fixing opcode portability issue (Closes: #711003).
   * Fix patch porting to Boost.Filesystem v3.
-  * Update symbols for i386, kfreebsd-i386 and kfreebsd-amd64 architectures.
+  * Update symbols for amd64, i386, kfreebsd-i386 and kfreebsd-amd64
+    architectures.
+  * Add autopkgtest support and simple test case.
 
  -- Thomas Moulard <thomas.moulard@gmail.com>  Thu, 13 Jun 2013 13:46:59 +0900
 
