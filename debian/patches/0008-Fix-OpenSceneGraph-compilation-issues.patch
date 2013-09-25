@@ -1,0 +1,107 @@
+From: Thomas Moulard <thomas.moulard@gmail.com>
+Date: Wed, 25 Sep 2013 14:45:09 +0900
+Subject: Fix OpenSceneGraph compilation issues
+
+Fix OpenSceneGraph compilation issues
+
+Forwarded: yes
+Author: Thomas Moulard <thomas.moulard@gmail.com>
+---
+ src/Base/OsgNormalVisualizer.cpp | 18 +++++++++---------
+ src/Base/VrmlToOsgConverter.cpp  | 12 ++++++------
+ 2 files changed, 15 insertions(+), 15 deletions(-)
+
+diff --git a/src/Base/OsgNormalVisualizer.cpp b/src/Base/OsgNormalVisualizer.cpp
+index 2d84167..4d4fe3e 100644
+--- a/src/Base/OsgNormalVisualizer.cpp
++++ b/src/Base/OsgNormalVisualizer.cpp
+@@ -104,12 +104,12 @@ void NormalExtractor::apply(osg::Geode& geode)
+                 if(normalIndices){
+                     normalIndexIter = normalIndices->begin();
+                 }
+-
++
+                 osg::Geometry::PrimitiveSetList::iterator it;
+                 for(it = primitiveSets.begin(); it != primitiveSets.end(); ++it){
+                     osg::PrimitiveSet* primitiveSet = it->get();
+
+-                    if(binding == osg::Geometry::BIND_PER_PRIMITIVE_SET){
++                    if(binding == deprecated_osg::Geometry::BIND_PER_PRIMITIVE_SET){
+                         extractPrimitiveSetNormal(primitiveSet);
+                     } else {
+                         switch(primitiveSet->getMode()){
+@@ -168,27 +168,27 @@ void NormalExtractor::extractPrimitiveNormals
+ (const osg::PrimitiveSet* primitiveSet, osg::Geometry::AttributeBinding binding, int numVertices)
+ {
+     for(size_t i=0; i < primitiveSet->getNumPrimitives(); ++i){
+-
+-        if(mode == NormalVisualizer::SURFACE || binding == osg::Geometry::BIND_PER_PRIMITIVE){
++
++        if(mode == NormalVisualizer::SURFACE || binding == deprecated_osg::Geometry::BIND_PER_PRIMITIVE){
+             osg::Vec3 n(0.0, 0.0, 0.0);
+-            if(binding == osg::Geometry::BIND_PER_PRIMITIVE){
++            if(binding == deprecated_osg::Geometry::BIND_PER_PRIMITIVE){
+                 n = *(normalIter++);
+             } else if(binding == osg::Geometry::BIND_PER_VERTEX){
+                 for(int j = 0; j < numVertices; ++j){
+                     n += *(normalIter++);
+                 }
+-                n /= numVertices;
++                n /= numVertices;
+             }
+-
++
+             osg::Vec3 v(0.0, 0.0, 0.0);
+             for(int j = 0; j < numVertices; ++j){
+                 v += *(vertexIter++);
+             }
+             v /= numVertices;
+-
++
+             normalLines->push_back(v);
+             normalLines->push_back(v + n * scale);
+-
++
+         } else if(mode == NormalVisualizer::VERTEX){
+             for(int j = 0; j < numVertices; ++j){
+                 osg::Vec3& v = *(vertexIter++);
+diff --git a/src/Base/VrmlToOsgConverter.cpp b/src/Base/VrmlToOsgConverter.cpp
+index 8093c1f..bceb26a 100644
+--- a/src/Base/VrmlToOsgConverter.cpp
++++ b/src/Base/VrmlToOsgConverter.cpp
+@@ -399,10 +399,10 @@ osg::Geometry* VrmlToOsgConverterImpl::createGeometryFromIndexedFaceSet(VrmlInde
+         if(vface->normalPerVertex == true){
+             geometry->setNormalBinding(osg::Geometry::BIND_PER_VERTEX);
+         } else {
+-            geometry->setNormalBinding(osg::Geometry::BIND_PER_PRIMITIVE);
++            geometry->setNormalBinding(deprecated_osg::Geometry::BIND_PER_PRIMITIVE);
+         }
+     }
+-
++
+     if(vface->color){
+         MFColor& c = vface->color->color;
+         if(!c.empty()){
+@@ -430,18 +430,18 @@ osg::Geometry* VrmlToOsgConverterImpl::createGeometryFromIndexedFaceSet(VrmlInde
+                 }
+                 geometry->setColorIndices(indices);
+             }
+-
++
+             if(vface->colorPerVertex == true){
+                 geometry->setColorBinding(osg::Geometry::BIND_PER_VERTEX);
+             } else {
+-                geometry->setColorBinding(osg::Geometry::BIND_PER_PRIMITIVE);
++                geometry->setColorBinding(deprecated_osg::Geometry::BIND_PER_PRIMITIVE);
+             }
+         }
+     }
+-
++
+     if(!vface->normal){
+         osgUtil::SmoothingVisitor::smooth(*geometry);
+     }
+-
++
+     return geometry;
+ }

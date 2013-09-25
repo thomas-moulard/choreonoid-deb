@@ -10,8 +10,8 @@ See https://svn.boost.org/trac/boost/ticket/6943
 Forwarded: yes
 Author: Thomas Moulard <thomas.moulard@gmail.com>
 ---
- src/Util/Referenced.h |    8 ++++----
- src/Util/YamlNodes.h  |    8 ++++----
+ src/Util/Referenced.h | 8 ++++----
+ src/Util/YamlNodes.h  | 8 ++++----
  2 files changed, 8 insertions(+), 8 deletions(-)
 
 diff --git a/src/Util/Referenced.h b/src/Util/Referenced.h

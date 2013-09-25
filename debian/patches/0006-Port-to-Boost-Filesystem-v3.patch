@@ -7,20 +7,20 @@ Port to Boost Filesystem v3.
 Forwarded: yes
 Author: Thomas Moulard <thomas.moulard@gmail.com>
 ---
- CMakeLists.txt                       |    4 ----
- src/Base/App.cpp                     |   20 ++++++++++----------
- src/Base/AppConfig.cpp               |    6 +++---
- src/Base/Archive.cpp                 |    8 ++++----
- src/Base/ItemManager.cpp             |    2 +-
- src/Base/MovieGenerator.cpp          |    2 +-
- src/Base/PluginManager.cpp           |    2 +-
- src/Base/ProjectManager.cpp          |    4 ++--
- src/Base/SceneItem.cpp               |    4 ++--
- src/Body/BodyCustomizerInterface.cpp |    8 ++++----
- src/Body/BodyLoader.cpp              |    4 ++--
- src/Body/BodyMotionUtil.cpp          |   16 ++++++++--------
- src/BodyPlugin/BodyItem.cpp          |    2 +-
- src/Util/VrmlParser.cpp              |   10 +++++-----
+ CMakeLists.txt                       |  4 ----
+ src/Base/App.cpp                     | 20 ++++++++++----------
+ src/Base/AppConfig.cpp               |  6 +++---
+ src/Base/Archive.cpp                 |  8 ++++----
+ src/Base/ItemManager.cpp             |  2 +-
+ src/Base/MovieGenerator.cpp          |  2 +-
+ src/Base/PluginManager.cpp           |  2 +-
+ src/Base/ProjectManager.cpp          |  4 ++--
+ src/Base/SceneItem.cpp               |  4 ++--
+ src/Body/BodyCustomizerInterface.cpp |  8 ++++----
+ src/Body/BodyLoader.cpp              |  4 ++--
+ src/Body/BodyMotionUtil.cpp          | 16 ++++++++--------
+ src/BodyPlugin/BodyItem.cpp          |  2 +-
+ src/Util/VrmlParser.cpp              | 10 +++++-----
  14 files changed, 44 insertions(+), 48 deletions(-)
 
 diff --git a/CMakeLists.txt b/CMakeLists.txt
@@ -96,7 +96,7 @@ index 01ccc6d..104a79d 100644
  }
  
 diff --git a/src/Base/AppConfig.cpp b/src/Base/AppConfig.cpp
-index 3dc150a..0e30e00 100644
+index 3dc150a..5eb3a9f 100644
 --- a/src/Base/AppConfig.cpp
 +++ b/src/Base/AppConfig.cpp
 @@ -48,7 +48,7 @@ bool AppConfig::initialize(const std::string& application_, const std::string& o
@@ -104,7 +104,7 @@ index 3dc150a..0e30e00 100644
      if(!configDirPath.empty()){
          fullPath = configDirPath / filePath;
 -        std::string fullPathString = fullPath.file_string(); 
-+        std::string fullPathString = fullPath.native(); 
++        std::string fullPathString = fullPath.native();
          load(fullPathString);
      }
  
@@ -127,7 +127,7 @@ index 3dc150a..0e30e00 100644
  
  
 diff --git a/src/Base/Archive.cpp b/src/Base/Archive.cpp
-index 529e3fa..4d03202 100644
+index 529e3fa..4cd1364 100644
 --- a/src/Base/Archive.cpp
 +++ b/src/Base/Archive.cpp
 @@ -122,7 +122,7 @@ void Archive::initSharedInfo(const std::string& projectFile)

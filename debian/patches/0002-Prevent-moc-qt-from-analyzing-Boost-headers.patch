@@ -5,7 +5,7 @@ Subject: Prevent moc-qt from analyzing Boost headers.
 Forwarded: yes
 Author: Thomas Moulard <thomas.moulard@gmail.com>
 ---
- src/CMakeLists.txt |    4 ++++
+ src/CMakeLists.txt | 4 ++++
  1 file changed, 4 insertions(+)
 
 diff --git a/src/CMakeLists.txt b/src/CMakeLists.txt

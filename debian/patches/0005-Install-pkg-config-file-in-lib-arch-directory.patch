@@ -7,7 +7,7 @@ Install pkg-config file in lib/arch directory.
 Forwarded: yes
 Author: Thomas Moulard <thomas.moulard@gmail.com>
 ---
- misc/pkgconfig/CMakeLists.txt |    3 ++-
+ misc/pkgconfig/CMakeLists.txt | 3 ++-
  1 file changed, 2 insertions(+), 1 deletion(-)
 
 diff --git a/misc/pkgconfig/CMakeLists.txt b/misc/pkgconfig/CMakeLists.txt

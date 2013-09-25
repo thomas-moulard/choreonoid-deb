@@ -7,7 +7,7 @@ Install choreonoid program when build type is RelWithDebInfo.
 Forwarded: yes
 Author: Thomas Moulard <thomas.moulard@gmail.com>
 ---
- src/Choreonoid/CMakeLists.txt |    2 +-
+ src/Choreonoid/CMakeLists.txt | 2 +-
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/src/Choreonoid/CMakeLists.txt b/src/Choreonoid/CMakeLists.txt

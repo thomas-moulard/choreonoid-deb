@@ -7,7 +7,7 @@ Do not make the assumption that the library directory is lib.
 Forwarded: yes
 Author: Thomas Moulard <thomas.moulard@gmail.com>
 ---
- CMakeLists.txt |   11 +++++++----
+ CMakeLists.txt | 11 +++++++----
  1 file changed, 7 insertions(+), 4 deletions(-)
 
 diff --git a/CMakeLists.txt b/CMakeLists.txt
