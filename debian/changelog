@@ -1,7 +1,8 @@
 choreonoid (1.1.0+dfsg-6) UNRELEASED; urgency=low
 
   * Remove debian/libcnoid1.symbols (close: #708991, close: #713355)
-  * Add patch to fix OpenScene Graph compilation issues (close: #719387, close: #719387)
+  * Add patch to fix OpenScene Graph compilation issues
+	(close: #719387, close: #719387)
 
  -- Thomas Moulard <thomas.moulard@gmail.com>  Wed, 25 Sep 2013 14:36:11 +0900
 
